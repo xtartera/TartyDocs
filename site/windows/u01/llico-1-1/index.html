@@ -576,10 +576,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#1-que-es-un-sistema-operatiu-en-xarxa" class="md-nav__link">
+  <a href="#1-context-per-que-existeixen-els-servidors" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. Què és un sistema operatiu en xarxa?
+        1. Context: per què existeixen els servidors?
       
     </span>
   </a>
@@ -587,10 +587,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-arquitectura-client-servidor" class="md-nav__link">
+  <a href="#2-sistemes-operatius-descriptori-vs-en-xarxa" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. Arquitectura client-servidor
+        2. Sistemes operatius d'escriptori vs. en xarxa
       
     </span>
   </a>
@@ -598,10 +598,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-serveis-principals-de-windows-server" class="md-nav__link">
+  <a href="#3-arquitectura-client-servidor" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3. Serveis principals de Windows Server
+        3. Arquitectura client-servidor
       
     </span>
   </a>
@@ -609,10 +609,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-virtualitzacio" class="md-nav__link">
+  <a href="#4-serveis-principals-de-windows-server" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4. Virtualització
+        4. Serveis principals de Windows Server
       
     </span>
   </a>
@@ -620,10 +620,71 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#5-bones-practiques-inicials" class="md-nav__link">
+  <a href="#5-virtualitzacio-de-servidors" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5. Bones pràctiques inicials
+        5. Virtualització de servidors
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Virtualització de servidors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#que-es-un-hipervisor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Què és un hipervisor?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#per-que-es-millor-virtualitzar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Per què és millor virtualitzar?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-cas-real-lempresa-tecnollum-sl" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Cas real: l'empresa Tecnollum S.L.
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-bones-practiques-inicials" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Bones pràctiques inicials
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#relacio-amb-els-projectes-del-curs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Relació amb els projectes del curs
       
     </span>
   </a>
@@ -801,152 +862,402 @@
 <h2 id="objectius-daprenentatge">Objectius d'aprenentatge<a class="headerlink" href="#objectius-daprenentatge" title="Permanent link">&para;</a></h2>
 <p>En acabar aquesta lliçó seràs capaç de:</p>
 <ul>
-<li>[ ] Entendre què és un sistema operatiu en xarxa.</li>
-<li>[ ] Diferenciar un sistema client d'un sistema servidor.</li>
-<li>[ ] Comprendre el paper de Windows Server dins d'una empresa.</li>
-<li>[ ] Identificar els principals serveis que ofereix un servidor.</li>
-<li>[ ] Entendre per què la majoria de servidors actuals són virtuals.</li>
+<li>[ ] Explicar per què una empresa necessita un sistema operatiu en xarxa.</li>
+<li>[ ] Diferenciar el rol d'un client i d'un servidor en una xarxa corporativa.</li>
+<li>[ ] Descriure l'arquitectura client-servidor i els seus components principals.</li>
+<li>[ ] Identificar i explicar almenys sis serveis que ofereix Windows Server.</li>
+<li>[ ] Justificar per què la virtualització és la norma actual en entorns empresarials.</li>
+<li>[ ] Aplicar les bones pràctiques bàsiques en la configuració inicial d'un servidor.</li>
 </ul>
 <hr />
-<h2 id="1-que-es-un-sistema-operatiu-en-xarxa">1. Què és un sistema operatiu en xarxa?<a class="headerlink" href="#1-que-es-un-sistema-operatiu-en-xarxa" title="Permanent link">&para;</a></h2>
-<p>Quan utilitzes un ordinador a casa, tota la informació i els programes es
-troben al mateix equip. Si l'ordinador falla, ningú més hi pot accedir.</p>
-<p>En canvi, una empresa necessita que molts usuaris comparteixin recursos de
-manera segura i centralitzada. Per aconseguir-ho s'utilitza un
-<strong>sistema operatiu en xarxa</strong> com <strong>Windows Server</strong>.</p>
+<h2 id="1-context-per-que-existeixen-els-servidors">1. Context: per què existeixen els servidors?<a class="headerlink" href="#1-context-per-que-existeixen-els-servidors" title="Permanent link">&para;</a></h2>
+<p>Imagina una empresa amb 50 treballadors. Cada persona té el seu ordinador
+i necessita:</p>
+<ul>
+<li>Accedir als mateixos fitxers de treball que els seus companys.</li>
+<li>Imprimir en impressores compartides.</li>
+<li>Rebre correus electrònics corporatius.</li>
+<li>Connectar-se amb les seves credencials des de qualsevol equip de l'oficina.</li>
+<li>Que l'administrador pugui gestionar tots els equips des d'un punt central.</li>
+</ul>
+<p>Si cadascú gestionés tot això al seu propi ordinador, el caos seria immediat:
+fitxers duplicats, contrasenyes inconsistents, impressores que ningú sap
+configurar i cap manera de garantir la seguretat.</p>
+<p>La solució és centralitzar tots aquests serveis en un <strong>servidor</strong>.</p>
 <div class="admonition tip">
-<p class="admonition-title">Recorda</p>
-<p>Windows Server <strong>no</strong> està pensat perquè els usuaris hi treballin directament.
-La seva funció és oferir serveis als ordinadors de la xarxa.</p>
+<p class="admonition-title">Analogia</p>
+<p>Pensa en un servidor com el <strong>cervell d'una empresa</strong>. Els ordinadors
+dels treballadors (clients) fan preguntes i el servidor les respon:
+<em>"Qui ets?"</em>, <em>"Quins fitxers pots veure?"</em>, <em>"Quina IP tens?"</em>.</p>
 </div>
 <hr />
-<h2 id="2-arquitectura-client-servidor">2. Arquitectura client-servidor<a class="headerlink" href="#2-arquitectura-client-servidor" title="Permanent link">&para;</a></h2>
-<pre class="mermaid"><code>flowchart LR
-    subgraph Empresa
-        WS[🖥️ Windows Server]
-        WS --&gt; AD[Active Directory]
-        WS --&gt; DNS[DNS]
-        WS --&gt; FS[Fitxers]
-    end
-    subgraph Clients
-        C1[💻 Client 1]
-        C2[💻 Client 2]
-    end
-    AD --&gt; C1
-    AD --&gt; C2
-    DNS --&gt; C1
-    DNS --&gt; C2
-    FS --&gt; C1
-    FS --&gt; C2</code></pre>
-<hr />
-<h2 id="3-serveis-principals-de-windows-server">3. Serveis principals de Windows Server<a class="headerlink" href="#3-serveis-principals-de-windows-server" title="Permanent link">&para;</a></h2>
+<h2 id="2-sistemes-operatius-descriptori-vs-en-xarxa">2. Sistemes operatius d'escriptori vs. en xarxa<a class="headerlink" href="#2-sistemes-operatius-descriptori-vs-en-xarxa" title="Permanent link">&para;</a></h2>
+<p>No tots els sistemes operatius estan pensats per a les mateixes tasques.</p>
 <table>
 <thead>
 <tr>
-<th><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 15.5A3.5 3.5 0 0 1 8.5 12 3.5 3.5 0 0 1 12 8.5a3.5 3.5 0 0 1 3.5 3.5 3.5 3.5 0 0 1-3.5 3.5m7.43-2.53c.04-.32.07-.64.07-.97s-.03-.66-.07-1l2.11-1.63c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.31-.61-.22l-2.49 1c-.52-.39-1.06-.73-1.69-.98l-.37-2.65A.506.506 0 0 0 14 2h-4c-.25 0-.46.18-.5.42l-.37 2.65c-.63.25-1.17.59-1.69.98l-2.49-1c-.22-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64L4.57 11c-.04.34-.07.67-.07 1s.03.65.07.97l-2.11 1.66c-.19.15-.25.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1.01c.52.4 1.06.74 1.69.99l.37 2.65c.04.24.25.42.5.42h4c.25 0 .46-.18.5-.42l.37-2.65c.63-.26 1.17-.59 1.69-.99l2.49 1.01c.22.08.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64z"/></svg></span> Servei</th>
-<th><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 9h-2V7h2m0 10h-2v-6h2m-1-9A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2"/></svg></span> Funció</th>
+<th>Característica</th>
+<th>Windows 11 (escriptori)</th>
+<th>Windows Server 2022</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Active Directory (AD DS)</td>
-<td>Gestió centralitzada d'usuaris i equips</td>
+<td>Usuaris simultanis</td>
+<td>1</td>
+<td>Molts (RDP, serveis)</td>
 </tr>
 <tr>
-<td>DNS</td>
-<td>Resolució de noms de domini</td>
+<td>Interfície gràfica</td>
+<td>Sí (per defecte)</td>
+<td>Opcional (Core mode)</td>
 </tr>
 <tr>
-<td>DHCP</td>
-<td>Assignació automàtica d'adreces IP</td>
+<td>Rol principal</td>
+<td>Productivitat personal</td>
+<td>Oferir serveis a la xarxa</td>
 </tr>
 <tr>
-<td>File Services</td>
-<td>Compartició de carpetes i permisos</td>
+<td>Active Directory</td>
+<td>No</td>
+<td>Sí</td>
 </tr>
 <tr>
-<td>Print Services</td>
-<td>Gestió centralitzada d'impressores</td>
+<td>Llicència</td>
+<td>Per equip</td>
+<td>Per nuclis de CPU</td>
 </tr>
 <tr>
-<td>Group Policy (GPO)</td>
-<td>Polítiques de seguretat per a tots els equips</td>
+<td>Estabilitat prioritària</td>
+<td>Rendiment d'usuari</td>
+<td>Disponibilitat contínua</td>
 </tr>
 </tbody>
 </table>
-<hr />
-<h2 id="4-virtualitzacio">4. Virtualització<a class="headerlink" href="#4-virtualitzacio" title="Permanent link">&para;</a></h2>
-<p>La virtualització permet executar <strong>diversos servidors</strong> sobre un únic
-equip físic, cosa que avui és la norma en qualsevol empresa.</p>
-<details class="info" open="open">
-<summary>Per què virtualitzar?</summary>
-<ul>
-<li><img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/2705.svg" title=":white_check_mark:" /> Reducció de costos de maquinari</li>
-<li><img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/2705.svg" title=":white_check_mark:" /> Millor aprofitament dels recursos</li>
-<li><img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/2705.svg" title=":white_check_mark:" /> <em>Snapshots</em> (punts de restauració ràpida)</li>
-<li><img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/2705.svg" title=":white_check_mark:" /> Recuperació davant de fallades</li>
-<li><img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/2705.svg" title=":white_check_mark:" /> Entorns de pràctiques senzills de crear i eliminar</li>
-</ul>
-</details>
-<div class="admonition warning">
-<p class="admonition-title">Error habitual</p>
-<p>No configuris mai el servidor amb <strong>IP dinàmica</strong>. Un servidor sempre necessita
-una adreça IP fixa i coneguda per tots els clients de la xarxa.</p>
+<div class="admonition tip">
+<p class="admonition-title">Recorda</p>
+<p>Windows Server <strong>no</strong> està pensat perquè els usuaris hi treballin directament.
+La seva funció és oferir serveis als ordinadors de la xarxa de forma
+contínua i fiable, idealment sense interrupcions.</p>
 </div>
 <hr />
-<h2 id="5-bones-practiques-inicials">5. Bones pràctiques inicials<a class="headerlink" href="#5-bones-practiques-inicials" title="Permanent link">&para;</a></h2>
+<h2 id="3-arquitectura-client-servidor">3. Arquitectura client-servidor<a class="headerlink" href="#3-arquitectura-client-servidor" title="Permanent link">&para;</a></h2>
+<p>El model <strong>client-servidor</strong> és la base de totes les xarxes empresarials.
+En aquest model hi ha dos tipus d'actors:</p>
+<ul>
+<li><strong>Servidor:</strong> equip que ofereix recursos i serveis. Sempre està encès i
+  disponible. Té una adreça IP fixa per ser localitzable en tot moment.</li>
+<li><strong>Client:</strong> equip que consumeix els serveis del servidor. Pot ser un
+  ordinador de sobretaula, un portàtil o fins i tot un mòbil.</li>
+</ul>
+<pre class="mermaid"><code>flowchart LR
+    subgraph Servidor["🖥️ Windows Server"]
+        AD[Active Directory]
+        DNS[DNS]
+        DHCP[DHCP]
+        FS[Fitxers]
+        GPO[GPO]
+    end
+    subgraph Clients
+        C1[💻 PC Comptabilitat]
+        C2[💻 PC Administració]
+        C3[💻 PC Direcció]
+    end
+    AD -- autenticació --&gt; C1
+    AD -- autenticació --&gt; C2
+    AD -- autenticació --&gt; C3
+    DNS -- noms --&gt; C1
+    DHCP -- IP --&gt; C2
+    FS -- carpetes --&gt; C3
+    GPO -- polítiques --&gt; C1
+    GPO -- polítiques --&gt; C2
+    GPO -- polítiques --&gt; C3</code></pre>
+<p>Quan un treballador engega el seu ordinador i introdueix la contrasenya,
+el que passa en realitat és:</p>
+<ol>
+<li>El client envia les credencials al servidor (Active Directory).</li>
+<li>El servidor verifica si l'usuari existeix i si la contrasenya és correcta.</li>
+<li>Si tot és correcte, aplica les polítiques de grup (GPO) corresponents.</li>
+<li>Munta les unitats de xarxa i carpetes als quals l'usuari té accés.</li>
+<li>L'usuari veu el seu escriptori habitual, des de qualsevol equip de l'empresa.</li>
+</ol>
+<hr />
+<h2 id="4-serveis-principals-de-windows-server">4. Serveis principals de Windows Server<a class="headerlink" href="#4-serveis-principals-de-windows-server" title="Permanent link">&para;</a></h2>
+<p>Windows Server no és un únic programa sinó una plataforma que pot oferir
+múltiples <strong>rols</strong>. Cada rol és un servei independent que es pot instal·lar
+o desinstal·lar segons les necessitats.</p>
+<table>
+<thead>
+<tr>
+<th>Rol / Servei</th>
+<th>Sigles</th>
+<th>Funció</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Active Directory Domain Services</td>
+<td>AD DS</td>
+<td>Gestió centralitzada d'usuaris, equips i polítiques</td>
+</tr>
+<tr>
+<td>Domain Name System</td>
+<td>DNS</td>
+<td>Traducció de noms (<code>srv-win01</code>) a adreces IP</td>
+</tr>
+<tr>
+<td>Dynamic Host Configuration Protocol</td>
+<td>DHCP</td>
+<td>Assignació automàtica d'IP als clients</td>
+</tr>
+<tr>
+<td>File and Storage Services</td>
+<td>FSS</td>
+<td>Compartició de carpetes amb permisos granulars</td>
+</tr>
+<tr>
+<td>Print and Document Services</td>
+<td>PDS</td>
+<td>Gestió centralitzada d'impressores</td>
+</tr>
+<tr>
+<td>Group Policy</td>
+<td>GPO</td>
+<td>Aplicació de configuracions i restriccions a tots els equips</td>
+</tr>
+<tr>
+<td>Remote Desktop Services</td>
+<td>RDS</td>
+<td>Accés remot al servidor o a aplicacions centralitzades</td>
+</tr>
+<tr>
+<td>Windows Server Update Services</td>
+<td>WSUS</td>
+<td>Gestió centralitzada d'actualitzacions de Windows</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Quants rols instal·lem?</p>
+<p>En entorns petits (PIME), un únic servidor pot tenir AD DS + DNS + DHCP + File Services
+instal·lats alhora. En empreses grans, cada rol sol estar en un servidor dedicat
+per motius de rendiment i seguretat.</p>
+</div>
+<hr />
+<h2 id="5-virtualitzacio-de-servidors">5. Virtualització de servidors<a class="headerlink" href="#5-virtualitzacio-de-servidors" title="Permanent link">&para;</a></h2>
+<p>Fins fa uns anys, cada servidor era un equip físic independent. Avui, la majoria
+de servidors empresarials s'executen com a <strong>màquines virtuals (MV)</strong> sobre
+un únic equip físic potent, anomenat <strong>hipervisor</strong>.</p>
+<h3 id="que-es-un-hipervisor">Què és un hipervisor?<a class="headerlink" href="#que-es-un-hipervisor" title="Permanent link">&para;</a></h3>
+<p>Un hipervisor és un programari que permet crear i gestionar màquines virtuals.
+Cada MV es comporta com un ordinador independent amb el seu propi sistema
+operatiu, però comparteix el maquinari físic amb les altres MV.</p>
+<pre class="mermaid"><code>flowchart TB
+    HW[🖥️ Maquinari físic\nCPU · RAM · Discos · Xarxa]
+    HW --&gt; HV[Hipervisor\nex: Hyper-V · VMware ESXi · Proxmox]
+    HV --&gt; MV1[MV 1\nWindows Server\nDC + DNS]
+    HV --&gt; MV2[MV 2\nWindows Server\nFitxers + Impressió]
+    HV --&gt; MV3[MV 3\nUbuntu Server\nWeb + Correu]</code></pre>
+<h3 id="per-que-es-millor-virtualitzar">Per què és millor virtualitzar?<a class="headerlink" href="#per-que-es-millor-virtualitzar" title="Permanent link">&para;</a></h3>
+<div class="grid cards" markdown>
+<ul>
+<li>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 18.5c-2.5 0-4.68-1.42-5.76-3.5H15l1-2H8.58c-.05-.33-.08-.66-.08-1s.03-.67.08-1H15l1-2H9.24A6.49 6.49 0 0 1 15 5.5c1.61 0 3.09.59 4.23 1.57L21 5.3A8.96 8.96 0 0 0 15 3c-3.92 0-7.24 2.5-8.5 6H3l-1 2h4.06c-.06.33-.06.66-.06 1s0 .67.06 1H3l-1 2h4.5c1.26 3.5 4.58 6 8.5 6 2.31 0 4.41-.87 6-2.3l-1.78-1.77c-1.13.98-2.6 1.57-4.22 1.57"/></svg></span> <strong>Reducció de costos</strong></p>
+<p>Un servidor físic potent substitueix cinc servidors antics. Menys
+consum elèctric, menys espai i menys manteniment.</p>
+</li>
+<li>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 4h3l2-2h6l2 2h3a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2m8 3a5 5 0 0 0-5 5 5 5 0 0 0 5 5 5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 2a3 3 0 0 1 3 3 3 3 0 0 1-3 3 3 3 0 0 1-3-3 3 3 0 0 1 3-3"/></svg></span> <strong>Snapshots</strong></p>
+<p>Abans de fer un canvi important, fas una instantània de la MV.
+Si alguna cosa va malament, la restaures en segons.</p>
+</li>
+<li>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 4a2 2 0 0 0-2 2v4h2V6h8v3h-2.5l3.5 3.5L20.5 9H18V6a2 2 0 0 0-2-2zm-5 8v2h8v-2zm0 3v2h8v-2zm10 0v2h8v-2zM3 18v2h8v-2zm10 0v2h8v-2z"/></svg></span> <strong>Portabilitat</strong></p>
+<p>Una MV és un fitxer. Pots copiar-la, moure-la o restaurar-la
+en qualsevol altre hipervisor compatible.</p>
+</li>
+<li>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m10 17-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9m-6-8L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5z"/></svg></span> <strong>Aïllament</strong></p>
+<p>Si una MV es veu compromesa per un virus o error, les altres
+continuen funcionant de forma independent.</p>
+</li>
+</ul>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Error habitual</p>
+<p>No configuris mai el servidor amb <strong>IP dinàmica (DHCP)</strong>. Si la IP canvia,
+cap client no el podrà trobar i tots els serveis deixaran de funcionar.
+<strong>Sempre IP fixa.</strong></p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Segon error habitual</p>
+<p>No apaguis mai un servidor virtual fent clic a "Tancar" des de dins
+del sistema operatiu guest. Utilitza sempre les opcions de l'hipervisor
+per aturar-lo de forma controlada.</p>
+</div>
+<hr />
+<h2 id="6-cas-real-lempresa-tecnollum-sl">6. Cas real: l'empresa Tecnollum S.L.<a class="headerlink" href="#6-cas-real-lempresa-tecnollum-sl" title="Permanent link">&para;</a></h2>
+<p><strong>Tecnollum S.L.</strong> és una PIME de 30 treballadors dedicada a la venda i
+instal·lació de material elèctric. Fins fa dos anys, cada treballador
+guardava els seus fitxers al propi ordinador i compartia contrasenyes
+per WhatsApp. Quan algú marxava de l'empresa, ningú sabia a quins
+sistemes tenia accés.</p>
+<p>El nou responsable de TIC va proposar implantar Windows Server i va
+aconseguir els resultats següents:</p>
+<table>
+<thead>
+<tr>
+<th>Problema anterior</th>
+<th>Solució amb Windows Server</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fitxers dispersos en 30 ordinadors</td>
+<td>Carpetes compartides centralitzades (File Services)</td>
+</tr>
+<tr>
+<td>Contrasenyes compartides per WhatsApp</td>
+<td>Usuaris individuals amb Active Directory</td>
+</tr>
+<tr>
+<td>Accés sense control quan marxava algú</td>
+<td>Desactivar l'usuari a AD en 30 segons</td>
+</tr>
+<tr>
+<td>Cap control sobre els ordinadors</td>
+<td>GPO que aplica el fons d'escriptori, restriccions i actualitzacions</td>
+</tr>
+<tr>
+<td>IPs canviants que trencaven les impressores</td>
+<td>DHCP centralitzat amb reserves d'IP</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition success">
+<p class="admonition-title">Resultat</p>
+<p>La implantació va costar 3.000 € (servidor + llicències) i va estalviar
+a l'empresa hores setmanals de suport tècnic i incidents de seguretat.</p>
+</div>
+<hr />
+<h2 id="7-bones-practiques-inicials">7. Bones pràctiques inicials<a class="headerlink" href="#7-bones-practiques-inicials" title="Permanent link">&para;</a></h2>
 <div class="grid cards" markdown>
 <ul>
 <li>
 <p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 9h-2V7h2zm7 11v2h-7a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1H2v-2h7a1 1 0 0 1 1-1h1v-2H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-4v2h1a1 1 0 0 1 1 1zM9 5H7v10h2zm2 10h2v-4h2a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-4z"/></svg></span> <strong>IP fixa</strong></p>
-<p>Assigna sempre una adreça estàtica al servidor.</p>
+<p>Assigna una adreça estàtica al servidor. Mai DHCP.
+Exemple: <code>192.168.1.10/24</code></p>
 </li>
 <li>
 <p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 17h-7.5l2-2H18M6 17v-2.5l7.88-7.85c.19-.2.51-.2.71 0l1.76 1.76c.2.2.2.51 0 .71L8.47 17M19 3H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2"/></svg></span> <strong>Nom descriptiu</strong></p>
-<p>Utilitza noms com <code>SRV-WIN01</code> per identificar fàcilment l'equip.</p>
+<p>Utilitza noms com <code>SRV-WIN01</code> o <code>DC01-TECNOLLUM</code>.
+Evita noms com <code>SERVIDOR</code> o <code>PC-JOAN</code>.</p>
 </li>
 <li>
 <p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 2c-1.11 0-2 .89-2 2v16a2 2 0 0 0 2 2h4v-1.91L12.09 18H6v-2h8.09l2-2H6v-2h12.09L20 10.09V8l-6-6zm7 1.5L18.5 9H13zm7.15 9.5a.55.55 0 0 0-.4.16l-1.02 1.02 2.09 2.08 1.02-1.01c.21-.22.21-.58 0-.79l-1.3-1.3a.54.54 0 0 0-.39-.16m-2.01 1.77L12 20.92V23h2.08l6.15-6.15z"/></svg></span> <strong>Documentació</strong></p>
-<p>Registra tots els canvis de configuració que facis.</p>
+<p>Registra tota la configuració: IPs, noms, contrasenyes, rols instal·lats
+i data dels canvis. Ho agrairàs en 6 mesos.</p>
 </li>
 <li>
-<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 9a2 2 0 0 1-2-2 2 2 0 0 1 2-2 2 2 0 0 1 2 2 2 2 0 0 1-2 2m13-6H4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1M7 19a2 2 0 0 1-2-2 2 2 0 0 1 2-2 2 2 0 0 1 2 2 2 2 0 0 1-2 2m13-6H4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1v-6a1 1 0 0 0-1-1"/></svg></span> <strong>DNS funcional</strong></p>
-<p>Comprova sempre que el DNS respon correctament abans de continuar.</p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 9a2 2 0 0 1-2-2 2 2 0 0 1 2-2 2 2 0 0 1 2 2 2 2 0 0 1-2 2m13-6H4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1M7 19a2 2 0 0 1-2-2 2 2 0 0 1 2-2 2 2 0 0 1 2 2 2 2 0 0 1-2 2m13-6H4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1v-6a1 1 0 0 0-1-1"/></svg></span> <strong>DNS apuntant a ell mateix</strong></p>
+<p>Quan el servidor és el DNS de la xarxa, la seva pròpia adreça DNS
+ha d'apuntar a <code>127.0.0.1</code> o a la seva IP fixa, mai a un DNS extern.</p>
+</li>
+<li>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 1 3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5zm0 6c1.4 0 2.8 1.1 2.8 2.5V11c.6 0 1.2.6 1.2 1.3v3.5c0 .6-.6 1.2-1.3 1.2H9.2c-.6 0-1.2-.6-1.2-1.3v-3.5c0-.6.6-1.2 1.2-1.2V9.5C9.2 8.1 10.6 7 12 7m0 1.2c-.8 0-1.5.5-1.5 1.3V11h3V9.5c0-.8-.7-1.3-1.5-1.3"/></svg></span> <strong>Contrasenya forta</strong></p>
+<p>L'administrador local ha de tenir una contrasenya complexa i única.
+No facis servir <code>Admin123</code> ni <code>P@ssw0rd</code> en producció.</p>
+</li>
+<li>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 10.12h-6.78l2.74-2.82c-2.73-2.7-7.15-2.8-9.88-.1a6.887 6.887 0 0 0 0 9.8c2.73 2.7 7.15 2.7 9.88 0 1.36-1.35 2.04-2.92 2.04-4.9h2c0 1.98-.88 4.55-2.64 6.29-3.51 3.48-9.21 3.48-12.72 0-3.5-3.47-3.53-9.11-.02-12.58a8.987 8.987 0 0 1 12.65 0L21 3zM12.5 8v4.25l3.5 2.08-.72 1.21L11 13V8z"/></svg></span> <strong>Actualitzacions planificades</strong></p>
+<p>Programa les actualitzacions fora de l'horari laboral.
+Un servidor que es reinicia a les 10 del matí és un problema.</p>
 </li>
 </ul>
 </div>
 <hr />
+<h2 id="relacio-amb-els-projectes-del-curs">Relació amb els projectes del curs<a class="headerlink" href="#relacio-amb-els-projectes-del-curs" title="Permanent link">&para;</a></h2>
+<p>Els conceptes d'aquesta lliçó són la base de tots els projectes del mòdul:</p>
+<ul>
+<li><strong>Projecte 1:</strong> Instal·lació i configuració d'un servidor Windows Server en
+  VirtualBox (Activitat 1.1.1).</li>
+<li><strong>Projecte 2:</strong> Creació d'un domini Active Directory per a una PIME fictícia.</li>
+<li><strong>Projecte 3:</strong> Configuració de serveis DNS, DHCP i compartició de fitxers.</li>
+<li><strong>Projecte final:</strong> Infraestructura completa d'una empresa amb múltiples
+  servidors virtuals i clients unificats al domini.</li>
+</ul>
+<hr />
 <h2 id="resum">Resum<a class="headerlink" href="#resum" title="Permanent link">&para;</a></h2>
-<p>Un sistema operatiu en xarxa com Windows Server centralitza tots els
-serveis d'una empresa: autenticació (AD), noms (DNS), adreces (DHCP),
-fitxers i impressió. Avui, la majoria de servidors s'executen com a
-màquines virtuals per optimitzar el maquinari i facilitar la gestió i
-la recuperació davant d'incidències.</p>
+<p>Un <strong>sistema operatiu en xarxa</strong> com Windows Server permet centralitzar tots els
+recursos d'una empresa: autenticació d'usuaris (AD DS), resolució de noms (DNS),
+assignació d'adreces (DHCP), fitxers compartits i polítiques de seguretat (GPO).</p>
+<p>La <strong>virtualització</strong> ha transformat la manera com es desplega la infraestructura:
+avui, un sol servidor físic pot allotjar múltiples servidors virtuals, cadascun
+amb el seu rol específic, permetent estalviar costos, facilitar les còpies de
+seguretat i recuperar-se de fallades en minuts.</p>
+<p>El <strong>model client-servidor</strong> és la base de tota xarxa corporativa: els clients
+sol·liciten serveis, el servidor els proporciona de forma centralitzada, segura i
+controlada.</p>
 <hr />
 <h2 id="autoavaluacio"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m15.07 11.25-.9.92C13.45 12.89 13 13.5 13 15h-2v-.5c0-1.11.45-2.11 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41a2 2 0 0 0-2-2 2 2 0 0 0-2 2H8a4 4 0 0 1 4-4 4 4 0 0 1 4 4 3.2 3.2 0 0 1-.93 2.25M13 19h-2v-2h2M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10c0-5.53-4.5-10-10-10"/></svg></span> Autoavaluació<a class="headerlink" href="#autoavaluacio" title="Permanent link">&para;</a></h2>
 <details class="question">
-<summary>1. Quina diferència hi ha entre un client i un servidor?</summary>
-<p>El <strong>client</strong> és l'equip que sol·licita serveis (ordinador d'un usuari).
-El <strong>servidor</strong> és l'equip que ofereix i gestiona aquests serveis de forma centralitzada.</p>
+<summary>1. Per quin motiu una empresa amb 50 treballadors necessita un servidor?</summary>
+<p>Perquè necessita centralitzar recursos: fitxers compartits, autenticació
+d'usuaris, impressores, actualitzacions i polítiques de seguretat. Sense
+servidor, cada equip funcionaria de forma aïllada i la gestió seria inviable.</p>
 </details>
 <details class="question">
-<summary>2. Què és Windows Server i per a qui està pensat?</summary>
-<p>És el sistema operatiu de Microsoft orientat a empreses. Està pensat per a
-administradors de sistemes, no per a usuaris finals.</p>
+<summary>2. Quina diferència hi ha entre Windows 11 i Windows Server?</summary>
+<p>Windows 11 està dissenyat per a un únic usuari en mode escriptori.
+Windows Server està dissenyat per oferir serveis a múltiples usuaris
+simultàniament, amb rols específics com AD DS, DNS o DHCP.</p>
 </details>
 <details class="question">
-<summary>3. Quins sis serveis principals ofereix Windows Server?</summary>
-<p>AD DS, DNS, DHCP, File Services, Print Services i Group Policy (GPO).</p>
+<summary>3. Explica el model client-servidor amb les teves paraules.</summary>
+<p>El servidor és l'equip que ofereix serveis (fitxers, autenticació, DNS...).
+El client és l'equip que consumeix aquests serveis. El client envia una
+petició, el servidor la processa i retorna una resposta.</p>
 </details>
 <details class="question">
-<summary>4. Per què és útil la virtualització en un entorn empresarial?</summary>
-<p>Permet estalviar maquinari, fer còpies ràpides (<em>snapshots</em>), recuperar-se
-d'errors i crear entorns de prova sense cost addicional.</p>
+<summary>4. Quins sis rols o serveis principals ofereix Windows Server?</summary>
+<p>AD DS, DNS, DHCP, File and Storage Services, Print and Document Services
+i Group Policy. Opcionals habituals: RDS i WSUS.</p>
 </details>
 <details class="question">
-<summary>5. Per quin motiu un servidor ha de tenir IP fixa?</summary>
-<p>Perquè tots els clients de la xarxa han de poder localitzar-lo sempre
-a la mateixa adreça. Si l'adreça canviés, els serveis deixarien de funcionar.</p>
+<summary>5. Què és un hipervisor i per a quin serveix?</summary>
+<p>Un hipervisor és un programari que permet crear i executar màquines virtuals
+sobre un equip físic. Exemples: Hyper-V, VMware ESXi, Proxmox.
+Serveix per aprofitar millor el maquinari i aïllar els servidors entre ells.</p>
+</details>
+<details class="question">
+<summary>6. Quins avantatges té un <em>snapshot</em> d'una màquina virtual?</summary>
+<p>Permet fer una fotografia de l'estat de la MV en un moment concret.
+Si alguna cosa va malament després d'un canvi, es pot restaurar l'estat
+anterior en pocs segons, sense pèrdua de dades.</p>
+</details>
+<details class="question">
+<summary>7. Per quin motiu el servidor ha de tenir IP fixa?</summary>
+<p>Perquè els clients necessiten trobar el servidor sempre a la mateixa adreça.
+Si la IP canviés (com passa amb DHCP), els serveis de DNS, AD i fitxers
+deixarien de funcionar per als clients.</p>
+</details>
+<details class="question">
+<summary>8. Quin problema soluciona Active Directory en una empresa?</summary>
+<p>Centralitza la gestió d'usuaris i equips. Permet que un treballador
+s'autentiqui amb les seves credencials des de qualsevol equip del domini,
+i que l'administrador pugui gestionar permisos i accesos des d'un punt únic.</p>
+</details>
+<details class="question">
+<summary>9. Quina diferència hi ha entre DNS i DHCP?</summary>
+<p><strong>DNS</strong> tradueix noms de domini a adreces IP (ex: <code>srv-win01</code> → <code>192.168.1.10</code>).
+<strong>DHCP</strong> assigna automàticament una adreça IP a cada equip que es connecta
+a la xarxa, evitant configurar-les manualment una per una.</p>
+</details>
+<details class="question">
+<summary>10. En el cas de Tecnollum S.L., quin servei hauria evitat compartir contrasenyes per WhatsApp?</summary>
+<p>Active Directory Domain Services (AD DS). Amb AD, cada treballador té
+el seu propi usuari i contrasenya individual. L'administrador pot crear,
+modificar o desactivar comptes en qualsevol moment sense tocar els altres.</p>
 </details>
 </div>
 <div class="tabbed-block">
