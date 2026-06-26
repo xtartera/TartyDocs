@@ -4,48 +4,48 @@ hide:
   - toc
 ---
 
-# Benvingut a Tarty Docs
+# Sistemes Operatius en Xarxa
 
-**Manual docent de Sistemes Microinformàtics i Xarxes (SMX)**  
+**Manual docent · 2n CFGM Sistemes Microinformàtics i Xarxes (SMX)**  
 Xavi Tartera · Institut Cirvianum
 
 ---
 
-## Mòduls del curs
+## Unitats de Treball
 
 <div class="grid cards" markdown>
 
--   :material-microsoft-windows:{ .lg } **Windows Server**
+-   :material-microsoft-windows:{ .lg } **UT1 · Windows Server**
 
     ---
 
-    Active Directory, DNS, DHCP, GPO i administració de servidors.
+    Instal·lació, configuració, Active Directory, DNS, DHCP i administració de servidors Windows.
 
-    [:octicons-arrow-right-24: Accedeix al mòdul](windows/index.md)
+    [:octicons-arrow-right-24: Accedeix a la UT1](ut1/index.md)
 
--   :material-linux:{ .lg } **Linux Server**
-
-    ---
-
-    Administració, serveis, scripting Bash i seguretat.
-
-    [:octicons-arrow-right-24: Pròximament](#)
-
--   :material-lan:{ .lg } **Xarxes**
+-   :material-linux:{ .lg } **UT2 · Linux Server**
 
     ---
 
-    Protocols, routing, switching i configuració de xarxes corporatives.
+    Instal·lació, configuració, serveis de xarxa i administració de servidors Linux.
 
-    [:octicons-arrow-right-24: Pròximament](#)
+    [:octicons-arrow-right-24: Accedeix a la UT2](ut2/index.md)
 
--   :material-folder-multiple:{ .lg } **Projectes**
+-   :material-folder-network:{ .lg } **UT3 · Compartició de recursos**
 
     ---
 
-    Projectes integrats del curs i rúbriques d'avaluació.
+    Compartició de fitxers i impressores entre sistemes Windows i Linux amb SAMBA i NFS.
 
-    [:octicons-arrow-right-24: Pròximament](#)
+    [:octicons-arrow-right-24: Accedeix a la UT3](ut3/index.md)
+
+-   :material-server-network:{ .lg } **UT4 · Sistemes heterogenis**
+
+    ---
+
+    Integració i administració d'entorns mixtos amb Windows Server i Linux.
+
+    [:octicons-arrow-right-24: Accedeix a la UT4](ut4/index.md)
 
 </div>
 
@@ -53,34 +53,22 @@ Xavi Tartera · Institut Cirvianum
 
 ## Com utilitzar el manual
 
-<div class="grid" markdown>
+<div class="grid cards" markdown>
 
-<div class="card" markdown>
+-   :material-book-open: **Apunts**
 
-:material-book-open: **Apunts**  
-Teoria explicada amb context, exemples reals i diagrames.
+    Teoria amb context, exemples reals i diagrames.
 
-</div>
+-   :material-hammer-wrench: **Activitats**
 
-<div class="card" markdown>
+    Pràctiques guiades pas a pas amb rúbrica d'avaluació.
 
-:material-hammer-wrench: **Activitats**  
-Pràctiques guiades amb procediment pas a pas i rúbrica.
+-   :material-play-circle: **Vídeos**
 
-</div>
+    Recursos audiovisuals de suport per a cada lliçó.
 
-<div class="card" markdown>
+-   :material-help-circle: **Autoavaluació**
 
-:material-play-circle: **Vídeos**  
-Recursos audiovisuals de suport per a cada lliçó.
-
-</div>
-
-<div class="card" markdown>
-
-:material-help-circle: **Autoavaluació**  
-Preguntes per comprovar la comprensió de cada lliçó.
-
-</div>
+    Preguntes per verificar la comprensió de cada lliçó.
 
 </div>

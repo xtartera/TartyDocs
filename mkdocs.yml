@@ -1,6 +1,6 @@
-site_name: Tarty Docs
+site_name: Sistemes Operatius en Xarxa
 
-site_description: Manual docent d'SMX
+site_description: Manual docent · 2n CFGM Sistemes Microinformàtics i Xarxes (SMX)
 site_author: Xavi Tartera
 
 theme:
@@ -45,10 +45,79 @@ nav:
   - Inici: index.md
   - Recursos generals: recursos.md
 
-  - Windows Server:
-      - Presentació del mòdul: windows/index.md
-      - Unitat 1 - Introducció a Windows Server:
-          - "Lliçó 1.1 - Introducció a Windows Server": windows/u01/llico-1-1.md
+  - UT1 · Windows Server:
+      - Presentació: ut1/index.md
+      - "Bloc 1 · Fonaments":
+          - "SO escriptori vs xarxa": ut1/bloc1-fonaments/01-so-escriptori-vs-xarxa.md
+          - "Arquitectura client-servidor": ut1/bloc1-fonaments/02-arquitectura-client-servidor.md
+          - "Windows Server 2022": ut1/bloc1-fonaments/03-windows-server-serveis.md
+          - "Virtualització": ut1/bloc1-fonaments/04-virtualitzacio.md
+          - "Requisits de maquinari": ut1/bloc1-fonaments/05-requisits-maquinari.md
+      - "Bloc 2 · Instal·lació":
+          - "Modes d'instal·lació": ut1/bloc2-installacio/06-modes-installacio.md
+          - "Particionament del disc": ut1/bloc2-installacio/07-particionament.md
+          - "Sistemes de fitxers": ut1/bloc2-installacio/08-sistemes-fitxers.md
+          - "Instal·lació pas a pas": ut1/bloc2-installacio/09-installacio-pas-a-pas.md
+          - "Configuració inicial": ut1/bloc2-installacio/10-configuracio-inicial.md
+      - "Bloc 3 · Administració":
+          - "Server Manager": ut1/bloc3-administracio/11-server-manager.md
+          - "Rols i característiques": ut1/bloc3-administracio/12-rols-caracteristiques.md
+          - "PowerShell bàsic": ut1/bloc3-administracio/13-powershell-basic.md
+          - "Monitoratge de recursos": ut1/bloc3-administracio/14-monitoratge-recursos.md
+          - "Visor d'Esdeveniments": ut1/bloc3-administracio/15-visor-esdeveniments.md
+          - "Manteniment del sistema": ut1/bloc3-administracio/16-manteniment-sistema.md
+          - "Planificador de tasques": ut1/bloc3-administracio/17-planificador-tasques.md
+          - "Automatització: unattend.xml": ut1/bloc3-administracio/18-automatitzacio-unattend.md
+          - "Verificació de connectivitat": ut1/bloc3-administracio/19-verificacio-connectivitat.md
+      - "Bloc 4 · Active Directory":
+          - "Conceptes AD": ut1/bloc4-active-directory/20-conceptes-ad.md
+          - "Unitats Organitzatives": ut1/bloc4-active-directory/21-unitats-organitzatives.md
+          - "Instal·lació AD DS": ut1/bloc4-active-directory/22-installacio-ad-ds.md
+          - "Promoció a DC": ut1/bloc4-active-directory/23-promocio-dc.md
+          - "DNS integrat amb AD": ut1/bloc4-active-directory/24-dns-integrat-ad.md
+      - "Bloc 5 · Usuaris i grups":
+          - "Gestió d'usuaris AD": ut1/bloc5-usuaris-grups/25-gestio-usuaris-ad.md
+          - "Gestió de grups AD": ut1/bloc5-usuaris-grups/26-gestio-grups-ad.md
+          - "Polítiques de contrasenya": ut1/bloc5-usuaris-grups/27-politiques-contrasenya.md
+          - "Restriccions horàries": ut1/bloc5-usuaris-grups/28-restriccions-horaries.md
+          - "PowerShell per AD": ut1/bloc5-usuaris-grups/29-powershell-ad.md
+      - "Bloc 6 · Clients al domini":
+          - "Unió de clients W11": ut1/bloc6-clients/30-unio-clients-domini.md
+          - "Configuració DNS al client": ut1/bloc6-clients/31-configuracio-dns-client.md
+          - "Validació de la integració": ut1/bloc6-clients/32-validacio-integracio.md
+          - "gpresult /r": ut1/bloc6-clients/33-gpresult.md
+      - "Bloc 7 · Recursos compartits":
+          - "Carpetes compartides": ut1/bloc7-recursos/34-carpetes-compartides.md
+          - "Permisos NTFS": ut1/bloc7-recursos/35-permisos-ntfs.md
+          - "Herència de permisos": ut1/bloc7-recursos/36-herencia-permisos.md
+          - "icacls": ut1/bloc7-recursos/37-icacls.md
+          - "Muntatge de carpetes de xarxa": ut1/bloc7-recursos/38-muntatge-carpetes-xarxa.md
+      - "Bloc 8 · GPO":
+          - "GPO – conceptes": ut1/bloc8-gpo/39-gpo-conceptes.md
+          - "Default Domain Policy": ut1/bloc8-gpo/40-default-domain-policy.md
+          - "GPO per UO": ut1/bloc8-gpo/41-gpo-per-uo.md
+          - "GPO de restriccions": ut1/bloc8-gpo/42-gpo-restriccions.md
+          - "gpupdate": ut1/bloc8-gpo/43-gpupdate.md
+      - "Bloc 9 · Perfils mòbils":
+          - "Tipus de perfils": ut1/bloc9-perfils/44-tipus-perfils.md
+          - "Carpeta per a perfils": ut1/bloc9-perfils/45-carpeta-perfils-mobils.md
+          - "Configuració de perfils mòbils": ut1/bloc9-perfils/46-configuracio-perfils-mobils.md
+          - "Sufix .v6": ut1/bloc9-perfils/47-sufix-v6.md
+          - "Permisos NTFS en perfils": ut1/bloc9-perfils/48-permisos-ntfs-perfils.md
+          - "Redirecció de carpetes": ut1/bloc9-perfils/49-redireccio-carpetes-gpo.md
+      - "Bloc 10 · Diagnòstic":
+          - "Auditoria d'accés": ut1/bloc10-monitoratge/50-auditoria-acces.md
+          - "Diagnòstic de perfils": ut1/bloc10-monitoratge/51-diagnostic-perfils.md
+          - "PowerShell de diagnòstic": ut1/bloc10-monitoratge/52-powershell-diagnostic.md
+
+  - UT2 · Linux Server:
+      - Presentació: ut2/index.md
+
+  - UT3 · Compartició de recursos:
+      - Presentació: ut3/index.md
+
+  - UT4 · Sistemes heterogenis:
+      - Presentació: ut4/index.md
 
 plugins:
   - search

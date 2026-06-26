@@ -6,31 +6,35 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Manual docent d'SMX">
+        <meta name="description" content="Manual docent · 2n CFGM Sistemes Microinformàtics i Xarxes (SMX)">
       
       
         <meta name="author" content="Xavi Tartera">
       
       
       
+        <link rel="prev" href="../ut1/llico-1-1/">
+      
+      
+        <link rel="next" href="../ut3/">
       
       
         
       
       
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
     
       
-        <title>Capítol 1. Introducció a Windows Server i a les xarxes client-servidor - Tarty Docs</title>
+        <title>UT2 · Linux Server - Sistemes Operatius en Xarxa</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -49,9 +53,9 @@
       
     
     
-      <link rel="stylesheet" href="../../stylesheets/extra.css">
+      <link rel="stylesheet" href="../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -76,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#capitol-1-introduccio-a-windows-server-i-a-les-xarxes-client-servidor" class="md-skip">
+        <a href="#ut2-linux-server" class="md-skip">
           Salta el contingut
         </a>
       
@@ -92,7 +96,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Capçalera">
-    <a href="../.." title="Tarty Docs" class="md-header__button md-logo" aria-label="Tarty Docs" data-md-component="logo">
+    <a href=".." title="Sistemes Operatius en Xarxa" class="md-header__button md-logo" aria-label="Sistemes Operatius en Xarxa" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 21.5c-1.35-.85-3.8-1.5-5.5-1.5-1.65 0-3.35.3-4.75 1.05-.1.05-.15.05-.25.05-.25 0-.5-.25-.5-.5V6c.6-.45 1.25-.75 2-1 1.11-.35 2.33-.5 3.5-.5 1.95 0 4.05.4 5.5 1.5 1.45-1.1 3.55-1.5 5.5-1.5 1.17 0 2.39.15 3.5.5.75.25 1.4.55 2 1v14.6c0 .25-.25.5-.5.5-.1 0-.15 0-.25-.05-1.4-.75-3.1-1.05-4.75-1.05-1.7 0-4.15.65-5.5 1.5M12 8v11.5c1.35-.85 3.8-1.5 5.5-1.5 1.2 0 2.4.15 3.5.5V7c-1.1-.35-2.3-.5-3.5-.5-1.7 0-4.15.65-5.5 1.5m1 3.5c1.11-.68 2.6-1 4.5-1 .91 0 1.76.09 2.5.28V9.23c-.87-.15-1.71-.23-2.5-.23q-2.655 0-4.5.84zm4.5.17c-1.71 0-3.21.26-4.5.79v1.69c1.11-.65 2.6-.99 4.5-.99 1.04 0 1.88.08 2.5.24v-1.5c-.87-.16-1.71-.23-2.5-.23m2.5 2.9c-.87-.16-1.71-.24-2.5-.24-1.83 0-3.33.27-4.5.8v1.69c1.11-.66 2.6-.99 4.5-.99 1.04 0 1.88.08 2.5.24z"/></svg>
@@ -106,13 +110,13 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            Tarty Docs
+            Sistemes Operatius en Xarxa
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Capítol 1. Introducció a Windows Server i a les xarxes client-servidor
+              UT2 · Linux Server
             
           </span>
         </div>
@@ -205,7 +209,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../.." class="md-tabs__link">
+      <a href=".." class="md-tabs__link">
         
   
   
@@ -224,7 +228,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../recursos/" class="md-tabs__link">
+      <a href="../recursos/" class="md-tabs__link">
         
   
   
@@ -245,11 +249,73 @@
     
     
       <li class="md-tabs__item">
-        <a href="../" class="md-tabs__link">
+        <a href="../ut1/" class="md-tabs__link">
           
   
   
-  Windows Server
+  UT1 · Windows Server
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+  
+  UT2 · Linux Server
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../ut3/" class="md-tabs__link">
+          
+  
+  
+  UT3 · Compartició de recursos
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../ut4/" class="md-tabs__link">
+          
+  
+  
+  UT4 · Sistemes heterogenis
 
         </a>
       </li>
@@ -274,6 +340,8 @@
           
             
               
+                
+              
               <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
@@ -287,13 +355,13 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navegació" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Tarty Docs" class="md-nav__button md-logo" aria-label="Tarty Docs" data-md-component="logo">
+    <a href=".." title="Sistemes Operatius en Xarxa" class="md-nav__button md-logo" aria-label="Sistemes Operatius en Xarxa" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 21.5c-1.35-.85-3.8-1.5-5.5-1.5-1.65 0-3.35.3-4.75 1.05-.1.05-.15.05-.25.05-.25 0-.5-.25-.5-.5V6c.6-.45 1.25-.75 2-1 1.11-.35 2.33-.5 3.5-.5 1.95 0 4.05.4 5.5 1.5 1.45-1.1 3.55-1.5 5.5-1.5 1.17 0 2.39.15 3.5.5.75.25 1.4.55 2 1v14.6c0 .25-.25.5-.5.5-.1 0-.15 0-.25-.05-1.4-.75-3.1-1.05-4.75-1.05-1.7 0-4.15.65-5.5 1.5M12 8v11.5c1.35-.85 3.8-1.5 5.5-1.5 1.2 0 2.4.15 3.5.5V7c-1.1-.35-2.3-.5-3.5-.5-1.7 0-4.15.65-5.5 1.5m1 3.5c1.11-.68 2.6-1 4.5-1 .91 0 1.76.09 2.5.28V9.23c-.87-.15-1.71-.23-2.5-.23q-2.655 0-4.5.84zm4.5.17c-1.71 0-3.21.26-4.5.79v1.69c1.11-.65 2.6-.99 4.5-.99 1.04 0 1.88.08 2.5.24v-1.5c-.87-.16-1.71-.23-2.5-.23m2.5 2.9c-.87-.16-1.71-.24-2.5-.24-1.83 0-3.33.27-4.5.8v1.69c1.11-.66 2.6-.99 4.5-.99 1.04 0 1.88.08 2.5.24z"/></svg>
 
     </a>
-    Tarty Docs
+    Sistemes Operatius en Xarxa
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -305,7 +373,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href=".." class="md-nav__link">
         
   
   
@@ -332,7 +400,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../recursos/" class="md-nav__link">
+      <a href="../recursos/" class="md-nav__link">
         
   
   
@@ -384,7 +452,7 @@
   <span class="md-ellipsis">
     
   
-    Windows Server
+    UT1 · Windows Server
   
 
     
@@ -400,7 +468,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Windows Server
+    UT1 · Windows Server
   
 
           </label>
@@ -413,14 +481,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../" class="md-nav__link">
+      <a href="../ut1/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Presentació del mòdul
+    Presentació
   
 
     
@@ -436,6 +504,143 @@
             
               
                 
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ut1/llico-1-1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lliçó 1.1 · Introducció a Windows Server
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UT2 · Linux Server
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    UT2 · Linux Server
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Presentació
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
   
   
   
@@ -456,17 +661,17 @@
         
           
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_2" >
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
         
           
-          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
             
   
   
   <span class="md-ellipsis">
     
   
-    Unitat 1 - Introducció a Windows Server
+    UT3 · Compartició de recursos
   
 
     
@@ -477,12 +682,12 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_2">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             
   
-    Unitat 1 - Introducció a Windows Server
+    UT3 · Compartició de recursos
   
 
           </label>
@@ -495,14 +700,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../u01/llico-1-1/" class="md-nav__link">
+      <a href="../ut3/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Lliçó 1.1 - Introducció a Windows Server
+    Presentació
   
 
     
@@ -519,6 +724,87 @@
           </ul>
         </nav>
       
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UT4 · Sistemes heterogenis
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    UT4 · Sistemes heterogenis
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ut4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Presentació
+  
+
+    
+  </span>
+  
+  
+
+      </a>
     </li>
   
 
@@ -545,86 +831,14 @@
               <article class="md-content__inner md-typeset">
                 
                   
+  
 
 
 
-<h1 id="capitol-1-introduccio-a-windows-server-i-a-les-xarxes-client-servidor">Capítol 1. Introducció a Windows Server i a les xarxes client-servidor<a class="headerlink" href="#capitol-1-introduccio-a-windows-server-i-a-les-xarxes-client-servidor" title="Permanent link">&para;</a></h1>
-<h2 id="objectius-daprenentatge">Objectius d'aprenentatge<a class="headerlink" href="#objectius-daprenentatge" title="Permanent link">&para;</a></h2>
-<p>En acabar aquest capítol seràs capaç de:</p>
-<ul>
-<li>Entendre què és un sistema operatiu en xarxa.</li>
-<li>Diferenciar un sistema client d'un sistema servidor.</li>
-<li>Comprendre el paper de Windows Server dins d'una empresa.</li>
-<li>Identificar els principals serveis que ofereix un servidor.</li>
-<li>Entendre per què avui dia la majoria de servidors són virtuals.</li>
-</ul>
-<hr />
-<h1 id="1-que-es-un-sistema-operatiu-en-xarxa">1. Què és un sistema operatiu en xarxa?<a class="headerlink" href="#1-que-es-un-sistema-operatiu-en-xarxa" title="Permanent link">&para;</a></h1>
-<p>Quan utilitzes un ordinador a casa, normalment tota la informació i els
-programes es troben al mateix equip. Si aquest ordinador deixa de
-funcionar, ningú més hi pot accedir.</p>
-<p>En canvi, una empresa necessita que molts usuaris comparteixin
-informació, impressores, aplicacions i recursos de manera segura. Per
-aconseguir-ho s'utilitza un <strong>sistema operatiu en xarxa</strong>, com <strong>Windows
-Server</strong>, que centralitza els serveis i facilita l'administració.</p>
-<div class="admonition tip">
-<p class="admonition-title">Recorda</p>
-<p>Windows Server no està pensat perquè els usuaris hi treballin directament.
-La seva funció és oferir serveis als ordinadors de la xarxa.</p>
-</div>
-<h1 id="2-arquitectura-client-servidor">2. Arquitectura client-servidor<a class="headerlink" href="#2-arquitectura-client-servidor" title="Permanent link">&para;</a></h1>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>                 Empresa
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>             +----------------+
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>             | Windows Server |
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>             +----------------+
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>              /      |       \
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>        Active   DNS    Fitxers
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>              \      |       /
-<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>          +---------+ +---------+
-<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>          | Client1 | | Client2 |
-<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>          +---------+ +---------+
-</code></pre></div>
-<h1 id="3-que-es-windows-server">3. Què és Windows Server?<a class="headerlink" href="#3-que-es-windows-server" title="Permanent link">&para;</a></h1>
-<p>Windows Server és el sistema operatiu de Microsoft orientat a empreses.</p>
-<p>Funcions principals:</p>
-<ul>
-<li>Active Directory</li>
-<li>DNS</li>
-<li>DHCP</li>
-<li>Compartició de fitxers</li>
-<li>Impressió</li>
-<li>Polítiques de seguretat</li>
-</ul>
-<h1 id="4-virtualitzacio">4. Virtualització<a class="headerlink" href="#4-virtualitzacio" title="Permanent link">&para;</a></h1>
-<p>La virtualització permet executar diversos servidors sobre un mateix
-equip físic.</p>
-<p>Avantatges:</p>
-<ul>
-<li>Reducció de costos.</li>
-<li>Millor aprofitament del maquinari.</li>
-<li>Snapshots.</li>
-<li>Recuperació ràpida.</li>
-<li>Facilitat per fer pràctiques.</li>
-</ul>
-<div class="admonition warning">
-<p class="admonition-title">Error habitual</p>
-<p>No configuris mai el servidor amb IP dinàmica.</p>
-</div>
-<h1 id="5-bones-practiques">5. Bones pràctiques<a class="headerlink" href="#5-bones-practiques" title="Permanent link">&para;</a></h1>
-<ul>
-<li>IP fixa.</li>
-<li>Nom descriptiu.</li>
-<li>Documentar els canvis.</li>
-<li>Comprovar sempre el DNS.</li>
-</ul>
-<h1 id="6-autoavaluacio">6. Autoavaluació<a class="headerlink" href="#6-autoavaluacio" title="Permanent link">&para;</a></h1>
-<ol>
-<li>Quina diferència hi ha entre un client i un servidor?</li>
-<li>Què és Windows Server?</li>
-<li>Quins serveis ofereix?</li>
-<li>Per què és útil la virtualització?</li>
-</ol>
+
+<h1 id="ut2-linux-server"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.62 8.35c-.42.28-1.75 1.04-1.95 1.19-.39.31-.75.29-1.14-.01-.2-.16-1.53-.92-1.95-1.19-.48-.31-.45-.7.08-.92 1.64-.69 3.28-.64 4.91.03.49.21.51.6.05.9m7.22 7.28c-.93-2.09-2.2-3.99-3.84-5.66a4.3 4.3 0 0 1-1.06-1.88c-.1-.33-.17-.67-.24-1.01-.2-.88-.29-1.78-.7-2.61-.73-1.58-2-2.4-3.84-2.47-1.81.05-3.16.81-3.95 2.4-.21.43-.36.88-.46 1.34-.17.76-.32 1.55-.5 2.32-.15.65-.45 1.21-.96 1.71-1.61 1.57-2.9 3.37-3.88 5.35-.14.29-.28.58-.37.88-.19.66.29 1.12.99.96.44-.09.88-.18 1.3-.31.41-.15.57-.05.67.35.65 2.15 2.07 3.66 4.24 4.5 4.12 1.56 8.93-.66 9.97-4.58.07-.27.17-.37.47-.27.46.14.93.24 1.4.35.49.09.85-.16.92-.64.03-.26-.06-.49-.16-.73"/></svg></span> UT2 · Linux Server<a class="headerlink" href="#ut2-linux-server" title="Permanent link">&para;</a></h1>
+<p><strong>Unitat de Treball 2 — Sistemes Operatius en Xarxa</strong></p>
+<p><em>El contingut d'aquesta unitat s'afegirà properament.</em></p>
 
 
 
@@ -632,8 +846,13 @@ equip físic.</p>
 
 
 
+  
+  
 
 
+
+
+  
 
 
 
@@ -657,6 +876,46 @@ equip físic.</p>
       
         <footer class="md-footer">
   
+    
+      
+        
+      
+      <nav class="md-footer__inner md-grid" aria-label="Peu de pàgina" >
+        
+          
+          <a href="../ut1/llico-1-1/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Lliçó 1.1 · Introducció a Windows Server">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Anterior
+              </span>
+              <div class="md-ellipsis">
+                Lliçó 1.1 · Introducció a Windows Server
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../ut3/" class="md-footer__link md-footer__link--next" aria-label="Següent: Presentació">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Següent
+              </span>
+              <div class="md-ellipsis">
+                Presentació
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
     
   
   <div class="md-footer-meta md-typeset">
@@ -684,10 +943,10 @@ equip físic.</p>
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.top", "navigation.footer", "content.tabs.link", "content.code.copy", "content.code.annotate", "toc.integrate"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiat al porta-retalls", "clipboard.copy": "C\u00f2pia al porta-retalls", "search.result.more.one": "1 m\u00e9s en aquesta p\u00e0gina", "search.result.more.other": "# m\u00e9s en aquesta p\u00e0gina", "search.result.none": "Cap document coincideix", "search.result.one": "1 document coincident", "search.result.other": "# documents coincidents", "search.result.placeholder": "Escriu per a comen\u00e7ar a cercar", "search.result.term.missing": "Desaparegut", "select.version": "Selecciona la versi\u00f3"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.top", "navigation.footer", "content.tabs.link", "content.code.copy", "content.code.annotate", "toc.integrate"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiat al porta-retalls", "clipboard.copy": "C\u00f2pia al porta-retalls", "search.result.more.one": "1 m\u00e9s en aquesta p\u00e0gina", "search.result.more.other": "# m\u00e9s en aquesta p\u00e0gina", "search.result.none": "Cap document coincideix", "search.result.one": "1 document coincident", "search.result.other": "# documents coincidents", "search.result.placeholder": "Escriu per a comen\u00e7ar a cercar", "search.result.term.missing": "Desaparegut", "select.version": "Selecciona la versi\u00f3"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   </body>
