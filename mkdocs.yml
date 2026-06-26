@@ -6,13 +6,39 @@ site_author: Xavi Tartera
 theme:
   name: material
   language: ca
+
+  palette:
+    - scheme: default
+      primary: teal
+      accent: green
+      toggle:
+        icon: material/brightness-7
+        name: Canvia a mode fosc
+    - scheme: slate
+      primary: teal
+      accent: green
+      toggle:
+        icon: material/brightness-4
+        name: Canvia a mode clar
+
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+  icon:
+    logo: material/book-open-variant
+    repo: fontawesome/brands/github
+
   features:
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.sections
     - navigation.expand
     - navigation.top
+    - navigation.footer
     - content.tabs.link
+    - content.code.copy
+    - content.code.annotate
     - toc.integrate
 
 nav:
@@ -27,3 +53,28 @@ nav:
 plugins:
   - search
   - tags
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true

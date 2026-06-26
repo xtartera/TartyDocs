@@ -1,0 +1,57 @@
+/* ── Capçaleres amb accent de color ── */
+.md-content h1 {
+  border-bottom: 3px solid var(--md-primary-fg-color);
+  padding-bottom: 0.3em;
+}
+
+.md-content h2 {
+  border-left: 4px solid var(--md-primary-fg-color);
+  padding-left: 0.6em;
+  margin-top: 1.8em;
+}
+
+/* ── Tabs més grans i amb millor contrast ── */
+.md-typeset .tabbed-labels > label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  padding: 0.6em 1.2em;
+}
+
+/* ── Taules amb capçalera de color ── */
+.md-typeset table:not([class]) th {
+  background-color: var(--md-primary-fg-color);
+  color: var(--md-primary-bg-color);
+}
+
+.md-typeset table:not([class]) tr:nth-child(even) {
+  background-color: var(--md-code-bg-color);
+}
+
+/* ── Blocs de codi amb lletra lleugerament més gran ── */
+.md-typeset code {
+  font-size: 0.88em;
+}
+
+/* ── Admonitions amb icona més prominent ── */
+.md-typeset .admonition,
+.md-typeset details {
+  border-radius: 6px;
+  margin: 1.2em 0;
+}
+
+/* ── Separadors visuals entre seccions ── */
+.md-typeset hr {
+  border-color: var(--md-primary-fg-color--light);
+  margin: 2em 0;
+}
+
+/* ── Número de lliçó destacat al títol principal ── */
+.md-typeset h1:first-of-type {
+  font-size: 1.8rem;
+}
+
+/* ── Millora del peu de pàgina de navegació ── */
+.md-footer-nav__link {
+  border-top: 2px solid var(--md-primary-fg-color);
+}
