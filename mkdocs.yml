@@ -1,0 +1,18 @@
+site_name: Tarty Docs
+
+site_description: Manual docent d'SMX
+site_author: Xavi Tartera
+
+theme:
+  name: material
+  language: ca
+
+nav:
+  - Inici: index.md
+
+  - Windows:
+      - Introducció: windows/index.md
+      - Capítol 1 - Introducció a Windows Server: windows/capitol-01.md
+
+plugins:
+  - search
