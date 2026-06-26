@@ -1,0 +1,5 @@
+MkDocs Material és la plataforma oficial.
+GitHub Pages publica mitjançant GitHub Actions.
+docs/ conté el material públic.
+decisions/ conté les decisions internes.
+assets/ contindrà imatges, icones i diagrames.
