@@ -6,13 +6,24 @@ site_author: Xavi Tartera
 theme:
   name: material
   language: ca
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - content.tabs.link
+    - toc.integrate
 
 nav:
   - Inici: index.md
+  - Recursos generals: recursos.md
 
-  - Windows:
-      - Introducció: windows/index.md
-      - Capítol 1 - Introducció a Windows Server: windows/capitol-01.md
+  - Windows Server:
+      - Presentació del mòdul: windows/index.md
+      - Unitat 1 - Introducció a Windows Server:
+          - "Lliçó 1.1 - Introducció a Windows Server": windows/u01/llico-1-1.md
 
 plugins:
   - search
+  - tags
