@@ -1,67 +1,59 @@
 ---
 title: Projecte integrador · Implantació d'un domini corporatiu
 icon: material/microsoft-windows
+hide:
+  - toc
 ---
 
-# 🖥️ Projecte integrador · Implantació d'un domini per a l'Institut Montseny
+# Projecte integrador · Implantació d'un domini per a l'Institut Montseny
 
-Aquest projecte forma part del **SpeedRun de la Unitat de Treball 1**. És el projecte integrador de la unitat: implementaràs una infraestructura AD completa des de zero per a un centre educatiu real.
+!!! abstract "De què tracta"
+    Implementa una **infraestructura Active Directory completa des de zero** seguint un supòsit real d'un centre educatiu. Integraràs tots els coneixements de la UT1: domini, usuaris, recursos, GPO i perfils mòbils.
 
----
-
-| ⏱️ Durada | 👤 Modalitat | 📚 Blocs teòrics | 🎓 Resultats d'aprenentatge |
+| :material-clock-outline: Durada | :material-account: Modalitat | :material-book-open-variant: Blocs | :material-school: RA avaluats |
 |:---:|:---:|:---:|:---:|
 | **8–10 hores** | Individual | **UT1 completa** | **RA1 · RA2 · RA3 · RA4 · RA5** |
 
----
+## Objectius
 
-## 🎯 Què aprendràs
+- Implementar una infraestructura AD completa des de zero seguint un supòsit real
+- Integrar clients Windows 11 al domini amb les configuracions corporatives
+- Aplicar polítiques de seguretat i restriccions per GPO adaptades al context educatiu
+- Gestionar recursos compartits amb permisos NTFS correctes per a departaments
+- Configurar perfils mòbils per als usuaris del centre
+- Documentar tota la infraestructura implementada de manera professional
 
-- Implementar una infraestructura AD completa des de zero seguint un supòsit real.
-- Integrar clients Windows 11 al domini amb les configuracions corporatives.
-- Aplicar polítiques de seguretat i restriccions per GPO adaptades al context educatiu.
-- Gestionar recursos compartits amb permisos NTFS correctes per a departaments.
-- Configurar perfils mòbils per als usuaris del centre.
-- Documentar tota la infraestructura implementada de manera professional.
+## Material necessari
 
----
-
-## 📚 Abans de començar
-
-Aquest projecte integrador requereix haver completat els projectes anteriors o tenir els coneixements de tota la **Unitat de Treball 1**.
-
-!!! info "Recursos"
-
-    Si durant el projecte tens qualsevol dubte, pots tornar als apunts de la unitat sempre que ho necessitis.
-
-**➡️ [Consultar els apunts de la UT1](../index.md)**
+- Windows Server 2022 instal·lat i configurat
+- Almenys un client Windows 11
+- Especificacions del supòsit pràctic (incloses al quadern)
 
 ---
 
-## 🧰 Material necessari
+<div class="grid cards" markdown>
 
-- Windows Server 2022 instal·lat i configurat.
-- Almenys un client Windows 11.
-- Especificacions del supòsit pràctic (incloses al quadern).
+- :material-notebook-edit:{ .lg }
 
----
+    ### Quadern interactiu
 
-## 🚀 Quadern interactiu
+    El projecte es desenvolupa íntegrament al **quadern digital**. Completa totes les activitats i documenta les evidències tècniques.
 
-!!! success "Comença el projecte"
+    El quadern es considerarà **APTE** quan totes les activitats hagin estat resoltes i la documentació sigui completa, coherent i suficient.
 
-    Aquest projecte es desenvolupa mitjançant un **quadern interactiu**.
+    [:octicons-arrow-right-24: Obrir el quadern](https://quadern-digital-v11-2.vercel.app/moduls/mp224/unitat_treball1.html?p=6){ .md-button .md-button--primary }
 
-    Durant la realització del projecte hauràs de completar totes les activitats proposades. Sempre que ho necessitis podràs consultar els apunts de la unitat.
+- :material-book-open-page-variant:{ .lg }
 
-    El quadern es considerarà **APTE** únicament quan **totes les activitats hagin estat resoltes correctament i la documentació aportada sigui completa, coherent i suficient per justificar les tasques realitzades.**
+    ### Apunts de la UT1
 
-**➡️ [Obrir el quadern interactiu](https://quadern-digital-v11-2.vercel.app/moduls/mp224/unitat_treball1.html?p=6)**
+    Revisa els continguts teòrics de la unitat en qualsevol moment. Pots consultar-los mentre treballes el projecte.
 
----
+    [:octicons-arrow-right-24: Consultar els apunts](../index.md){ .md-button }
+
+</div>
 
 !!! tip "Recomanacions"
-
-    - Documenta totes les activitats.
-    - Justifica les decisions tècniques.
+    - Documenta cada pas amb captures de pantalla.
+    - Justifica les decisions tècniques a les respostes.
     - Comprova el correcte funcionament de tota la infraestructura abans de finalitzar.

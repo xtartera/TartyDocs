@@ -1,67 +1,59 @@
 ---
-title: Projecte 4 · Roaming Profiles i GPOs
+title: Projecte 4 · GPOs i Roaming Profiles
 icon: material/microsoft-windows
+hide:
+  - toc
 ---
 
-# 🖥️ Projecte 4 · Roaming Profiles i GPOs
+# Projecte 4 · GPOs i Roaming Profiles
 
-Aquest projecte forma part del **SpeedRun de la Unitat de Treball 1**. Implementaràs perfils mòbils i polítiques de grup (GPO) per gestionar de forma centralitzada el comportament dels clients del domini.
+!!! abstract "De què tracta"
+    Implementa **polítiques de grup (GPO)** i configura perfils mòbils per gestionar de forma centralitzada el comportament dels clients del domini. Aprendràs a aplicar polítiques globals i per UO, i a validar-les amb les eines de diagnòstic.
 
----
-
-| ⏱️ Durada | 👤 Modalitat | 📚 Blocs teòrics | 🎓 Resultats d'aprenentatge |
+| :material-clock-outline: Durada | :material-account: Modalitat | :material-book-open-variant: Blocs | :material-school: RA avaluats |
 |:---:|:---:|:---:|:---:|
-| **5–7 hores** | Individual | **Blocs 8–9** | **RA4 · RA5** |
+| **5–7 hores** | Individual | **UT1 · Blocs 8–9** | **RA4 · RA5** |
+
+## Objectius
+
+- Crear i aplicar GPO globals (Default Domain Policy)
+- Crear GPO específiques per Unitat Organitzativa
+- Configurar perfils mòbils (.V6) des de les propietats d'usuari AD
+- Validar la replicació de polítiques amb `gpupdate` i `gpresult`
+- Solucionar problemes de GPO amb RSOP
+- Organitzar clients i usuaris en UO per a una aplicació de polítiques efectiva
+
+## Material necessari
+
+- Domini Active Directory amb usuaris i grups creats (Projecte 3)
+- Almenys un client Windows 11 unit al domini
+- Servidor de fitxers per a la carpeta de perfils
 
 ---
 
-## 🎯 Què aprendràs
+<div class="grid cards" markdown>
 
-- Crear i aplicar GPO globals (Default Domain Policy).
-- Crear GPO específiques per Unitat Organitzativa.
-- Configurar perfils mòbils (.V6) des de les propietats d'usuari AD.
-- Validar la replicació de polítiques amb `gpupdate` i `gpresult`.
-- Solucionar problemes de GPO amb RSOP.
-- Organitzar els clients i usuaris en UO per a una aplicació de polítiques efectiva.
+- :material-notebook-edit:{ .lg }
 
----
+    ### Quadern interactiu
 
-## 📚 Abans de començar
+    El projecte es desenvolupa íntegrament al **quadern digital**. Completa totes les activitats i documenta les evidències tècniques.
 
-Abans d'iniciar el projecte és recomanable haver treballat els continguts dels blocs teòrics de la **Unitat de Treball 1**, especialment els Blocs 8 i 9.
+    El quadern es considerarà **APTE** quan totes les activitats hagin estat resoltes i la documentació sigui completa, coherent i suficient.
 
-!!! info "Recursos"
+    [:octicons-arrow-right-24: Obrir el quadern](https://quadern-digital-v11-2.vercel.app/moduls/mp224/unitat_treball1.html?p=4){ .md-button .md-button--primary }
 
-    Si durant el projecte tens qualsevol dubte, pots tornar als apunts de la unitat sempre que ho necessitis.
+- :material-book-open-page-variant:{ .lg }
 
-**➡️ [Consultar els apunts de la UT1](../index.md)**
+    ### Apunts de la UT1
 
----
+    Revisa els continguts teòrics de la unitat en qualsevol moment. Pots consultar-los mentre treballes el projecte.
 
-## 🧰 Material necessari
+    [:octicons-arrow-right-24: Consultar els apunts](../index.md){ .md-button }
 
-- Domini Active Directory amb usuaris i grups creats (Projecte 3).
-- Almenys un client Windows 11 unit al domini.
-- Servidor de fitxers per a la carpeta de perfils.
-
----
-
-## 🚀 Quadern interactiu
-
-!!! success "Comença el projecte"
-
-    Aquest projecte es desenvolupa mitjançant un **quadern interactiu**.
-
-    Durant la realització del projecte hauràs de completar totes les activitats proposades. Sempre que ho necessitis podràs consultar els apunts de la unitat.
-
-    El quadern es considerarà **APTE** únicament quan **totes les activitats hagin estat resoltes correctament i la documentació aportada sigui completa, coherent i suficient per justificar les tasques realitzades.**
-
-**➡️ [Obrir el quadern interactiu](https://quadern-digital-v11-2.vercel.app/moduls/mp224/unitat_treball1.html?p=4)**
-
----
+</div>
 
 !!! tip "Recomanacions"
-
-    - Documenta totes les activitats.
-    - Justifica les decisions tècniques.
+    - Documenta cada pas amb captures de pantalla.
+    - Justifica les decisions tècniques a les respostes.
     - Verifica que els perfils es carreguen correctament des de dos clients diferents.

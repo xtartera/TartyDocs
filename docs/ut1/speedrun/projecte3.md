@@ -1,67 +1,59 @@
 ---
 title: Projecte 3 · Gestió avançada d'usuaris, grups i recursos
 icon: material/microsoft-windows
+hide:
+  - toc
 ---
 
-# 🖥️ Projecte 3 · Gestió avançada d'usuaris, grups i recursos amb Active Directory
+# Projecte 3 · Gestió avançada d'usuaris, grups i recursos
 
-Aquest projecte forma part del **SpeedRun de la Unitat de Treball 1**. Aprofundiràs en la gestió d'usuaris i grups AD, permisos NTFS i compartició de recursos corporatius.
+!!! abstract "De què tracta"
+    Aprofundeix en la gestió d'usuaris i grups AD, la configuració de **permisos NTFS** granulars i la compartició de recursos corporatius. Treballaràs tant des de la interfície gràfica com des de PowerShell i `icacls`.
 
----
-
-| ⏱️ Durada | 👤 Modalitat | 📚 Blocs teòrics | 🎓 Resultats d'aprenentatge |
+| :material-clock-outline: Durada | :material-account: Modalitat | :material-book-open-variant: Blocs | :material-school: RA avaluats |
 |:---:|:---:|:---:|:---:|
-| **4–6 hores** | Individual | **Blocs 5–7** | **RA3 · RA4** |
+| **4–6 hores** | Individual | **UT1 · Blocs 5–7** | **RA3 · RA4** |
+
+## Objectius
+
+- Gestionar usuaris i grups de forma avançada (polítiques de contrasenya, restriccions horàries)
+- Configurar carpetes compartides amb permisos NTFS granulars
+- Aplicar herència de permisos i entendre la combinació NTFS + compartició
+- Gestionar permisos per línia de comandes amb `icacls`
+- Muntar unitats de xarxa des dels clients Windows 11
+- Automatitzar tasques AD amb PowerShell
+
+## Material necessari
+
+- Domini Active Directory funcional (Projecte 2)
+- Almenys un client Windows 11 unit al domini
+- Espai de disc per a les carpetes compartides
 
 ---
 
-## 🎯 Què aprendràs
+<div class="grid cards" markdown>
 
-- Gestionar usuaris i grups de forma avançada (polítiques de contrasenya, restriccions horàries).
-- Configurar carpetes compartides amb permisos NTFS granulars.
-- Aplicar herència de permisos i entendre la combinació NTFS + compartició.
-- Gestionar permisos per línia de comandes amb `icacls`.
-- Muntar unitats de xarxa des dels clients Windows 11.
-- Automatitzar tasques AD amb PowerShell.
+- :material-notebook-edit:{ .lg }
 
----
+    ### Quadern interactiu
 
-## 📚 Abans de començar
+    El projecte es desenvolupa íntegrament al **quadern digital**. Completa totes les activitats i documenta les evidències tècniques.
 
-Abans d'iniciar el projecte és recomanable haver treballat els continguts dels blocs teòrics de la **Unitat de Treball 1**, especialment els Blocs 5, 6 i 7.
+    El quadern es considerarà **APTE** quan totes les activitats hagin estat resoltes i la documentació sigui completa, coherent i suficient.
 
-!!! info "Recursos"
+    [:octicons-arrow-right-24: Obrir el quadern](https://quadern-digital-v11-2.vercel.app/moduls/mp224/unitat_treball1.html?p=3){ .md-button .md-button--primary }
 
-    Si durant el projecte tens qualsevol dubte, pots tornar als apunts de la unitat sempre que ho necessitis.
+- :material-book-open-page-variant:{ .lg }
 
-**➡️ [Consultar els apunts de la UT1](../index.md)**
+    ### Apunts de la UT1
 
----
+    Revisa els continguts teòrics de la unitat en qualsevol moment. Pots consultar-los mentre treballes el projecte.
 
-## 🧰 Material necessari
+    [:octicons-arrow-right-24: Consultar els apunts](../index.md){ .md-button }
 
-- Domini Active Directory funcional (Projecte 2).
-- Almenys un client Windows 11 unit al domini.
-- Espai de disc per a les carpetes compartides.
-
----
-
-## 🚀 Quadern interactiu
-
-!!! success "Comença el projecte"
-
-    Aquest projecte es desenvolupa mitjançant un **quadern interactiu**.
-
-    Durant la realització del projecte hauràs de completar totes les activitats proposades. Sempre que ho necessitis podràs consultar els apunts de la unitat.
-
-    El quadern es considerarà **APTE** únicament quan **totes les activitats hagin estat resoltes correctament i la documentació aportada sigui completa, coherent i suficient per justificar les tasques realitzades.**
-
-**➡️ [Obrir el quadern interactiu](https://quadern-digital-v11-2.vercel.app/moduls/mp224/unitat_treball1.html?p=3)**
-
----
+</div>
 
 !!! tip "Recomanacions"
-
-    - Documenta totes les activitats.
-    - Justifica les decisions tècniques.
+    - Documenta cada pas amb captures de pantalla.
+    - Justifica les decisions tècniques a les respostes.
     - Comprova el correcte funcionament dels permisos des del client.
