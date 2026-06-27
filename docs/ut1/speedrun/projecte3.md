@@ -34,7 +34,7 @@ Abans d'iniciar el projecte és recomanable haver treballat els continguts dels 
 
     Si durant el projecte tens qualsevol dubte, pots tornar als apunts de la unitat sempre que ho necessitis.
 
-**➡️ [Consultar els apunts de la UT1](../)**
+**➡️ [Consultar els apunts de la UT1](../index.md)**
 
 ---
 
