@@ -192,6 +192,9 @@ plugins:
 extra_css:
   - stylesheets/extra.css
 
+extra_javascript:
+  - javascripts/vercel-back-link.js
+
 markdown_extensions:
   - admonition
   - pymdownx.details
