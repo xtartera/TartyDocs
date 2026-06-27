@@ -47,6 +47,9 @@ nav:
 
   - UT1 · Windows Server:
       - Presentació: ut1/index.md
+      - SpeedRun:
+          - Presentació: ut1/speedrun/index.md
+          - Projecte 1: ut1/speedrun/projecte1.md
       - "Bloc 1 · Fonaments":
           - "SO escriptori vs xarxa": ut1/bloc1-fonaments/01-so-escriptori-vs-xarxa.md
           - "Arquitectura client-servidor": ut1/bloc1-fonaments/02-arquitectura-client-servidor.md
