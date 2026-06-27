@@ -110,8 +110,62 @@ nav:
           - "Diagnòstic de perfils": ut1/bloc10-monitoratge/51-diagnostic-perfils.md
           - "PowerShell de diagnòstic": ut1/bloc10-monitoratge/52-powershell-diagnostic.md
 
-  - UT2 · Linux Server:
+  - "UT2 · Linux Server":
       - Presentació: ut2/index.md
+      - "Bloc 1 · Fonaments Linux":
+          - "Windows vs Ubuntu Server": ut2/bloc1-fonaments/01-windows-vs-linux-server.md
+          - "Arquitectura Ubuntu 24.04": ut2/bloc1-fonaments/02-arquitectura-ubuntu-server.md
+      - "Bloc 2 · Instal·lació i xarxa":
+          - "Interfícies de xarxa Linux": ut2/bloc2-installacio/03-interficies-xarxa-linux.md
+          - "netplan: IP fixa": ut2/bloc2-installacio/04-netplan-ip-fixa.md
+          - "Hostname i resolució local": ut2/bloc2-installacio/05-hostname-resolucio.md
+          - "Gestió de paquets apt": ut2/bloc2-installacio/06-gestio-paquets-apt.md
+          - "SSH: accés remot": ut2/bloc2-installacio/07-ssh-acces-remot.md
+          - "Sincronització horària": ut2/bloc2-installacio/08-sincronitzacio-horaria.md
+          - "Firewall ufw": ut2/bloc2-installacio/09-firewall-ufw.md
+      - "Bloc 3 · LDAP – Conceptes":
+          - "Conceptes LDAP": ut2/bloc3-ldap-conceptes/10-conceptes-ldap.md
+          - "LDAP vs Active Directory": ut2/bloc3-ldap-conceptes/11-ldap-vs-active-directory.md
+          - "Instal·lació OpenLDAP": ut2/bloc3-ldap-conceptes/12-installacio-openldap.md
+          - "Configuració base LDAP": ut2/bloc3-ldap-conceptes/13-configuracio-base-ldap.md
+          - "Format LDIF": ut2/bloc3-ldap-conceptes/14-format-ldif.md
+          - "ldapsearch: consultes": ut2/bloc3-ldap-conceptes/15-ldapsearch-consultes.md
+      - "Bloc 4 · LDAP – Usuaris i grups":
+          - "Atributs POSIX": ut2/bloc4-ldap-usuaris/16-atributs-posix.md
+          - "objectClasses POSIX": ut2/bloc4-ldap-usuaris/17-objectclasses-posix.md
+          - "slappasswd: hash SSHA": ut2/bloc4-ldap-usuaris/18-slappasswd-hash.md
+          - "ldapadd: usuaris i grups": ut2/bloc4-ldap-usuaris/19-ldapadd-usuaris-grups.md
+          - "ldapwhoami: validació": ut2/bloc4-ldap-usuaris/20-ldapwhoami-validacio.md
+          - "Coherència UID/GID": ut2/bloc4-ldap-usuaris/21-coherencia-uid-gid.md
+          - "LDAP multiusuari": ut2/bloc4-ldap-usuaris/22-ldap-multiusuari.md
+      - "Bloc 5 · LDAP – Operacions CRUD":
+          - "ldapmodify": ut2/bloc5-ldap-crud/23-ldapmodify.md
+          - "ldapdelete": ut2/bloc5-ldap-crud/24-ldapdelete.md
+          - "Errors LDAP freqüents": ut2/bloc5-ldap-crud/25-errors-ldap-frequents.md
+          - "Entorn de proves LDAP": ut2/bloc5-ldap-crud/26-entorn-proves-ldap.md
+      - "Bloc 6 · SSSD":
+          - "SSSD: conceptes": ut2/bloc6-sssd/27-sssd-conceptes.md
+          - "Instal·lació SSSD": ut2/bloc6-sssd/28-installacio-sssd.md
+          - "Configuració sssd.conf": ut2/bloc6-sssd/29-configuracio-sssd-conf.md
+          - "nsswitch.conf": ut2/bloc6-sssd/30-nsswitch-conf.md
+          - "getent i id: verificació": ut2/bloc6-sssd/31-getent-id-verificacio.md
+          - "sssctl config-check": ut2/bloc6-sssd/32-sssctl-diagnostic.md
+          - "Autenticació real Linux": ut2/bloc6-sssd/33-autenticacio-real-linux.md
+      - "Bloc 7 · NFS":
+          - "NFS: conceptes": ut2/bloc7-nfs/34-nfs-conceptes.md
+          - "Instal·lació NFS servidor": ut2/bloc7-nfs/35-installacio-nfs-servidor.md
+          - "/etc/exports": ut2/bloc7-nfs/36-etc-exports.md
+          - "exportfs i showmount": ut2/bloc7-nfs/37-exportfs-showmount.md
+      - "Bloc 8 · Perfils mòbils":
+          - "Estructura de perfils Linux": ut2/bloc8-perfils-mobils/38-estructura-perfils-linux.md
+          - "autofs: conceptes": ut2/bloc8-perfils-mobils/39-autofs-conceptes.md
+          - "auto.master": ut2/bloc8-perfils-mobils/40-auto-master.md
+          - "auto.home amb wildcard": ut2/bloc8-perfils-mobils/41-auto-home-wildcard.md
+          - "Perfils Ubuntu 22.04 vs 24.04": ut2/bloc8-perfils-mobils/42-perfils-ubuntu22-vs-24.md
+          - "Persistència i roaming": ut2/bloc8-perfils-mobils/43-persistencia-roaming.md
+          - "Seguretat de perfils": ut2/bloc8-perfils-mobils/44-seguretat-perfils.md
+      - "Bloc 9 · Diagnòstic":
+          - "Diagnòstic integral Linux": ut2/bloc9-diagnostic/45-diagnostic-integral-linux.md
 
   - UT3 · Compartició de recursos:
       - Presentació: ut3/index.md
