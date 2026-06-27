@@ -7,7 +7,7 @@ hide:
 # Sistemes Operatius en Xarxa
 
 **Manual docent · 2n CFGM Sistemes Microinformàtics i Xarxes (SMX)**  
-Xavi Tartera · Institut Cirvianum
+Xavier Tartera · Institut Cirvianum
 
 ---
 
