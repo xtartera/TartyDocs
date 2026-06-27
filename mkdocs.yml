@@ -47,9 +47,6 @@ nav:
 
   - UT1 · Windows Server:
       - Presentació: ut1/index.md
-      - SpeedRun:
-          - Presentació: ut1/speedrun/index.md
-          - Projecte 1: ut1/speedrun/projecte1.md
       - "Bloc 1 · Fonaments":
           - "SO escriptori vs xarxa": ut1/bloc1-fonaments/01-so-escriptori-vs-xarxa.md
           - "Arquitectura client-servidor": ut1/bloc1-fonaments/02-arquitectura-client-servidor.md
@@ -113,7 +110,6 @@ nav:
           - "Diagnòstic de perfils": ut1/bloc10-monitoratge/51-diagnostic-perfils.md
           - "PowerShell de diagnòstic": ut1/bloc10-monitoratge/52-powershell-diagnostic.md
       - "SpeedRun · Projectes":
-          - "SpeedRun UT1": ut1/speedrun/index.md
           - "Projecte 1 · Instal·lació WS": ut1/speedrun/projecte1.md
           - "Projecte 2 · Active Directory": ut1/speedrun/projecte2.md
           - "Projecte 3 · Usuaris i recursos": ut1/speedrun/projecte3.md
