@@ -1,67 +1,59 @@
 ---
 title: Projecte 5 · Perfils mòbils amb Active Directory
 icon: material/microsoft-windows
+hide:
+  - toc
 ---
 
-# 🖥️ Projecte 5 · Perfils mòbils amb Active Directory
+# Projecte 5 · Perfils mòbils amb Active Directory
 
-Aquest projecte forma part del **SpeedRun de la Unitat de Treball 1**. Configuraràs perfils mòbils complets amb redirecció de carpetes i permisos NTFS adequats per a un entorn corporatiu.
+!!! abstract "De què tracta"
+    Configura **perfils mòbils complets** amb redirecció de carpetes i permisos NTFS adequats per a un entorn corporatiu. Verificaràs el comportament del sufix `.V6` en clients Windows 11 i aprendràs a diagnosticar els problemes habituals.
 
----
-
-| ⏱️ Durada | 👤 Modalitat | 📚 Blocs teòrics | 🎓 Resultats d'aprenentatge |
+| :material-clock-outline: Durada | :material-account: Modalitat | :material-book-open-variant: Blocs | :material-school: RA avaluats |
 |:---:|:---:|:---:|:---:|
-| **5–7 hores** | Individual | **Bloc 9** | **RA5** |
+| **5–7 hores** | Individual | **UT1 · Bloc 9** | **RA5** |
+
+## Objectius
+
+- Configurar la carpeta compartida per als perfils al servidor de fitxers
+- Assignar el camí de perfil mòbil a les propietats d'usuari AD
+- Configurar la redirecció de carpetes (Documents, Escriptori) per GPO
+- Establir permisos NTFS correctes per garantir l'aïllament entre usuaris
+- Verificar el comportament del sufix `.V6` en clients Windows 11
+- Diagnosticar problemes habituals amb perfils mòbils
+
+## Material necessari
+
+- Domini Active Directory funcional amb GPO configurades (Projecte 4)
+- Servidor de fitxers amb espai suficient per als perfils
+- Almenys dos clients Windows 11 per verificar el roaming
 
 ---
 
-## 🎯 Què aprendràs
+<div class="grid cards" markdown>
 
-- Configurar la carpeta compartida per als perfils al servidor de fitxers.
-- Assignar el camí de perfil mòbil a les propietats d'usuari AD.
-- Configurar la redirecció de carpetes (Documents, Escriptori) per GPO.
-- Establir permisos NTFS correctes per garantir l'aïllament entre usuaris.
-- Verificar el comportament del sufix `.V6` en clients Windows 11.
-- Diagnosticar problemes habituals amb perfils mòbils.
+- :material-notebook-edit:{ .lg }
 
----
+    ### Quadern interactiu
 
-## 📚 Abans de començar
+    El projecte es desenvolupa íntegrament al **quadern digital**. Completa totes les activitats i documenta les evidències tècniques.
 
-Abans d'iniciar el projecte és recomanable haver treballat els continguts dels blocs teòrics de la **Unitat de Treball 1**, especialment el Bloc 9.
+    El quadern es considerarà **APTE** quan totes les activitats hagin estat resoltes i la documentació sigui completa, coherent i suficient.
 
-!!! info "Recursos"
+    [:octicons-arrow-right-24: Obrir el quadern](https://quadern-digital-v11-2.vercel.app/moduls/mp224/unitat_treball1.html?p=5){ .md-button .md-button--primary }
 
-    Si durant el projecte tens qualsevol dubte, pots tornar als apunts de la unitat sempre que ho necessitis.
+- :material-book-open-page-variant:{ .lg }
 
-**➡️ [Consultar els apunts de la UT1](../index.md)**
+    ### Apunts de la UT1
 
----
+    Revisa els continguts teòrics de la unitat en qualsevol moment. Pots consultar-los mentre treballes el projecte.
 
-## 🧰 Material necessari
+    [:octicons-arrow-right-24: Consultar els apunts](../index.md){ .md-button }
 
-- Domini Active Directory funcional amb GPO configurades (Projecte 4).
-- Servidor de fitxers amb espai suficient per als perfils.
-- Almenys dos clients Windows 11 per verificar el roaming.
-
----
-
-## 🚀 Quadern interactiu
-
-!!! success "Comença el projecte"
-
-    Aquest projecte es desenvolupa mitjançant un **quadern interactiu**.
-
-    Durant la realització del projecte hauràs de completar totes les activitats proposades. Sempre que ho necessitis podràs consultar els apunts de la unitat.
-
-    El quadern es considerarà **APTE** únicament quan **totes les activitats hagin estat resoltes correctament i la documentació aportada sigui completa, coherent i suficient per justificar les tasques realitzades.**
-
-**➡️ [Obrir el quadern interactiu](https://quadern-digital-v11-2.vercel.app/moduls/mp224/unitat_treball1.html?p=5)**
-
----
+</div>
 
 !!! tip "Recomanacions"
-
-    - Documenta totes les activitats.
-    - Justifica les decisions tècniques.
+    - Documenta cada pas amb captures de pantalla.
+    - Justifica les decisions tècniques a les respostes.
     - Comprova que el perfil es replica correctament entre dos clients.

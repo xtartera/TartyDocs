@@ -1,66 +1,58 @@
 ---
 title: Projecte 2 · Active Directory en Windows Server 2022
 icon: material/microsoft-windows
+hide:
+  - toc
 ---
 
-# 🖥️ Projecte 2 · Active Directory en Windows Server 2022
+# Projecte 2 · Active Directory en Windows Server 2022
 
-Aquest projecte forma part del **SpeedRun de la Unitat de Treball 1**. Instal·laràs i configuraràs el rol Active Directory Domain Services (AD DS) per crear un domini corporatiu funcional.
+!!! abstract "De què tracta"
+    Instal·la i configura el rol **Active Directory Domain Services (AD DS)** per crear un domini corporatiu funcional. Promouràs el servidor a Controlador de Domini, configuraràs el DNS integrat i estructuraràs el domini amb Unitats Organitzatives.
 
----
-
-| ⏱️ Durada | 👤 Modalitat | 📚 Blocs teòrics | 🎓 Resultats d'aprenentatge |
+| :material-clock-outline: Durada | :material-account: Modalitat | :material-book-open-variant: Blocs | :material-school: RA avaluats |
 |:---:|:---:|:---:|:---:|
-| **4–6 hores** | Individual | **Blocs 3–4** | **RA2 · RA3** |
+| **4–6 hores** | Individual | **UT1 · Blocs 3–4** | **RA2 · RA3** |
+
+## Objectius
+
+- Instal·lar el rol AD DS amb Server Manager
+- Promocionar el servidor a Controlador de Domini (DC)
+- Configurar el DNS integrat en Active Directory
+- Crear Unitats Organitzatives (UO) i estructurar el domini
+- Gestionar usuaris i grups del domini des de l'ADUC
+
+## Material necessari
+
+- Windows Server 2022 instal·lat i configurat (Projecte 1)
+- IP fixa assignada al servidor
+- Nom de domini preparat (ex: `lafita.local`)
 
 ---
 
-## 🎯 Què aprendràs
+<div class="grid cards" markdown>
 
-- Instal·lar el rol AD DS amb Server Manager.
-- Promocionar el servidor a Controlador de Domini (DC).
-- Configurar el DNS integrat en Active Directory.
-- Crear Unitats Organitzatives (UO) i estructurar el domini.
-- Gestionar usuaris i grups del domini des de l'ADUC.
+- :material-notebook-edit:{ .lg }
 
----
+    ### Quadern interactiu
 
-## 📚 Abans de començar
+    El projecte es desenvolupa íntegrament al **quadern digital**. Completa totes les activitats i documenta les evidències tècniques.
 
-Abans d'iniciar el projecte és recomanable haver treballat els continguts dels blocs teòrics de la **Unitat de Treball 1**, especialment els Blocs 3 i 4.
+    El quadern es considerarà **APTE** quan totes les activitats hagin estat resoltes i la documentació sigui completa, coherent i suficient.
 
-!!! info "Recursos"
+    [:octicons-arrow-right-24: Obrir el quadern](https://quadern-digital-v11-2.vercel.app/moduls/mp224/unitat_treball1.html?p=2){ .md-button .md-button--primary }
 
-    Si durant el projecte tens qualsevol dubte, pots tornar als apunts de la unitat sempre que ho necessitis.
+- :material-book-open-page-variant:{ .lg }
 
-**➡️ [Consultar els apunts de la UT1](../index.md)**
+    ### Apunts de la UT1
 
----
+    Revisa els continguts teòrics de la unitat en qualsevol moment. Pots consultar-los mentre treballes el projecte.
 
-## 🧰 Material necessari
+    [:octicons-arrow-right-24: Consultar els apunts](../index.md){ .md-button }
 
-- Windows Server 2022 instal·lat i configurat (Projecte 1).
-- IP fixa assignada al servidor.
-- Nom de domini preparat (ex: `lafita.local`).
-
----
-
-## 🚀 Quadern interactiu
-
-!!! success "Comença el projecte"
-
-    Aquest projecte es desenvolupa mitjançant un **quadern interactiu**.
-
-    Durant la realització del projecte hauràs de completar totes les activitats proposades. Sempre que ho necessitis podràs consultar els apunts de la unitat.
-
-    El quadern es considerarà **APTE** únicament quan **totes les activitats hagin estat resoltes correctament i la documentació aportada sigui completa, coherent i suficient per justificar les tasques realitzades.**
-
-**➡️ [Obrir el quadern interactiu](https://quadern-digital-v11-2.vercel.app/moduls/mp224/unitat_treball1.html?p=2)**
-
----
+</div>
 
 !!! tip "Recomanacions"
-
-    - Documenta totes les activitats.
-    - Justifica les decisions tècniques.
-    - Comprova el correcte funcionament del domini abans de finalitzar el projecte.
+    - Documenta cada pas amb captures de pantalla.
+    - Justifica les decisions tècniques a les respostes.
+    - Comprova el correcte funcionament del domini abans de finalitzar.

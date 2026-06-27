@@ -1,57 +1,51 @@
 ---
-title: Projecte 7 · Dossier de preguntes per blocs – Active Directory
+title: Projecte 7 · Dossier de preguntes per blocs
 icon: material/microsoft-windows
+hide:
+  - toc
 ---
 
-# 🖥️ Projecte 7 · Dossier de preguntes per blocs – Active Directory
+# Projecte 7 · Dossier de preguntes per blocs
 
-Aquest projecte forma part del **SpeedRun de la Unitat de Treball 1**. És un dossier de preguntes teòriques i pràctiques organitzat per blocs per consolidar i avaluar els coneixements adquirits a tota la unitat.
+!!! abstract "De què tracta"
+    Dossier de **preguntes teòriques i pràctiques organitzat per blocs** per consolidar i avaluar els coneixements adquirits a tota la UT1. Treballaràs la comprensió conceptual, la terminologia tècnica i la relació entre teoria i pràctica.
 
----
-
-| ⏱️ Durada | 👤 Modalitat | 📚 Blocs teòrics | 🎓 Resultats d'aprenentatge |
+| :material-clock-outline: Durada | :material-account: Modalitat | :material-book-open-variant: Blocs | :material-school: RA avaluats |
 |:---:|:---:|:---:|:---:|
 | **3–5 hores** | Individual | **UT1 completa** | **RA1 · RA2 · RA3 · RA4 · RA5** |
 
----
+## Objectius
 
-## 🎯 Què treballaràs
-
-- Respondre qüestions teòriques per blocs sobre tots els continguts de la UT1.
-- Demostrar la comprensió dels conceptes clau d'Active Directory.
-- Relacionar els conceptes teòrics amb la seva aplicació pràctica.
-- Consolidar el vocabulari tècnic del mòdul.
+- Respondre qüestions teòriques per blocs sobre tots els continguts de la UT1
+- Demostrar la comprensió dels conceptes clau d'Active Directory
+- Relacionar els conceptes teòrics amb la seva aplicació pràctica
+- Consolidar el vocabulari tècnic del mòdul
 
 ---
 
-## 📚 Abans de començar
+<div class="grid cards" markdown>
 
-Aquest dossier cobreix tots els continguts de la **Unitat de Treball 1**. És recomanable haver completat els projectes pràctics anteriors abans d'afrontar-lo.
+- :material-notebook-edit:{ .lg }
 
-!!! info "Recursos"
+    ### Quadern interactiu
 
-    Si durant el projecte tens qualsevol dubte, pots tornar als apunts de la unitat sempre que ho necessitis.
+    El projecte es desenvolupa íntegrament al **quadern digital**. Completa totes les activitats i documenta les evidències tècniques.
 
-**➡️ [Consultar els apunts de la UT1](../index.md)**
+    El quadern es considerarà **APTE** quan totes les activitats hagin estat resoltes i la documentació sigui completa, coherent i suficient.
 
----
+    [:octicons-arrow-right-24: Obrir el quadern](https://quadern-digital-v11-2.vercel.app/moduls/mp224/unitat_treball1.html?p=7){ .md-button .md-button--primary }
 
-## 🚀 Quadern interactiu
+- :material-book-open-page-variant:{ .lg }
 
-!!! success "Comença el projecte"
+    ### Apunts de la UT1
 
-    Aquest projecte es desenvolupa mitjançant un **quadern interactiu**.
+    Revisa els continguts teòrics de la unitat en qualsevol moment. Pots consultar-los mentre treballes el projecte.
 
-    Durant la realització del projecte hauràs de completar totes les activitats proposades. Sempre que ho necessitis podràs consultar els apunts de la unitat.
+    [:octicons-arrow-right-24: Consultar els apunts](../index.md){ .md-button }
 
-    El quadern es considerarà **APTE** únicament quan **totes les activitats hagin estat resoltes correctament i la documentació aportada sigui completa, coherent i suficient per justificar les tasques realitzades.**
-
-**➡️ [Obrir el quadern interactiu](https://quadern-digital-v11-2.vercel.app/moduls/mp224/unitat_treball1.html?p=7)**
-
----
+</div>
 
 !!! tip "Recomanacions"
-
     - Respon amb el teu propi criteri i justifica cada resposta.
     - Usa la terminologia tècnica correcta.
     - Consulta els apunts si tens dubtes, però redacta les respostes amb les teves pròpies paraules.
