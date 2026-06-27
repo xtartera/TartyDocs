@@ -10,7 +10,7 @@ Aquest SpeedRun està format per diversos projectes interactius que et permetran
 
     Instal·lació i configuració de Windows Server 2022.
 
-    **[:octicons-arrow-right-24: Obrir projecte 1](projecte1/)**
+    **[:octicons-arrow-right-24: Obrir projecte 1](projecte1.md)**
 
 
 

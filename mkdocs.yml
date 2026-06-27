@@ -112,6 +112,9 @@ nav:
           - "Auditoria d'accés": ut1/bloc10-monitoratge/50-auditoria-acces.md
           - "Diagnòstic de perfils": ut1/bloc10-monitoratge/51-diagnostic-perfils.md
           - "PowerShell de diagnòstic": ut1/bloc10-monitoratge/52-powershell-diagnostic.md
+      - "SpeedRun · Projectes":
+          - "SpeedRun UT1": ut1/speedrun/index.md
+          - "Projecte 1 · Windows Server": ut1/speedrun/projecte1.md
 
   - "UT2 · Linux Server":
       - Presentació: ut2/index.md
