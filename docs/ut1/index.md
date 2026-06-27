@@ -61,3 +61,6 @@ Cada concepte d'aquesta unitat té el seu paral·lel a la **UT2 · Linux Server 
 | Permisos NTFS (`icacls`) | Permisos POSIX (`chmod` / `chown`) |
 | DNS integrat en AD DS | `/etc/hosts` + `hostname` + resolució local |
 | Server Manager (GUI) | `systemctl` + `apt` + `journalctl` |
+
+
+**[:octicons-arrow-right-24: Obrir projecte](speedrun/)**
