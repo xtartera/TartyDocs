@@ -15,37 +15,45 @@ Xavi Tartera · Institut Cirvianum
 
 <div class="grid cards" markdown>
 
--   :material-microsoft-windows:{ .lg } **UT1 · Windows Server**
+- :material-microsoft-windows:{ .lg }
 
-    ---
+    ### UT1 · Windows Server
 
-    Instal·lació, configuració, Active Directory, DNS, DHCP i administració de servidors Windows.
+    Active Directory, GPO, perfils mòbils i diagnòstic en Windows Server 2022. Inclou 7 projectes interactius.
 
-    [:octicons-arrow-right-24: Accedeix a la UT1](ut1/index.md)
+    :material-check-circle: 52 pàgines &nbsp;·&nbsp; 10 blocs &nbsp;·&nbsp; 7 projectes
 
--   :material-linux:{ .lg } **UT2 · Linux Server**
+    [:octicons-arrow-right-24: Accedir a la UT1](ut1/index.md){ .md-button .md-button--primary }
 
-    ---
+- :material-linux:{ .lg }
 
-    Instal·lació, configuració, serveis de xarxa i administració de servidors Linux.
+    ### UT2 · Linux Server
 
-    [:octicons-arrow-right-24: Accedeix a la UT2](ut2/index.md)
+    OpenLDAP, SSSD, NFS, autofs i perfils mòbils en Ubuntu Server 24.04.
 
--   :material-folder-network:{ .lg } **UT3 · Compartició de recursos**
+    :material-check-circle: 45 pàgines &nbsp;·&nbsp; 9 blocs
 
-    ---
+    [:octicons-arrow-right-24: Accedir a la UT2](ut2/index.md){ .md-button .md-button--primary }
 
-    Compartició de fitxers i impressores entre sistemes Windows i Linux amb SAMBA i NFS.
+- :material-folder-network:{ .lg }
 
-    [:octicons-arrow-right-24: Accedeix a la UT3](ut3/index.md)
+    ### UT3 · Compartició de recursos
 
--   :material-server-network:{ .lg } **UT4 · Sistemes heterogenis**
+    Compartició de fitxers i impressores entre sistemes Windows i Linux amb Samba i NFS.
 
-    ---
+    :material-progress-wrench: En construcció
+
+    [:octicons-arrow-right-24: Accedir a la UT3](ut3/index.md){ .md-button }
+
+- :material-server-network:{ .lg }
+
+    ### UT4 · Sistemes heterogenis
 
     Integració i administració d'entorns mixtos amb Windows Server i Linux.
 
-    [:octicons-arrow-right-24: Accedeix a la UT4](ut4/index.md)
+    :material-progress-wrench: En construcció
+
+    [:octicons-arrow-right-24: Accedir a la UT4](ut4/index.md){ .md-button }
 
 </div>
 
