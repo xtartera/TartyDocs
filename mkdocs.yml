@@ -114,7 +114,13 @@ nav:
           - "PowerShell de diagnòstic": ut1/bloc10-monitoratge/52-powershell-diagnostic.md
       - "SpeedRun · Projectes":
           - "SpeedRun UT1": ut1/speedrun/index.md
-          - "Projecte 1 · Windows Server": ut1/speedrun/projecte1.md
+          - "Projecte 1 · Instal·lació WS": ut1/speedrun/projecte1.md
+          - "Projecte 2 · Active Directory": ut1/speedrun/projecte2.md
+          - "Projecte 3 · Usuaris i recursos": ut1/speedrun/projecte3.md
+          - "Projecte 4 · GPO i perfils": ut1/speedrun/projecte4.md
+          - "Projecte 5 · Perfils mòbils": ut1/speedrun/projecte5.md
+          - "Projecte 6 · Integrador": ut1/speedrun/projecte6.md
+          - "Projecte 7 · Dossier preguntes": ut1/speedrun/projecte7.md
 
   - "UT2 · Linux Server":
       - Presentació: ut2/index.md
