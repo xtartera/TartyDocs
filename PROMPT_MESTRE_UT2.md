@@ -69,10 +69,10 @@ Client Ubuntu (si s'usa)
 | Bloc 3 | 10–15 | ✅ Complet |
 | Bloc 4 | 16–22 | ✅ Complet |
 | Bloc 5 | 23–26 | ✅ Complet |
-| Bloc 6 | 27–33 | 🔲 Stub |
-| Bloc 7 | 34–37 | 🔲 Stub |
-| Bloc 8 | 38–44 | 🔲 Stub |
-| Bloc 9 | 45 | 🔲 Stub |
+| Bloc 6 | 27–33 | ✅ Complet |
+| Bloc 7 | 34–37 | ✅ Complet |
+| Bloc 8 | 38–44 | ✅ Complet |
+| Bloc 9 | 45 | ✅ Complet |
 
 ---
 
@@ -408,3 +408,7 @@ ls /home/                       # ha de mostrar les carpetes ghost
 | 2026-06 | Sessió 3 | PROMPT_MESTRE_UT2.md creat, contingut Bloc 3 (pàgines 10–15: conceptes LDAP, LDAP vs AD, instal·lació slapd, dpkg-reconfigure, format LDIF, ldapsearch) |
 | 2026-06 | Sessió 4 | Contingut Bloc 4 (pàgines 16–22: atributs POSIX, objectClasses, slappasswd, ldapadd, ldapwhoami, coherència UID/GID, multiusuari) |
 | 2026-06 | Sessió 5 | Contingut Bloc 5 (pàgines 23–26: ldapmodify, ldapdelete, errors LDAP freqüents, entorn de proves) |
+| 2026-06 | Sessió 6 | Contingut Bloc 6 (pàgines 27–33: SSSD conceptes+arquitectura, instal·lació, sssd.conf+chmod600, nsswitch.conf, getent+id, sssctl, login real) |
+| 2026-06 | Sessió 7 | Contingut Bloc 7 (pàgines 34–37: NFS conceptes+comparativa SMB, instal·lació nfs-kernel-server, /etc/exports+no_root_squash+error exportfs-ra, exportfs+showmount+muntatge manual) |
+| 2026-06 | Sessió 8 | Contingut Bloc 8 (pàgines 38–44: estructura perfils mòbils+flux complet, autofs conceptes+ghost+timeout, auto.master+error-ghost-crític, auto.perfils+wildcard+&+diagnòstic, comparativa 22.04 vs 24.04, persistència roaming multi-client, seguretat permisos 700+UID/GID+no_root_squash) |
+| 2026-06 | Sessió 9 | Contingut Bloc 9 (pàgina 45: diagnòstic integral 5 capes LDAP→SSSD→NFS→autofs→POSIX, protocol de 5 passos amb ordres concretes, fluxograma mermaid complet, script diagnostic-ut2.sh reutilitzable, taula d'errors freqüents recapitulada, taula de fitxers+logs de la UT2, activitat de fallada controlada+prova final roaming) — UT2 completament redactada |
