@@ -73,58 +73,72 @@ Aplica els continguts de la UT1 amb projectes pràctics al quadern digital. Cada
 
 - :material-rocket-launch:{ .lg }
 
-    ## Projecte 1
+    ### Projecte 1 · Instal·lació WS
 
-    Instal·lació i configuració de Windows Server 2022 en entorn virtualitzat.
+    Desplega Windows Server 2022 en entorn virtualitzat des de zero.
 
-    **[:octicons-arrow-right-24: Obrir projecte 1](speedrun/projecte1.md)**
+    :material-clock-outline: 4–6 h &nbsp;·&nbsp; Blocs 1–3 &nbsp;·&nbsp; RA1, RA5
+
+    [:octicons-arrow-right-24: Veure el projecte](speedrun/projecte1.md){ .md-button .md-button--primary }
 
 - :material-domain:{ .lg }
 
-    ## Projecte 2
+    ### Projecte 2 · Active Directory
 
-    Active Directory en Windows Server 2022: instal·lació i configuració d'AD DS.
+    Instal·la AD DS i promou el servidor a Controlador de Domini.
 
-    **[:octicons-arrow-right-24: Obrir projecte 2](speedrun/projecte2.md)**
+    :material-clock-outline: 4–6 h &nbsp;·&nbsp; Blocs 3–4 &nbsp;·&nbsp; RA2, RA3
+
+    [:octicons-arrow-right-24: Veure el projecte](speedrun/projecte2.md){ .md-button .md-button--primary }
 
 - :material-account-group:{ .lg }
 
-    ## Projecte 3
+    ### Projecte 3 · Usuaris i recursos
 
-    Gestió avançada d'usuaris, grups i recursos compartits amb Active Directory.
+    Gestiona usuaris avançats, permisos NTFS i carpetes compartides.
 
-    **[:octicons-arrow-right-24: Obrir projecte 3](speedrun/projecte3.md)**
+    :material-clock-outline: 4–6 h &nbsp;·&nbsp; Blocs 5–7 &nbsp;·&nbsp; RA3, RA4
+
+    [:octicons-arrow-right-24: Veure el projecte](speedrun/projecte3.md){ .md-button .md-button--primary }
 
 - :material-shield-key:{ .lg }
 
-    ## Projecte 4
+    ### Projecte 4 · GPOs i perfils
 
-    Roaming Profiles i GPOs: gestió avançada del domini amb Active Directory.
+    Aplica polítiques de grup globals i per UO, i configura perfils mòbils.
 
-    **[:octicons-arrow-right-24: Obrir projecte 4](speedrun/projecte4.md)**
+    :material-clock-outline: 5–7 h &nbsp;·&nbsp; Blocs 8–9 &nbsp;·&nbsp; RA4, RA5
+
+    [:octicons-arrow-right-24: Veure el projecte](speedrun/projecte4.md){ .md-button .md-button--primary }
 
 - :material-home-account:{ .lg }
 
-    ## Projecte 5
+    ### Projecte 5 · Perfils mòbils
 
-    Perfils mòbils amb Active Directory: redirecció de carpetes i permisos NTFS.
+    Configura el roaming complet amb redirecció de carpetes i sufix .V6.
 
-    **[:octicons-arrow-right-24: Obrir projecte 5](speedrun/projecte5.md)**
+    :material-clock-outline: 5–7 h &nbsp;·&nbsp; Bloc 9 &nbsp;·&nbsp; RA5
+
+    [:octicons-arrow-right-24: Veure el projecte](speedrun/projecte5.md){ .md-button .md-button--primary }
 
 - :material-trophy:{ .lg }
 
-    ## Projecte integrador
+    ### Projecte integrador
 
-    Implantació d'un domini corporatiu complet per a l'Institut Montseny.
+    Implanta una infraestructura AD completa per a l'Institut Montseny.
 
-    **[:octicons-arrow-right-24: Obrir projecte 6](speedrun/projecte6.md)**
+    :material-clock-outline: 8–10 h &nbsp;·&nbsp; UT1 completa &nbsp;·&nbsp; RA1–RA5
+
+    [:octicons-arrow-right-24: Veure el projecte](speedrun/projecte6.md){ .md-button .md-button--primary }
 
 - :material-help-box:{ .lg }
 
-    ## Projecte 7
+    ### Projecte 7 · Dossier de preguntes
 
-    Dossier de preguntes per blocs: consolida i avalua els coneixements de tota la UT1.
+    Consolida i avalua els coneixements teòrics de tota la unitat per blocs.
 
-    **[:octicons-arrow-right-24: Obrir projecte 7](speedrun/projecte7.md)**
+    :material-clock-outline: 3–5 h &nbsp;·&nbsp; UT1 completa &nbsp;·&nbsp; RA1–RA5
+
+    [:octicons-arrow-right-24: Veure el projecte](speedrun/projecte7.md){ .md-button .md-button--primary }
 
 </div>
