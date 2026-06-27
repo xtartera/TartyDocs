@@ -1,69 +1,61 @@
 ---
-title: Projecte 1 · Instal·lació i configuració de Windows Server 2022
+title: Projecte 1 · Instal·lació Windows Server 2022
 icon: material/microsoft-windows
+hide:
+  - toc
 ---
 
-# 🖥️ Projecte 1 · Instal·lació i configuració de Windows Server 2022
+# Projecte 1 · Instal·lació de Windows Server 2022
 
-Aquest projecte forma part del **SpeedRun de la Unitat de Treball 1**. Al llarg del quadern interactiu posaràs en pràctica els coneixements treballats als diferents blocs teòrics de la unitat, desplegant i configurant un servidor Windows Server 2022 en un entorn virtualitzat.
+!!! abstract "De què tracta"
+    Desplega i configura un **Windows Server 2022** en entorn virtualitzat. Instal·laràs el sistema operatiu, configuraràs la xarxa, gestionaràs rols i característiques i monitoritzaràs el servidor — tot des de zero.
 
----
-
-| ⏱️ Durada | 👤 Modalitat | 📚 Bloc teòric | 🎓 Resultats d'aprenentatge |
+| :material-clock-outline: Durada | :material-account: Modalitat | :material-book-open-variant: Blocs | :material-school: RA avaluats |
 |:---:|:---:|:---:|:---:|
-| **4–6 hores** | Individual | **UT1** | **RA1 (85%) · RA5 (15%)** |
+| **4–6 hores** | Individual | **UT1 · Blocs 1–3** | **RA1 (85%) · RA5 (15%)** |
+
+## Objectius
+
+- Instal·lar Windows Server 2022 des de zero
+- Configurar una màquina virtual amb VirtualBox
+- Gestionar particions i sistemes de fitxers
+- Configurar els paràmetres de xarxa del servidor
+- Instal·lar rols i característiques del servidor
+- Automatitzar tasques bàsiques amb el Planificador
+- Monitoritzar el funcionament amb el Visor d'Esdeveniments
+
+## Material necessari
+
+- VirtualBox instal·lat al teu equip
+- ISO de Windows Server 2022
+- Mínim 4 GB de RAM disponibles
+- Disc virtual de 100 GB
 
 ---
 
-## 🎯 Què aprendràs
+<div class="grid cards" markdown>
 
-- Instal·lar Windows Server 2022.
-- Configurar una màquina virtual.
-- Gestionar particions i sistemes de fitxers.
-- Configurar els principals paràmetres de xarxa.
-- Instal·lar rols i característiques.
-- Automatitzar tasques bàsiques.
-- Monitoritzar el funcionament del servidor.
+- :material-notebook-edit:{ .lg }
 
----
+    ### Quadern interactiu
 
-## 📚 Abans de començar
+    El projecte es desenvolupa íntegrament al **quadern digital**. Completa totes les activitats i documenta les evidències tècniques.
 
-Abans d'iniciar el projecte és recomanable haver treballat els continguts dels blocs teòrics de la **Unitat de Treball 1**.
+    El quadern es considerarà **APTE** quan totes les activitats hagin estat resoltes i la documentació sigui completa, coherent i suficient.
 
-!!! info "Recursos"
+    [:octicons-arrow-right-24: Obrir el quadern](https://quadern-digital-v11-2.vercel.app/moduls/mp224/unitat_treball1.html?p=1){ .md-button .md-button--primary }
 
-    Si durant el projecte tens qualsevol dubte, pots tornar als apunts de la unitat sempre que ho necessitis.
+- :material-book-open-page-variant:{ .lg }
 
-**➡️ [Consultar els apunts de la UT1](../index.md)**
+    ### Apunts de la UT1
 
----
+    Revisa els continguts teòrics de la unitat en qualsevol moment. Pots consultar-los mentre treballes el projecte.
 
-## 🧰 Material necessari
+    [:octicons-arrow-right-24: Consultar els apunts](../index.md){ .md-button }
 
-- VirtualBox instal·lat.
-- ISO de Windows Server 2022.
-- 4 GB de RAM disponibles.
-- Disc virtual de 100 GB.
-
----
-
-## 🚀 Quadern interactiu
-
-!!! success "Comença el projecte"
-
-    Aquest projecte es desenvolupa mitjançant un **quadern interactiu**.
-
-    Durant la realització del projecte hauràs de completar totes les activitats proposades. Sempre que ho necessitis podràs consultar els apunts de la unitat.
-
-    El quadern es considerarà **APTE** únicament quan **totes les activitats hagin estat resoltes correctament i la documentació aportada sigui completa, coherent i suficient per justificar les tasques realitzades.**
-
-**➡️ [Obrir el quadern interactiu](https://quadern-digital-v11-2.vercel.app/moduls/mp224/unitat_treball1.html?p=1)**
-
----
+</div>
 
 !!! tip "Recomanacions"
-
-    - Documenta totes les activitats.
-    - Justifica les decisions tècniques.
-    - Comprova el correcte funcionament del servidor abans de finalitzar el projecte.
+    - Documenta cada pas amb captures de pantalla.
+    - Justifica les decisions tècniques a les respostes.
+    - Comprova el funcionament del servidor abans de finalitzar.
