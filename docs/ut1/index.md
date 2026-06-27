@@ -18,16 +18,16 @@ tags:
 
 | Bloc | Títol | Pàgines | Contingut principal |
 |------|-------|:-------:|---------------------|
-| **Bloc 1** | Fonaments | 01–05 | SO escriptori vs xarxa, arquitectura client-servidor, serveis Windows Server, virtualització, requisits de maquinari |
-| **Bloc 2** | Instal·lació | 06–10 | Modes d'instal·lació, particionament, sistemes de fitxers NTFS/ReFS, instal·lació pas a pas, configuració inicial |
-| **Bloc 3** | Administració | 11–19 | Server Manager, rols i característiques, PowerShell bàsic, monitoratge de recursos, Visor d'Esdeveniments, manteniment, planificador de tasques, unattend.xml, verificació de connectivitat |
-| **Bloc 4** | Active Directory | 20–24 | Conceptes AD, unitats organitzatives (UO), instal·lació AD DS, promoció a DC, DNS integrat en AD |
-| **Bloc 5** | Usuaris i grups | 25–29 | Gestió d'usuaris i grups AD, polítiques de contrasenya, restriccions horàries, PowerShell per AD |
-| **Bloc 6** | Clients al domini | 30–33 | Unió de clients Windows 11, configuració DNS al client, validació de la integració, gpresult |
-| **Bloc 7** | Recursos compartits | 34–38 | Carpetes compartides, permisos NTFS, herència de permisos, icacls, muntatge de carpetes de xarxa |
-| **Bloc 8** | GPO | 39–43 | Conceptes GPO, Default Domain Policy, GPO per UO, GPO de restriccions, gpupdate |
-| **Bloc 9** | Perfils mòbils | 44–49 | Tipus de perfils, carpeta per a perfils, configuració de perfils mòbils, sufix .V6, permisos NTFS en perfils, redirecció de carpetes |
-| **Bloc 10** | Diagnòstic | 50–52 | Auditoria d'accés, diagnòstic de perfils, PowerShell de diagnòstic |
+| **Bloc 1** | [Fonaments](bloc1-fonaments/01-so-escriptori-vs-xarxa.md) | 01–05 | SO escriptori vs xarxa, arquitectura client-servidor, serveis Windows Server, virtualització, requisits de maquinari |
+| **Bloc 2** | [Instal·lació](bloc2-installacio/06-modes-installacio.md) | 06–10 | Modes d'instal·lació, particionament, sistemes de fitxers NTFS/ReFS, instal·lació pas a pas, configuració inicial |
+| **Bloc 3** | [Administració](bloc3-administracio/11-server-manager.md) | 11–19 | Server Manager, rols i característiques, PowerShell bàsic, monitoratge de recursos, Visor d'Esdeveniments, manteniment, planificador de tasques, unattend.xml, verificació de connectivitat |
+| **Bloc 4** | [Active Directory](bloc4-active-directory/20-conceptes-ad.md) | 20–24 | Conceptes AD, unitats organitzatives (UO), instal·lació AD DS, promoció a DC, DNS integrat en AD |
+| **Bloc 5** | [Usuaris i grups](bloc5-usuaris-grups/25-gestio-usuaris-ad.md) | 25–29 | Gestió d'usuaris i grups AD, polítiques de contrasenya, restriccions horàries, PowerShell per AD |
+| **Bloc 6** | [Clients al domini](bloc6-clients/30-unio-clients-domini.md) | 30–33 | Unió de clients Windows 11, configuració DNS al client, validació de la integració, gpresult |
+| **Bloc 7** | [Recursos compartits](bloc7-recursos/34-carpetes-compartides.md) | 34–38 | Carpetes compartides, permisos NTFS, herència de permisos, icacls, muntatge de carpetes de xarxa |
+| **Bloc 8** | [GPO](bloc8-gpo/39-gpo-conceptes.md) | 39–43 | Conceptes GPO, Default Domain Policy, GPO per UO, GPO de restriccions, gpupdate |
+| **Bloc 9** | [Perfils mòbils](bloc9-perfils/44-tipus-perfils.md) | 44–49 | Tipus de perfils, carpeta per a perfils, configuració de perfils mòbils, sufix .V6, permisos NTFS en perfils, redirecció de carpetes |
+| **Bloc 10** | [Diagnòstic](bloc10-monitoratge/50-auditoria-acces.md) | 50–52 | Auditoria d'accés, diagnòstic de perfils, PowerShell de diagnòstic |
 
 **Total: 52 pàgines**
 
@@ -44,6 +44,16 @@ graph LR
     B7 --> B8["Bloc 8\nGPO"]
     B8 --> B9["Bloc 9\nPerfils\nmòbils"]
     B9 --> B10["Bloc 10\nDiagnòstic"]
+    click B1 "bloc1-fonaments/01-so-escriptori-vs-xarxa/" "Obrir Bloc 1"
+    click B2 "bloc2-installacio/06-modes-installacio/" "Obrir Bloc 2"
+    click B3 "bloc3-administracio/11-server-manager/" "Obrir Bloc 3"
+    click B4 "bloc4-active-directory/20-conceptes-ad/" "Obrir Bloc 4"
+    click B5 "bloc5-usuaris-grups/25-gestio-usuaris-ad/" "Obrir Bloc 5"
+    click B6 "bloc6-clients/30-unio-clients-domini/" "Obrir Bloc 6"
+    click B7 "bloc7-recursos/34-carpetes-compartides/" "Obrir Bloc 7"
+    click B8 "bloc8-gpo/39-gpo-conceptes/" "Obrir Bloc 8"
+    click B9 "bloc9-perfils/44-tipus-perfils/" "Obrir Bloc 9"
+    click B10 "bloc10-monitoratge/50-auditoria-acces/" "Obrir Bloc 10"
 ```
 
 ## Cap a la UT2: l'equivalent Linux
