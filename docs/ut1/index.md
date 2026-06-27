@@ -63,4 +63,68 @@ Cada concepte d'aquesta unitat té el seu paral·lel a la **UT2 · Linux Server 
 | Server Manager (GUI) | `systemctl` + `apt` + `journalctl` |
 
 
-**[:octicons-arrow-right-24: Obrir projecte](speedrun/)**
+---
+
+## SpeedRun · Projectes interactius
+
+Aplica els continguts de la UT1 amb projectes pràctics al quadern digital. Cada projecte té activitats guiades, autodesat automàtic i exportació en PDF.
+
+<div class="grid cards" markdown>
+
+- :material-rocket-launch:{ .lg }
+
+    ## Projecte 1
+
+    Instal·lació i configuració de Windows Server 2022 en entorn virtualitzat.
+
+    **[:octicons-arrow-right-24: Obrir projecte 1](speedrun/projecte1.md)**
+
+- :material-domain:{ .lg }
+
+    ## Projecte 2
+
+    Active Directory en Windows Server 2022: instal·lació i configuració d'AD DS.
+
+    **[:octicons-arrow-right-24: Obrir projecte 2](speedrun/projecte2.md)**
+
+- :material-account-group:{ .lg }
+
+    ## Projecte 3
+
+    Gestió avançada d'usuaris, grups i recursos compartits amb Active Directory.
+
+    **[:octicons-arrow-right-24: Obrir projecte 3](speedrun/projecte3.md)**
+
+- :material-shield-key:{ .lg }
+
+    ## Projecte 4
+
+    Roaming Profiles i GPOs: gestió avançada del domini amb Active Directory.
+
+    **[:octicons-arrow-right-24: Obrir projecte 4](speedrun/projecte4.md)**
+
+- :material-home-account:{ .lg }
+
+    ## Projecte 5
+
+    Perfils mòbils amb Active Directory: redirecció de carpetes i permisos NTFS.
+
+    **[:octicons-arrow-right-24: Obrir projecte 5](speedrun/projecte5.md)**
+
+- :material-trophy:{ .lg }
+
+    ## Projecte integrador
+
+    Implantació d'un domini corporatiu complet per a l'Institut Montseny.
+
+    **[:octicons-arrow-right-24: Obrir projecte 6](speedrun/projecte6.md)**
+
+- :material-help-box:{ .lg }
+
+    ## Projecte 7
+
+    Dossier de preguntes per blocs: consolida i avalua els coneixements de tota la UT1.
+
+    **[:octicons-arrow-right-24: Obrir projecte 7](speedrun/projecte7.md)**
+
+</div>
