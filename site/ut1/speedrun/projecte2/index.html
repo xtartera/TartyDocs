@@ -340,6 +340,8 @@
           
             
               
+                
+              
               <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
@@ -2767,21 +2769,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#que-aprendras" class="md-nav__link">
+  <a href="#objectius" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🎯 Què aprendràs
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#abans-de-comencar" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        📚 Abans de començar
+        Objectius
       
     </span>
   </a>
@@ -2792,21 +2783,38 @@
   <a href="#material-necessari" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧰 Material necessari
+        Material necessari
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Material necessari">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#quadern-interactiu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quadern interactiu
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#quadern-interactiu" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#apunts-de-la-ut1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🚀 Quadern interactiu
+        Apunts de la UT1
       
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -5083,70 +5091,72 @@
               <article class="md-content__inner md-typeset">
                 
                   
+  
 
 
 
-<h1 id="projecte-2-active-directory-en-windows-server-2022">🖥️ Projecte 2 · Active Directory en Windows Server 2022<a class="headerlink" href="#projecte-2-active-directory-en-windows-server-2022" title="Permanent link">&para;</a></h1>
-<p>Aquest projecte forma part del <strong>SpeedRun de la Unitat de Treball 1</strong>. Instal·laràs i configuraràs el rol Active Directory Domain Services (AD DS) per crear un domini corporatiu funcional.</p>
-<hr />
+
+<h1 id="projecte-2-active-directory-en-windows-server-2022">Projecte 2 · Active Directory en Windows Server 2022<a class="headerlink" href="#projecte-2-active-directory-en-windows-server-2022" title="Permanent link">&para;</a></h1>
+<div class="admonition abstract">
+<p class="admonition-title">De què tracta</p>
+<p>Instal·la i configura el rol <strong>Active Directory Domain Services (AD DS)</strong> per crear un domini corporatiu funcional. Promouràs el servidor a Controlador de Domini, configuraràs el DNS integrat i estructuraràs el domini amb Unitats Organitzatives.</p>
+</div>
 <table>
 <thead>
 <tr>
-<th style="text-align: center;">⏱️ Durada</th>
-<th style="text-align: center;">👤 Modalitat</th>
-<th style="text-align: center;">📚 Blocs teòrics</th>
-<th style="text-align: center;">🎓 Resultats d'aprenentatge</th>
+<th style="text-align: center;"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10 10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67-.75 1.23L11 13V7z"/></svg></span> Durada</th>
+<th style="text-align: center;"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 4a4 4 0 0 1 4 4 4 4 0 0 1-4 4 4 4 0 0 1-4-4 4 4 0 0 1 4-4m0 10c4.42 0 8 1.79 8 4v2H4v-2c0-2.21 3.58-4 8-4"/></svg></span> Modalitat</th>
+<th style="text-align: center;"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 21.5c-1.35-.85-3.8-1.5-5.5-1.5-1.65 0-3.35.3-4.75 1.05-.1.05-.15.05-.25.05-.25 0-.5-.25-.5-.5V6c.6-.45 1.25-.75 2-1 1.11-.35 2.33-.5 3.5-.5 1.95 0 4.05.4 5.5 1.5 1.45-1.1 3.55-1.5 5.5-1.5 1.17 0 2.39.15 3.5.5.75.25 1.4.55 2 1v14.6c0 .25-.25.5-.5.5-.1 0-.15 0-.25-.05-1.4-.75-3.1-1.05-4.75-1.05-1.7 0-4.15.65-5.5 1.5M12 8v11.5c1.35-.85 3.8-1.5 5.5-1.5 1.2 0 2.4.15 3.5.5V7c-1.1-.35-2.3-.5-3.5-.5-1.7 0-4.15.65-5.5 1.5m1 3.5c1.11-.68 2.6-1 4.5-1 .91 0 1.76.09 2.5.28V9.23c-.87-.15-1.71-.23-2.5-.23q-2.655 0-4.5.84zm4.5.17c-1.71 0-3.21.26-4.5.79v1.69c1.11-.65 2.6-.99 4.5-.99 1.04 0 1.88.08 2.5.24v-1.5c-.87-.16-1.71-.23-2.5-.23m2.5 2.9c-.87-.16-1.71-.24-2.5-.24-1.83 0-3.33.27-4.5.8v1.69c1.11-.66 2.6-.99 4.5-.99 1.04 0 1.88.08 2.5.24z"/></svg></span> Blocs</th>
+<th style="text-align: center;"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3 1 9l11 6 9-4.91V17h2V9M5 13.18v4L12 21l7-3.82v-4L12 17z"/></svg></span> RA avaluats</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td style="text-align: center;"><strong>4–6 hores</strong></td>
 <td style="text-align: center;">Individual</td>
-<td style="text-align: center;"><strong>Blocs 3–4</strong></td>
+<td style="text-align: center;"><strong>UT1 · Blocs 3–4</strong></td>
 <td style="text-align: center;"><strong>RA2 · RA3</strong></td>
 </tr>
 </tbody>
 </table>
-<hr />
-<h2 id="que-aprendras">🎯 Què aprendràs<a class="headerlink" href="#que-aprendras" title="Permanent link">&para;</a></h2>
+<h2 id="objectius">Objectius<a class="headerlink" href="#objectius" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Instal·lar el rol AD DS amb Server Manager.</li>
-<li>Promocionar el servidor a Controlador de Domini (DC).</li>
-<li>Configurar el DNS integrat en Active Directory.</li>
-<li>Crear Unitats Organitzatives (UO) i estructurar el domini.</li>
-<li>Gestionar usuaris i grups del domini des de l'ADUC.</li>
+<li>Instal·lar el rol AD DS amb Server Manager</li>
+<li>Promocionar el servidor a Controlador de Domini (DC)</li>
+<li>Configurar el DNS integrat en Active Directory</li>
+<li>Crear Unitats Organitzatives (UO) i estructurar el domini</li>
+<li>Gestionar usuaris i grups del domini des de l'ADUC</li>
+</ul>
+<h2 id="material-necessari">Material necessari<a class="headerlink" href="#material-necessari" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Windows Server 2022 instal·lat i configurat (Projecte 1)</li>
+<li>IP fixa assignada al servidor</li>
+<li>Nom de domini preparat (ex: <code>lafita.local</code>)</li>
 </ul>
 <hr />
-<h2 id="abans-de-comencar">📚 Abans de començar<a class="headerlink" href="#abans-de-comencar" title="Permanent link">&para;</a></h2>
-<p>Abans d'iniciar el projecte és recomanable haver treballat els continguts dels blocs teòrics de la <strong>Unitat de Treball 1</strong>, especialment els Blocs 3 i 4.</p>
-<div class="admonition info">
-<p class="admonition-title">Recursos</p>
-<p>Si durant el projecte tens qualsevol dubte, pots tornar als apunts de la unitat sempre que ho necessitis.</p>
-</div>
-<p><strong>➡️ <a href="../../">Consultar els apunts de la UT1</a></strong></p>
-<hr />
-<h2 id="material-necessari">🧰 Material necessari<a class="headerlink" href="#material-necessari" title="Permanent link">&para;</a></h2>
+<div class="grid cards">
 <ul>
-<li>Windows Server 2022 instal·lat i configurat (Projecte 1).</li>
-<li>IP fixa assignada al servidor.</li>
-<li>Nom de domini preparat (ex: <code>lafita.local</code>).</li>
+<li>
+<p><span class="twemoji lg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.04 13.13c.14 0 .27.06.38.17l1.28 1.28c.22.21.22.56 0 .77l-1 1-2.05-2.05 1-1c.11-.11.25-.17.39-.17m-1.97 1.75 2.05 2.05L15.06 23H13v-2.06zM3 7V5h2V4a2 2 0 0 1 2-2h6v7l2.5-1.5L18 9V2h1c1.05 0 2 .95 2 2v6L11 20v2H7c-1.05 0-2-.95-2-2v-1H3v-2h2v-4H3v-2h2V7zm2 0h2V5H5zm0 4v2h2v-2zm0 6v2h2v-2z"/></svg></span></p>
+<h3 id="quadern-interactiu">Quadern interactiu<a class="headerlink" href="#quadern-interactiu" title="Permanent link">&para;</a></h3>
+<p>El projecte es desenvolupa íntegrament al <strong>quadern digital</strong>. Completa totes les activitats i documenta les evidències tècniques.</p>
+<p>El quadern es considerarà <strong>APTE</strong> quan totes les activitats hagin estat resoltes i la documentació sigui completa, coherent i suficient.</p>
+<p><a class="md-button md-button--primary" href="https://quadern-digital-v11-2.vercel.app/moduls/mp224/unitat_treball1.html?p=2"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Obrir el quadern</a></p>
+</li>
+<li>
+<p><span class="twemoji lg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m19 2-5 4.5v11l5-4.5zM6.5 5C4.55 5 2.45 5.4 1 6.5v14.66c0 .25.25.5.5.5.1 0 .15-.07.25-.07 1.35-.65 3.3-1.09 4.75-1.09 1.95 0 4.05.4 5.5 1.5 1.35-.85 3.8-1.5 5.5-1.5 1.65 0 3.35.31 4.75 1.06.1.05.15.03.25.03.25 0 .5-.25.5-.5V6.5c-.6-.45-1.25-.75-2-1V19c-1.1-.35-2.3-.5-3.5-.5-1.7 0-4.15.65-5.5 1.5V6.5C10.55 5.4 8.45 5 6.5 5"/></svg></span></p>
+<h3 id="apunts-de-la-ut1">Apunts de la UT1<a class="headerlink" href="#apunts-de-la-ut1" title="Permanent link">&para;</a></h3>
+<p>Revisa els continguts teòrics de la unitat en qualsevol moment. Pots consultar-los mentre treballes el projecte.</p>
+<p><a class="md-button" href="../../"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Consultar els apunts</a></p>
+</li>
 </ul>
-<hr />
-<h2 id="quadern-interactiu">🚀 Quadern interactiu<a class="headerlink" href="#quadern-interactiu" title="Permanent link">&para;</a></h2>
-<div class="admonition success">
-<p class="admonition-title">Comença el projecte</p>
-<p>Aquest projecte es desenvolupa mitjançant un <strong>quadern interactiu</strong>.</p>
-<p>Durant la realització del projecte hauràs de completar totes les activitats proposades. Sempre que ho necessitis podràs consultar els apunts de la unitat.</p>
-<p>El quadern es considerarà <strong>APTE</strong> únicament quan <strong>totes les activitats hagin estat resoltes correctament i la documentació aportada sigui completa, coherent i suficient per justificar les tasques realitzades.</strong></p>
 </div>
-<p><strong>➡️ <a href="https://quadern-digital-v11-2.vercel.app/moduls/mp224/unitat_treball1.html?p=2">Obrir el quadern interactiu</a></strong></p>
-<hr />
 <div class="admonition tip">
 <p class="admonition-title">Recomanacions</p>
 <ul>
-<li>Documenta totes les activitats.</li>
-<li>Justifica les decisions tècniques.</li>
-<li>Comprova el correcte funcionament del domini abans de finalitzar el projecte.</li>
+<li>Documenta cada pas amb captures de pantalla.</li>
+<li>Justifica les decisions tècniques a les respostes.</li>
+<li>Comprova el correcte funcionament del domini abans de finalitzar.</li>
 </ul>
 </div>
 
@@ -5161,6 +5171,8 @@
 
 
 
+
+  
 
 
 
@@ -5185,6 +5197,8 @@
         <footer class="md-footer">
   
     
+      
+        
       
       <nav class="md-footer__inner md-grid" aria-label="Peu de pàgina" >
         
