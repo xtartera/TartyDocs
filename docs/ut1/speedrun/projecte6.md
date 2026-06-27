@@ -34,7 +34,7 @@ Aquest projecte integrador requereix haver completat els projectes anteriors o t
 
     Si durant el projecte tens qualsevol dubte, pots tornar als apunts de la unitat sempre que ho necessitis.
 
-**➡️ [Consultar els apunts de la UT1](../)**
+**➡️ [Consultar els apunts de la UT1](../index.md)**
 
 ---
 
