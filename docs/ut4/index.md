@@ -4,47 +4,44 @@ hide:
   - toc
 tags:
   - ut4
+  - nfs
   - active-directory
-  - ldap
   - samba
 ---
 
 # :material-lan-connect: UT4 · Integració de sistemes heterogenis
 
 !!! abstract "Presentació de la unitat"
-    En aquesta unitat integrem entorns **Windows i Linux** en un únic directori d'usuaris. Treballem les tres grans solucions de directori: **Active Directory** (Windows Server 2022), **OpenLDAP multiplataforma** (Ubuntu amb clients Windows via pGina) i **Samba com a controlador de domini AD-compatible**. Apliquem polítiques de grup (GPO), perfils mòbils, ACLs esteses i integració creuada de clients.
+    En aquesta unitat integrem entorns **Windows i Linux** en un únic directori d'usuaris. Treballem **NFS multiplataforma**, la integració d'**Ubuntu al domini Active Directory** (realmd + SSSD + Kerberos) i **Samba com a controlador de domini AD-compatible**. Apliquem recursos compartits, ACLs esteses i diagnòstic integral.
 
 ## Blocs de la unitat
 
 | Bloc | Títol | Projecte | Contingut principal |
 |------|-------|---------|---------------------|
-| **Bloc 1** | [Conceptes d'integració](bloc1-conceptes/01-sistemes-heterogenis-conceptes.md) | P41–P43 | Sistemes heterogenis, protocols (LDAP, Kerberos, SMB, NFS), comparativa |
-| **Bloc 2** | [Active Directory](bloc2-active-directory/03-active-directory-arquitectura.md) | P41 | Forest, DC, DNS integrat, OUs, usuaris i grups |
-| **Bloc 3** | [GPO i recursos Windows](bloc3-gpo-recursos-windows/08-gpo-group-policy-management.md) | P41 | Group Policy, restriccions, perfils mòbils Windows, backups |
-| **Bloc 4** | [Linux al domini AD](bloc4-linux-ad/12-windows11-unio-domini.md) | P41 | Windows 11 al domini, Ubuntu+realmd+sssd, Kerberos, mkhomedir |
-| **Bloc 5** | [OpenLDAP multiplataforma](bloc5-openldap-multiplataforma/17-openldap-dit-ous.md) | P42 | PAM+NSS, pGina, perfils NFS+LDAP, validació creuada |
-| **Bloc 6** | [Samba com a AD DC](bloc6-samba-ad-dc/22-samba-ad-dc-arquitectura.md) | P43 | `samba-tool domain provision`, clients Windows i Linux al Samba-AD |
-| **Bloc 7** | [Recursos i ACLs](bloc7-recursos-acls/27-recursos-compartits-domini.md) | P43 | Recursos compartits al domini, `setfacl`/`getfacl`, `acl_xattr`, diagnòstic |
+| **Bloc 1** | [Conceptes d'integració](bloc1-conceptes/00-anatomia-infraestructura-heterogenia.md) | P41–P45 | Anatomia infraestructura, protocols (LDAP, Kerberos, SMB, NFS), comparativa |
+| **Bloc 2** | [NFS multiplataforma](bloc2-nfs-windows/01-nfs-windows-server-2022.md) | P44 | WS2022 servidor NFS, Ubuntu servidor NFS, Client for NFS Windows |
+| **Bloc 3** | [Ubuntu al domini AD](bloc3-linux-ad/01-ubuntu-ad-realmd.md) | P41 | realmd, sssd.conf, Kerberos, oddjob-mkhomedir |
+| **Bloc 4** | [Samba com a AD DC](bloc4-samba-ad-dc/01-samba-ad-dc-arquitectura.md) | P42 | `samba-tool domain provision`, clients Windows i Linux al Samba-AD |
+| **Bloc 5** | [Recursos i ACLs](bloc5-recursos-acls/01-recursos-acls-domini.md) | P42 | Recursos compartits al domini, `setfacl`/`getfacl`, `acl_xattr` |
+| **Bloc 6** | [Diagnòstic integral](bloc6-diagnostic/01-diagnostic-integral-ut4.md) | P41–P45 | Flowchart diagnòstic, ordres clau, taula d'errors freqüents |
 
 ## Mapa de la unitat
 
 ```mermaid
 graph LR
-    B1["Bloc 1\nConceptes"] --> B2["Bloc 2\nActive\nDirectory"]
-    B2 --> B3["Bloc 3\nGPO i\nrecursos"]
-    B3 --> B4["Bloc 4\nLinux\nal domini"]
-    B1 --> B5["Bloc 5\nOpenLDAP\nmultiplat."]
-    B1 --> B6["Bloc 6\nSamba\nAD DC"]
-    B4 --> B7["Bloc 7\nRecursos\ni ACLs"]
-    B5 --> B7
-    B6 --> B7
-    click B1 "bloc1-conceptes/01-sistemes-heterogenis-conceptes/" "Obrir Bloc 1"
-    click B2 "bloc2-active-directory/03-active-directory-arquitectura/" "Obrir Bloc 2"
-    click B3 "bloc3-gpo-recursos-windows/08-gpo-group-policy-management/" "Obrir Bloc 3"
-    click B4 "bloc4-linux-ad/12-windows11-unio-domini/" "Obrir Bloc 4"
-    click B5 "bloc5-openldap-multiplataforma/17-openldap-dit-ous/" "Obrir Bloc 5"
-    click B6 "bloc6-samba-ad-dc/22-samba-ad-dc-arquitectura/" "Obrir Bloc 6"
-    click B7 "bloc7-recursos-acls/27-recursos-compartits-domini/" "Obrir Bloc 7"
+    B1["Bloc 1\nConceptes"] --> B2["Bloc 2\nNFS\nmultiplat."]
+    B1 --> B3["Bloc 3\nUbuntu\nal domini AD"]
+    B1 --> B4["Bloc 4\nSamba\nAD DC"]
+    B3 --> B5["Bloc 5\nRecursos\ni ACLs"]
+    B4 --> B5
+    B2 --> B6["Bloc 6\nDiagnòstic\nintegral"]
+    B5 --> B6
+    click B1 "bloc1-conceptes/00-anatomia-infraestructura-heterogenia/" "Obrir Bloc 1"
+    click B2 "bloc2-nfs-windows/01-nfs-windows-server-2022/" "Obrir Bloc 2"
+    click B3 "bloc3-linux-ad/01-ubuntu-ad-realmd/" "Obrir Bloc 3"
+    click B4 "bloc4-samba-ad-dc/01-samba-ad-dc-arquitectura/" "Obrir Bloc 4"
+    click B5 "bloc5-recursos-acls/01-recursos-acls-domini/" "Obrir Bloc 5"
+    click B6 "bloc6-diagnostic/01-diagnostic-integral-ut4/" "Obrir Bloc 6"
 ```
 
 ---
@@ -57,43 +54,43 @@ Aplica els continguts de la UT4 amb projectes pràctics al quadern digital. Cada
 
 - :material-microsoft-windows:{ .lg }
 
-    ### Projecte 41 · Windows Active Directory
+    ### Projecte 41 · Ubuntu → WS2022 AD
 
-    Desplega un DC amb Windows Server 2022, gestiona OUs, GPOs, clients W11 i Ubuntu al domini AD.
+    Uneix un client Ubuntu a un domini Windows Server 2022 Active Directory amb realmd, SSSD i Kerberos.
 
-    :material-clock-outline: 10–12 h &nbsp;·&nbsp; Blocs 1–4 &nbsp;·&nbsp; RA2, RA3, RA4, RA5, RA6
+    :material-clock-outline: 10–12 h &nbsp;·&nbsp; Blocs 1, 3 &nbsp;·&nbsp; RA4, RA5, RA6
 
     [:octicons-arrow-right-24: Veure el projecte](speedrun/projecte41.md){ .md-button .md-button--primary }
 
-- :material-server-network:{ .lg }
-
-    ### Projecte 42 · OpenLDAP multiplataforma
-
-    Configura OpenLDAP amb clients Ubuntu (PAM/NSS), Windows (pGina) i perfils mòbils NFS.
-
-    :material-clock-outline: 10–12 h &nbsp;·&nbsp; Blocs 1, 5 &nbsp;·&nbsp; RA2, RA3, RA4, RA5, RA6
-
-    [:octicons-arrow-right-24: Veure el projecte](speedrun/projecte42.md){ .md-button .md-button--primary }
-
 - :material-domain:{ .lg }
 
-    ### Projecte 43 · Samba com a AD DC
+    ### Projecte 42 · Samba com a AD DC
 
     Desplega Samba-AD DC (libretic.local), uneix clients Windows i Ubuntu, comparteix recursos amb ACLs.
 
-    :material-clock-outline: 10–12 h &nbsp;·&nbsp; Blocs 1, 6–7 &nbsp;·&nbsp; RA1, RA2, RA3, RA4, RA5, RA6
+    :material-clock-outline: 12–14 h &nbsp;·&nbsp; Blocs 1, 4–5 &nbsp;·&nbsp; RA4, RA5, RA6
 
-    [:octicons-arrow-right-24: Veure el projecte](speedrun/projecte43.md){ .md-button .md-button--primary }
+    [:octicons-arrow-right-24: Veure el projecte](speedrun/projecte42.md){ .md-button .md-button--primary }
+
+- :material-folder-network:{ .lg }
+
+    ### Projecte 44 · NFS multiplataforma
+
+    Configura NFS bidireccional: WS2022 com a servidor NFS i Ubuntu com a servidor NFS per a clients Windows.
+
+    :material-clock-outline: 8–10 h &nbsp;·&nbsp; Bloc 2 &nbsp;·&nbsp; RA4, RA5
+
+    [:octicons-arrow-right-24: Veure el projecte](speedrun/projecte44.md){ .md-button .md-button--primary }
 
 - :material-help-box:{ .lg }
 
-    ### Projecte 44 · Dossier de preguntes
+    ### Projecte 45 · Dossier de preguntes
 
     Consolida i avalua els coneixements teòrics de tota la unitat per blocs.
 
-    :material-clock-outline: 3–5 h &nbsp;·&nbsp; UT4 completa &nbsp;·&nbsp; RA2–RA6
+    :material-clock-outline: 3–4 h &nbsp;·&nbsp; UT4 completa &nbsp;·&nbsp; RA4, RA5, RA6
 
-    [:octicons-arrow-right-24: Veure el projecte](speedrun/projecte44.md){ .md-button .md-button--primary }
+    [:octicons-arrow-right-24: Veure el projecte](speedrun/projecte45.md){ .md-button .md-button--primary }
 
 </div>
 
@@ -103,9 +100,8 @@ Aplica els continguts de la UT4 amb projectes pràctics al quadern digital. Cada
 
 | UT1 (Windows Server) | UT2 (Linux Server) | UT3 (Compartició) | UT4 (Integració) |
 |---------------------|-------------------|--------------------|-----------------|
-| AD DS bàsic | OpenLDAP bàsic | Samba + LDAP | AD avançat + Samba-AD DC |
-| GPO bàsiques | SSSD per LDAP | — | SSSD per AD, GPOs avançades |
-| Carpetes NTFS | NFS bàsic | NFS avançat | NFS perfils roaming LDAP |
+| AD DS bàsic | OpenLDAP bàsic | Samba + LDAP | Samba-AD DC |
+| GPO bàsiques | SSSD per LDAP | — | SSSD per AD |
+| Carpetes NTFS | NFS bàsic | NFS avançat | NFS multiplataforma |
 | Clients W11 al domini | Clients Ubuntu LDAP | — | Clients multiplataforma |
-| — | — | — | pGina: Windows → LDAP |
-| Backups bàsics | — | — | Veeam + PowerShell + Robocopy |
+| — | — | — | ACLs POSIX + acl_xattr |
