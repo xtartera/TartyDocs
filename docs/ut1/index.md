@@ -14,6 +14,8 @@ tags:
 !!! abstract "Presentació de la unitat"
     En aquesta unitat treballem amb **Windows Server 2022** com a plataforma de serveis de xarxa corporativa. Aprendrem a instal·lar i administrar un servidor Windows, a gestionar identitats centralitzades amb **Active Directory Domain Services (AD DS)**, a aplicar polítiques de grup (**GPO**) i a implementar **perfils mòbils** — la base conceptual que ens permetrà comparar-la, bloc a bloc, amb l'equivalent Linux a la UT2.
 
+![Imatge UT1](../assets/Imatge-UT1.png)
+
 ## Blocs de la unitat
 
 | Bloc | Títol | Pàgines | Contingut principal |

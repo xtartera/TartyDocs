@@ -14,6 +14,8 @@ tags:
 !!! abstract "Presentació de la unitat"
     En aquesta unitat integrem entorns **Windows i Linux** en un únic directori d'usuaris. Treballem **NFS multiplataforma**, la integració d'**Ubuntu al domini Active Directory** (realmd + SSSD + Kerberos) i **Samba com a controlador de domini AD-compatible**. Apliquem recursos compartits, ACLs esteses i diagnòstic integral.
 
+![Imatge UT4](../assets/Imatge-UT4.png)
+
 ## Blocs de la unitat
 
 | Bloc | Títol | Projecte | Contingut principal |
