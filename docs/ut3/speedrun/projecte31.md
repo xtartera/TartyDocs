@@ -41,7 +41,7 @@ hide:
 
     El quadern es considerarà **APTE** quan totes les activitats hagin estat resoltes i la documentació sigui completa, coherent i suficient.
 
-    [:octicons-arrow-right-24: Obrir el quadern](#){ .md-button .md-button--primary }
+    [:octicons-arrow-right-24: Obrir el quadern](https://quadern-digital-v11-2.vercel.app/moduls/mp224/unitat_treball3.html?p=1){ .md-button .md-button--primary }
 
 - :material-book-open-page-variant:{ .lg }
 
