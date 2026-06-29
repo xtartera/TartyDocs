@@ -31,11 +31,6 @@ tags:
 
         A --> B --> C --> D --> E
 
-        style A fill:#1565C0,color:#fff
-        style B fill:#1565C0,color:#fff
-        style C fill:#1565C0,color:#fff
-        style D fill:#1565C0,color:#fff
-        style E fill:#1565C0,color:#fff
     ```
 
     !!! tip "Regla fonamental"
@@ -277,13 +272,6 @@ tags:
         F -->|No| F1["sudo chmod 700 /perfils/maria.puig\nsudo chown 1001:2001 /perfils/maria.puig"]
         F -->|Sí| G["✅ Pila completa OK\nsu - maria.puig ha de funcionar"]
 
-        style A fill:#B71C1C,color:#fff
-        style B1 fill:#E65100,color:#fff
-        style C1 fill:#E65100,color:#fff
-        style D1 fill:#E65100,color:#fff
-        style E1 fill:#E65100,color:#fff
-        style F1 fill:#E65100,color:#fff
-        style G fill:#1B5E20,color:#fff
     ```
 
     ---

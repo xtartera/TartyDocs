@@ -53,12 +53,6 @@ tags:
         SLAPD --- DIT
         SSSD <--> CACHE
 
-        style U fill:#1565C0,color:#fff
-        style SSSD fill:#6A1B9A,color:#fff
-        style SLAPD fill:#1B5E20,color:#fff
-        style CACHE fill:#E65100,color:#fff
-        style PAM fill:#880E4F,color:#fff
-        style NSS fill:#004D40,color:#fff
     ```
 
     SSSD té dos rols principals:
@@ -100,12 +94,6 @@ tags:
         D --> E["32\nDiagnòstic\namb sssctl"]
         E --> F["33\nLogin real\nam maria.puig"]
 
-        style A fill:#1565C0,color:#fff
-        style B fill:#6A1B9A,color:#fff
-        style C fill:#004D40,color:#fff
-        style D fill:#1B5E20,color:#fff
-        style E fill:#E65100,color:#fff
-        style F fill:#880E4F,color:#fff
     ```
 
     !!! tip "Connexió amb UT1"

@@ -35,11 +35,6 @@ tags:
         AUTOFS["4. autofs\ndetecta accés a /perfils/maria.puig\nmunta NFS automàticament"] --> NFS
         NFS["5. NFS\n192.168.100.10:/perfils/maria.puig\n→ /perfils/maria.puig al client"]
 
-        style LDAP fill:#1565C0,color:#fff
-        style SSSD fill:#6A1B9A,color:#fff
-        style PAM fill:#4A148C,color:#fff
-        style AUTOFS fill:#1B5E20,color:#fff
-        style NFS fill:#E65100,color:#fff
     ```
 
     ## Estructura de directoris al servidor

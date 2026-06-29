@@ -32,8 +32,6 @@ tags:
         C --> D["pam_mkhomedir\ncrea /perfils/maria.puig\nsi no existeix"]
         D --> E["Sessió oberta\na /perfils/maria.puig"]
 
-        style A fill:#1565C0,color:#fff
-        style E fill:#1B5E20,color:#fff
     ```
 
     ### Configuració típica a 22.04
@@ -69,9 +67,6 @@ tags:
         E --> F["Inactivitat > 60 s"]
         F --> G["autofs desmunta\nautomàticament"]
 
-        style A fill:#1565C0,color:#fff
-        style E fill:#1B5E20,color:#fff
-        style G fill:#6A1B9A,color:#fff
     ```
 
     ### Configuració a 24.04 (el que hem fet als Blocs 7 i 8)

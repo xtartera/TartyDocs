@@ -60,11 +60,6 @@ tags:
         H -->|Sí| I["Falta atribut obligatori:\nrevisa la objectClass\ni els seus atributs requerits"]
         H -->|No| J["Consulta la taula d'errors\namb el codi concret"]
 
-        style A fill:#B71C1C,color:#fff
-        style C fill:#1565C0,color:#fff
-        style E fill:#E65100,color:#fff
-        style G fill:#1B5E20,color:#fff
-        style I fill:#6A1B9A,color:#fff
     ```
 
     ## Activar el log detallat de slapd

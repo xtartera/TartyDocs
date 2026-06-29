@@ -47,8 +47,6 @@ tags:
 
         EXP -- "NFS · TCP 2049" --> MNT
 
-        style Servidor fill:#1565C0,color:#fff
-        style Client fill:#1B5E20,color:#fff
     ```
 
     Al nostre laboratori:

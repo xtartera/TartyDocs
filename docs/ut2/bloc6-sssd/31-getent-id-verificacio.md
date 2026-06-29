@@ -139,10 +139,6 @@ tags:
         F -->|Sí| G["Corregeix els errors\nde sssd.conf\n→ pàgina 32"]
         F -->|No| H["sssctl cache-expire -E\ni torna a provar getent"]
 
-        style A fill:#B71C1C,color:#fff
-        style C fill:#1565C0,color:#fff
-        style E fill:#1B5E20,color:#fff
-        style G fill:#6A1B9A,color:#fff
     ```
 
     ??? question "Auto-avaluació"

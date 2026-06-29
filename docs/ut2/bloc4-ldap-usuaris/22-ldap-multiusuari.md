@@ -22,11 +22,6 @@ tags:
         C --> D["4. Afegir al directori\n(ldapadd × 3 fitxers, en ordre)"]
         D --> E["5. Verificació\n(ldapsearch + ldapwhoami)"]
 
-        style A fill:#1565C0,color:#fff
-        style B fill:#6A1B9A,color:#fff
-        style C fill:#1B5E20,color:#fff
-        style D fill:#E65100,color:#fff
-        style E fill:#37474F,color:#fff
     ```
 
     ## Fitxer LDIF complet del laboratori

@@ -24,9 +24,6 @@ tags:
         AD --> AD2["+ Kerberos · DNS integrat · GPO · Replicació multi-DC"]
         OL --> OL2["+ slapd · ldap-utils · backends pluggables (MDB)"]
 
-        style LDAP fill:#1565C0,color:#fff
-        style AD fill:#0078D4,color:#fff
-        style OL fill:#E65100,color:#fff
     ```
 
     ## Comparativa: Active Directory vs OpenLDAP
