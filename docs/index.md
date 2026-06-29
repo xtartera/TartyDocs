@@ -19,6 +19,8 @@ Xavier Tartera · Institut Cirvianum
 
     ### UT1 · Windows Server
 
+    ![UT1](assets/Imatge-UT1.png)
+
     Active Directory, GPO, perfils mòbils i diagnòstic en Windows Server 2022. Inclou 7 projectes interactius.
 
     :material-check-circle: 52 pàgines &nbsp;·&nbsp; 10 blocs &nbsp;·&nbsp; 7 projectes
