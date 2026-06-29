@@ -39,21 +39,21 @@ Xavier Tartera · Institut Cirvianum
 
     ### UT3 · Compartició de recursos
 
-    Compartició de fitxers i impressores entre sistemes Windows i Linux amb Samba i NFS.
+    Samba, NFS, CUPS i diagnòstic en entorns mixtos Windows i Linux. Inclou 3 projectes interactius.
 
-    :material-progress-wrench: En construcció
+    :material-check-circle: 30 pàgines &nbsp;·&nbsp; 9 blocs &nbsp;·&nbsp; 3 projectes
 
-    [:octicons-arrow-right-24: Accedir a la UT3](ut3/index.md){ .md-button }
+    [:octicons-arrow-right-24: Accedir a la UT3](ut3/index.md){ .md-button .md-button--primary }
 
 - :material-server-network:{ .lg }
 
-    ### UT4 · Sistemes heterogenis
+    ### UT4 · Integració de sistemes heterogenis
 
-    Integració i administració d'entorns mixtos amb Windows Server i Linux.
+    Active Directory, OpenLDAP i Samba-AD DC. Integració multiplataforma Windows i Linux. Inclou 4 projectes interactius.
 
-    :material-progress-wrench: En construcció
+    :material-check-circle: 30 pàgines &nbsp;·&nbsp; 7 blocs &nbsp;·&nbsp; 4 projectes
 
-    [:octicons-arrow-right-24: Accedir a la UT4](ut4/index.md){ .md-button }
+    [:octicons-arrow-right-24: Accedir a la UT4](ut4/index.md){ .md-button .md-button--primary }
 
 </div>
 
