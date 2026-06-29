@@ -112,7 +112,7 @@ tags:
     ```
 
     !!! info "El valor `userPassword` es genera amb `slappasswd`"
-        El camp `userPassword: {SSHA}...` no es pot inventar — és un hash criptogràfic. A la pàgina [18 — slappasswd](../bloc4-ldap-usuaris/18-slappasswd.md) aprendràs a generar-lo. Per ara, els fitxers LDIF que crees al Bloc 3 no inclouran `userPassword`.
+        El camp `userPassword: {SSHA}...` no es pot inventar — és un hash criptogràfic. A la pàgina [18 — slappasswd](../bloc4-ldap-usuaris/18-slappasswd-hash.md) aprendràs a generar-lo. Per ara, els fitxers LDIF que crees al Bloc 3 no inclouran `userPassword`.
 
     ## Valors en Base64
 
@@ -224,7 +224,7 @@ tags:
     Comprova que: (1) hi ha línia en blanc entre entrades, (2) cada atribut té un espai després dels dos punts, (3) no hi ha espais al final de cap línia.
 
     !!! info "No aplicis els fitxers LDIF encara"
-        Aplicar fitxers LDIF requereix `ldapadd`, que aprendràs a la pàgina [19 — ldapadd](../bloc4-ldap-usuaris/19-ldapadd.md). Per ara, prepara els fitxers i verifica la seva sintaxi visualment.
+        Aplicar fitxers LDIF requereix `ldapadd`, que aprendràs a la pàgina [19 — ldapadd](../bloc4-ldap-usuaris/19-ldapadd-usuaris-grups.md). Per ara, prepara els fitxers i verifica la seva sintaxi visualment.
 
 === ":material-play-circle-outline: Vídeo"
 
