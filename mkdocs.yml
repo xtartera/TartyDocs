@@ -233,47 +233,30 @@ nav:
   - "UT4 · Integració de sistemes heterogenis":
       - Presentació: ut4/index.md
       - "Bloc 1 · Conceptes d'integració":
+          - "Anatomia d'una infraestructura heterogènia": ut4/bloc1-conceptes/00-anatomia-infraestructura-heterogenia.md
           - "Sistemes heterogenis": ut4/bloc1-conceptes/01-sistemes-heterogenis-conceptes.md
           - "Comparativa AD / LDAP / Samba-AD": ut4/bloc1-conceptes/02-comparativa-ad-ldap-samba.md
-      - "Bloc 2 · Active Directory":
-          - "Arquitectura AD": ut4/bloc2-active-directory/03-active-directory-arquitectura.md
-          - "Instal·lació AD DS": ut4/bloc2-active-directory/04-installacio-ad-ds.md
-          - "DNS integrat amb AD": ut4/bloc2-active-directory/05-dns-integrat-ad.md
-          - "Unitats Organitzatives": ut4/bloc2-active-directory/06-unitats-organitzatives.md
-          - "Usuaris i grups de domini": ut4/bloc2-active-directory/07-usuaris-grups-domini.md
-      - "Bloc 3 · GPO i recursos Windows":
-          - "GPO: Group Policy Management": ut4/bloc3-gpo-recursos-windows/08-gpo-group-policy-management.md
-          - "GPO: restriccions pràctiques": ut4/bloc3-gpo-recursos-windows/09-gpo-restriccions.md
-          - "Carpetes compartides i perfils": ut4/bloc3-gpo-recursos-windows/10-carpetes-compartides-perfils-windows.md
-          - "Backups: Veeam + PowerShell": ut4/bloc3-gpo-recursos-windows/11-backups-veeam-powershell.md
-      - "Bloc 4 · Linux al domini AD":
-          - "Windows 11: unió al domini": ut4/bloc4-linux-ad/12-windows11-unio-domini.md
-          - "Ubuntu → AD: realmd": ut4/bloc4-linux-ad/13-ubuntu-ad-realmd.md
-          - "sssd.conf per a AD": ut4/bloc4-linux-ad/14-sssd-active-directory.md
-          - "Kerberos a Linux": ut4/bloc4-linux-ad/15-kerberos-linux.md
-          - "oddjob-mkhomedir": ut4/bloc4-linux-ad/16-oddjob-mkhomedir.md
-      - "Bloc 5 · OpenLDAP multiplataforma":
-          - "OpenLDAP: DIT i OUs": ut4/bloc5-openldap-multiplataforma/17-openldap-dit-ous.md
-          - "PAM + NSS: client LDAP": ut4/bloc5-openldap-multiplataforma/18-pam-nss-ldap-client.md
-          - "getent i SSH: validació LDAP": ut4/bloc5-openldap-multiplataforma/19-getent-ssh-validacio-ldap.md
-          - "pGina: Windows via LDAP": ut4/bloc5-openldap-multiplataforma/20-pgina-windows-ldap.md
-          - "NFS + LDAP: perfils mòbils": ut4/bloc5-openldap-multiplataforma/21-nfs-ldap-perfils-mobils.md
-      - "Bloc 6 · Samba com a AD DC":
-          - "Samba AD DC: arquitectura": ut4/bloc6-samba-ad-dc/22-samba-ad-dc-arquitectura.md
-          - "samba-tool domain provision": ut4/bloc6-samba-ad-dc/23-samba-tool-provision.md
-          - "samba-tool: usuaris i grups": ut4/bloc6-samba-ad-dc/24-samba-tool-usuaris-grups.md
-          - "Windows → Samba-AD DC": ut4/bloc6-samba-ad-dc/25-windows-samba-ad-dc.md
-          - "Ubuntu → Samba-AD DC": ut4/bloc6-samba-ad-dc/26-ubuntu-samba-ad-dc.md
-      - "Bloc 7 · Recursos i ACLs":
-          - "Recursos compartits al domini": ut4/bloc7-recursos-acls/27-recursos-compartits-domini.md
-          - "ACLs POSIX (setfacl/getfacl)": ut4/bloc7-recursos-acls/28-acls-posix-setfacl.md
-          - "vfs objects = acl_xattr": ut4/bloc7-recursos-acls/29-vfs-acl-xattr-samba.md
-          - "Diagnòstic integral UT4": ut4/bloc7-recursos-acls/30-diagnostic-integral-ut4.md
+      - "Bloc 2 · NFS multiplataforma":
+          - "NFS · WS2022 com a servidor": ut4/bloc2-nfs-windows/01-nfs-windows-server-2022.md
+          - "NFS · Ubuntu servidor → Windows client": ut4/bloc2-nfs-windows/02-nfs-ubuntu-client-windows.md
+      - "Bloc 3 · Ubuntu al domini Active Directory":
+          - "Ubuntu → AD: realmd": ut4/bloc3-linux-ad/01-ubuntu-ad-realmd.md
+          - "sssd.conf per a AD": ut4/bloc3-linux-ad/02-sssd-active-directory.md
+          - "Kerberos a Linux": ut4/bloc3-linux-ad/03-kerberos-linux.md
+          - "oddjob-mkhomedir": ut4/bloc3-linux-ad/04-oddjob-mkhomedir.md
+      - "Bloc 4 · Samba com a AD DC":
+          - "Samba AD DC · Arquitectura i preparació": ut4/bloc4-samba-ad-dc/01-samba-ad-dc-arquitectura.md
+          - "Windows 11 → Samba AD DC": ut4/bloc4-samba-ad-dc/02-windows-samba-ad-dc.md
+          - "Ubuntu 24.04 → Samba AD DC": ut4/bloc4-samba-ad-dc/03-ubuntu-samba-ad-dc.md
+      - "Bloc 5 · Recursos i ACLs":
+          - "Recursos compartits i ACLs POSIX": ut4/bloc5-recursos-acls/01-recursos-acls-domini.md
+      - "Bloc 6 · Diagnòstic integral":
+          - "Diagnòstic integral UT4": ut4/bloc6-diagnostic/01-diagnostic-integral-ut4.md
       - "SpeedRun · Projectes":
-          - "Projecte 41 · Windows AD": ut4/speedrun/projecte41.md
-          - "Projecte 42 · OpenLDAP": ut4/speedrun/projecte42.md
-          - "Projecte 43 · Samba-AD DC": ut4/speedrun/projecte43.md
-          - "Projecte 44 · Dossier preguntes": ut4/speedrun/projecte44.md
+          - "Projecte 41 · Ubuntu → WS2022 AD": ut4/speedrun/projecte41.md
+          - "Projecte 42 · Samba AD DC": ut4/speedrun/projecte42.md
+          - "Projecte 44 · NFS multiplataforma": ut4/speedrun/projecte44.md
+          - "Projecte 45 · Dossier de preguntes": ut4/speedrun/projecte45.md
 
 plugins:
   - search
