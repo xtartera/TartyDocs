@@ -1,0 +1,114 @@
+/* ══════════════════════════════════════════
+   TARTY DOCS — CSS personalitzat
+   ══════════════════════════════════════════ */
+
+/* ── Capçaleres principals ── */
+.md-content h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  border-bottom: 4px solid var(--md-primary-fg-color);
+  padding-bottom: 0.4em;
+  margin-bottom: 1em;
+}
+
+.md-content h2 {
+  border-left: 5px solid var(--md-primary-fg-color);
+  padding-left: 0.75em;
+  margin-top: 2em;
+  font-weight: 600;
+}
+
+.md-content h3 {
+  color: var(--md-primary-fg-color);
+  font-weight: 600;
+}
+
+/* ── Tabs: pestanyes més grans i visibles ── */
+.md-typeset .tabbed-labels > label {
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  padding: 0.75em 1.5em;
+  text-transform: uppercase;
+}
+
+/* ── Taules: capçalera en color primari ── */
+.md-typeset table:not([class]) {
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.md-typeset table:not([class]) th {
+  background-color: var(--md-primary-fg-color);
+  color: var(--md-primary-bg-color);
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+}
+
+.md-typeset table:not([class]) tr:nth-child(even) {
+  background-color: var(--md-code-bg-color);
+}
+
+/* ── Grid cards: més grans i amb ombra ── */
+.md-typeset .grid.cards > ul > li,
+.md-typeset .grid.cards > ol > li {
+  border: 1px solid var(--md-primary-fg-color--light);
+  border-radius: 8px;
+  padding: 1.2em 1.4em;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.md-typeset .grid.cards > ul > li:hover,
+.md-typeset .grid.cards > ol > li:hover {
+  box-shadow: 0 6px 20px rgba(0,0,0,0.14);
+  transform: translateY(-2px);
+}
+
+/* ── Admonitions: arrodonides ── */
+.md-typeset .admonition,
+.md-typeset details {
+  border-radius: 8px;
+  margin: 1.5em 0;
+}
+
+/* ── Blocs de codi ── */
+.md-typeset pre > code {
+  font-size: 0.85rem;
+  border-radius: 6px;
+}
+
+/* ── Separadors ── */
+.md-typeset hr {
+  border-color: var(--md-primary-fg-color--light);
+  margin: 2.5em 0;
+  opacity: 0.4;
+}
+
+/* ── Icones grans a les cards ── */
+.md-typeset .grid.cards .lg {
+  font-size: 2rem;
+}
+
+/* ── Navegació: làmina del mòdul actiu destacada ── */
+.md-nav__link--active {
+  font-weight: 700;
+  color: var(--md-primary-fg-color) !important;
+}
+
+/* ── Peu de pàgina de navegació (anterior/següent) ── */
+.md-footer-nav__link {
+  border-top: 3px solid var(--md-primary-fg-color);
+}
+
+/* ── Barra de cerca: arrodonida ── */
+.md-search__form {
+  border-radius: 999px;
+}
+
+/* ── Pàgina d'inici: amplada completa ── */
+.md-content[data-md-component="content"] article.md-content__inner h1:first-child {
+  font-size: 2.4rem;
+}
