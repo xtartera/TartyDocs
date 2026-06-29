@@ -34,9 +34,6 @@ tags:
         A["1. OUs\n(usuaris-base.ldif)"] --> B["2. Grups\n(grups.ldif)"]
         B --> C["3. Usuaris\n(alumnes.ldif)"]
 
-        style A fill:#1565C0,color:#fff
-        style B fill:#1B5E20,color:#fff
-        style C fill:#E65100,color:#fff
     ```
 
     No pots afegir un usuari a `ou=usuaris` si aquesta OU no existeix. No pots referenciar `gidNumber: 2001` si el grup no existeix (tècnicament, LDAP no valida la referència, però el sistema pot comportar-se incorrectament).

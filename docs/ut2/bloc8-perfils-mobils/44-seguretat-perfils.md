@@ -63,8 +63,6 @@ tags:
         C2["Client: procés de pere.costa\nUID=1002, GID=2001"] -- "NFS: llegeix /perfils/maria.puig" --> S2["Servidor: comprova permisos\n/perfils/maria.puig: 700, owner=1001"]
         S2 --> NOK["UID 1002 ≠ propietari\n❌ Permission denied"]
 
-        style OK fill:#1B5E20,color:#fff
-        style NOK fill:#B71C1C,color:#fff
     ```
 
     **Implicació important**: si un atacant aconseguís crear un procés amb UID 1001 en qualsevol client autoritzat, podria accedir als fitxers de `maria.puig`. Per això, la seguretat del client és tan important com la del servidor.

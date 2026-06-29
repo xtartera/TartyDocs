@@ -95,10 +95,6 @@ tags:
         SS -->|"Trobat!"| R["uid=1001\ngid=2001\n/perfils/maria.puig"]
         F -->|"Trobat"| R2["Resultat immediat\n(usuaris locals)"]
 
-        style Q fill:#1565C0,color:#fff
-        style SS fill:#6A1B9A,color:#fff
-        style R fill:#1B5E20,color:#fff
-        style R2 fill:#1B5E20,color:#fff
     ```
 
     Els usuaris locals (`root`, `www-data`, etc.) es troben a `files` i **mai** arriben a consultar SSSD. Únicament els usuaris que no existeixen localment (com `maria.puig`) acaben consultats a LDAP via SSSD.

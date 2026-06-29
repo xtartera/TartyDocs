@@ -26,13 +26,6 @@ tags:
         top --> shadow["shadowAccount\nuserPassword, shadowLastChange..."]
         top --> posixG["posixGroup\ngidNumber, memberUid"]
 
-        style top fill:#455A64,color:#fff
-        style person fill:#546E7A,color:#fff
-        style orgPerson fill:#607D8B,color:#fff
-        style inetOrg fill:#1565C0,color:#fff
-        style posix fill:#E65100,color:#fff
-        style shadow fill:#6A1B9A,color:#fff
-        style posixG fill:#1B5E20,color:#fff
     ```
 
     ## Les tres objectClasses dels usuaris UT2

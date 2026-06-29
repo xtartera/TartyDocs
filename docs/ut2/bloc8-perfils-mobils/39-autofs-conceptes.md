@@ -41,9 +41,6 @@ tags:
         AUTOFS["autofs (dimoni)"] --> AM
         AUTOFS --> AP
 
-        style AM fill:#1565C0,color:#fff
-        style AP fill:#1B5E20,color:#fff
-        style AUTOFS fill:#4A148C,color:#fff
     ```
 
     | Fitxer | Propòsit |
