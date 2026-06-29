@@ -36,14 +36,14 @@ tags:
         B --> G["uid=anna.valls"]
         C --> H["cn=alumnes"]
 
-        style A fill:#1565C0,color:#000
-        style B fill:#0277BD,color:#000
-        style C fill:#0277BD,color:#000
-        style D fill:#558B2F,color:#000
-        style E fill:#2E7D32,color:#000
-        style F fill:#2E7D32,color:#000
-        style G fill:#2E7D32,color:#000
-        style H fill:#6A1B9A,color:#000
+        style A fill:#1565C0,color:#fff
+        style B fill:#0277BD,color:#fff
+        style C fill:#0277BD,color:#fff
+        style D fill:#558B2F,color:#fff
+        style E fill:#2E7D32,color:#fff
+        style F fill:#2E7D32,color:#fff
+        style G fill:#2E7D32,color:#fff
+        style H fill:#6A1B9A,color:#fff
     ```
 
     ## Components del DN (Distinguished Name)
