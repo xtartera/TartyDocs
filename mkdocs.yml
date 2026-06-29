@@ -258,6 +258,12 @@ nav:
           - "Projecte 44 · NFS multiplataforma": ut4/speedrun/projecte44.md
           - "Projecte 45 · Dossier de preguntes": ut4/speedrun/projecte45.md
 
+extra:
+  mermaid:
+    theme:
+      light: base
+      dark: dark
+
 plugins:
   - search
   - tags
