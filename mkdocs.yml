@@ -185,6 +185,50 @@ nav:
 
   - UT3 · Compartició de recursos:
       - Presentació: ut3/index.md
+      - "Bloc 1 · Conceptes":
+          - "Protocols de compartició": ut3/bloc1-conceptes/01-conceptes-comparticio-recursos.md
+          - "Comparativa Samba / NFS / CUPS": ut3/bloc1-conceptes/02-comparativa-samba-nfs-cups.md
+      - "Bloc 2 · Samba: instal·lació":
+          - "Arquitectura i instal·lació": ut3/bloc2-samba-installacio/03-samba-arquitectura-installacio.md
+          - "smb.conf: estructura": ut3/bloc2-samba-installacio/04-smb-conf-estructura.md
+          - "Accés lliure (guest ok)": ut3/bloc2-samba-installacio/05-samba-acces-lliure.md
+      - "Bloc 3 · Samba: control d'accés":
+          - "Accés restringit (valid users)": ut3/bloc3-samba-acces/06-samba-acces-restringit.md
+          - "Accés per grups Linux": ut3/bloc3-samba-acces/07-samba-acces-grups.md
+          - "smbpasswd: usuaris Samba": ut3/bloc3-samba-acces/08-smbpasswd-usuaris.md
+      - "Bloc 4 · Samba: gestió avançada":
+          - "Permisos compostos (mask, force)": ut3/bloc4-samba-avanzat/09-samba-permisos-mascara.md
+          - "Quotes i límits de fitxer": ut3/bloc4-samba-avanzat/10-samba-quotes-limits.md
+          - "Integració Samba + LDAP": ut3/bloc4-samba-avanzat/11-samba-integracio-ldap.md
+      - "Bloc 5 · NFS: servidor":
+          - "NFS: arquitectura i conceptes": ut3/bloc5-nfs-servidor/12-nfs-arquitectura-conceptes.md
+          - "NFS: instal·lació del servidor": ut3/bloc5-nfs-servidor/13-nfs-servidor-installacio.md
+          - "/etc/exports: opcions": ut3/bloc5-nfs-servidor/14-etc-exports-opcions.md
+          - "exportfs i showmount": ut3/bloc5-nfs-servidor/15-exportfs-showmount.md
+      - "Bloc 6 · NFS: client i seguretat":
+          - "Muntatge manual NFS": ut3/bloc6-nfs-client-seguretat/16-nfs-client-muntatge-manual.md
+          - "Muntatge persistent (/etc/fstab)": ut3/bloc6-nfs-client-seguretat/17-nfs-muntatge-fstab.md
+          - "Control d'accés per IP": ut3/bloc6-nfs-client-seguretat/18-nfs-control-acces-ip.md
+          - "Opcions de seguretat (noexec, nosuid)": ut3/bloc6-nfs-client-seguretat/19-nfs-opcions-seguretat.md
+          - "UFW i ports NFS": ut3/bloc6-nfs-client-seguretat/20-nfs-ufw-ports.md
+          - "all_squash, anonuid, anongid": ut3/bloc6-nfs-client-seguretat/21-nfs-all-squash-uid-gid.md
+      - "Bloc 7 · CUPS: instal·lació":
+          - "CUPS: arquitectura i instal·lació": ut3/bloc7-cups-installacio/22-cups-arquitectura-installacio.md
+          - "Interfície web (port 631)": ut3/bloc7-cups-installacio/23-cups-interficie-web.md
+          - "Impressora PDF virtual": ut3/bloc7-cups-installacio/24-cups-impressora-pdf-virtual.md
+          - "Ordres d'impressió": ut3/bloc7-cups-installacio/25-cups-ordres-impressio.md
+      - "Bloc 8 · CUPS: compartició":
+          - "Compartició en xarxa": ut3/bloc8-cups-comparticio/26-cups-comparticio-xarxa.md
+          - "Restriccions per grups": ut3/bloc8-cups-comparticio/27-cups-restriccions-grups.md
+          - "PPD i URI d'impressora": ut3/bloc8-cups-comparticio/28-cups-ppd-uri.md
+          - "Samba + Windows printing": ut3/bloc8-cups-comparticio/29-cups-samba-windows.md
+      - "Bloc 9 · Diagnòstic":
+          - "Diagnòstic integral UT3": ut3/bloc9-diagnostic/30-diagnostic-integral-ut3.md
+      - "SpeedRun · Projectes":
+          - "Projecte 31 · Samba": ut3/speedrun/projecte31.md
+          - "Projecte 32 · NFS": ut3/speedrun/projecte32.md
+          - "Projecte 33 · CUPS": ut3/speedrun/projecte33.md
+          - "Projecte 34 · Dossier preguntes": ut3/speedrun/projecte34.md
 
   - UT4 · Sistemes heterogenis:
       - Presentació: ut4/index.md
