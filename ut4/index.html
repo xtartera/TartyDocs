@@ -6863,10 +6863,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#projecte-41-windows-active-directory" class="md-nav__link">
+  <a href="#projecte-41-ubuntu-ws2022-ad" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Projecte 41 · Windows Active Directory
+        Projecte 41 · Ubuntu → WS2022 AD
       
     </span>
   </a>
@@ -6874,10 +6874,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#projecte-42-openldap-multiplataforma" class="md-nav__link">
+  <a href="#projecte-42-samba-com-a-ad-dc" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Projecte 42 · OpenLDAP multiplataforma
+        Projecte 42 · Samba com a AD DC
       
     </span>
   </a>
@@ -6885,10 +6885,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#projecte-43-samba-com-a-ad-dc" class="md-nav__link">
+  <a href="#projecte-44-nfs-multiplataforma" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Projecte 43 · Samba com a AD DC
+        Projecte 44 · NFS multiplataforma
       
     </span>
   </a>
@@ -6896,10 +6896,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#projecte-44-dossier-de-preguntes" class="md-nav__link">
+  <a href="#projecte-45-dossier-de-preguntes" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Projecte 44 · Dossier de preguntes
+        Projecte 45 · Dossier de preguntes
       
     </span>
   </a>
@@ -7935,7 +7935,7 @@
       
       
       
-        <span class="md-tag">ldap</span>
+        <span class="md-tag">nfs</span>
       
     
       
@@ -7959,7 +7959,7 @@
 <h1 id="ut4-integracio-de-sistemes-heterogenis"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 1c-1.11 0-2 .89-2 2v4c0 1.11.89 2 2 2H1v2h12V9h-3c1.11 0 2-.89 2-2V3c0-1.11-.89-2-2-2zm0 2h6v4H4zM3 13v7h7v-2H5v-5zm11 0c-1.11 0-2 .89-2 2v4c0 1.11.89 2 2 2h-3v2h12v-2h-3c1.11 0 2-.89 2-2v-4c0-1.11-.89-2-2-2zm0 2h6v4h-6z"/></svg></span> UT4 · Integració de sistemes heterogenis<a class="headerlink" href="#ut4-integracio-de-sistemes-heterogenis" title="Permanent link">&para;</a></h1>
 <div class="admonition abstract">
 <p class="admonition-title">Presentació de la unitat</p>
-<p>En aquesta unitat integrem entorns <strong>Windows i Linux</strong> en un únic directori d'usuaris. Treballem les tres grans solucions de directori: <strong>Active Directory</strong> (Windows Server 2022), <strong>OpenLDAP multiplataforma</strong> (Ubuntu amb clients Windows via pGina) i <strong>Samba com a controlador de domini AD-compatible</strong>. Apliquem polítiques de grup (GPO), perfils mòbils, ACLs esteses i integració creuada de clients.</p>
+<p>En aquesta unitat integrem entorns <strong>Windows i Linux</strong> en un únic directori d'usuaris. Treballem <strong>NFS multiplataforma</strong>, la integració d'<strong>Ubuntu al domini Active Directory</strong> (realmd + SSSD + Kerberos) i <strong>Samba com a controlador de domini AD-compatible</strong>. Apliquem recursos compartits, ACLs esteses i diagnòstic integral.</p>
 </div>
 <h2 id="blocs-de-la-unitat">Blocs de la unitat<a class="headerlink" href="#blocs-de-la-unitat" title="Permanent link">&para;</a></h2>
 <table>
@@ -7974,65 +7974,57 @@
 <tbody>
 <tr>
 <td><strong>Bloc 1</strong></td>
-<td><a href="bloc1-conceptes/01-sistemes-heterogenis-conceptes/">Conceptes d'integració</a></td>
-<td>P41–P43</td>
-<td>Sistemes heterogenis, protocols (LDAP, Kerberos, SMB, NFS), comparativa</td>
+<td><a href="bloc1-conceptes/00-anatomia-infraestructura-heterogenia/">Conceptes d'integració</a></td>
+<td>P41–P45</td>
+<td>Anatomia infraestructura, protocols (LDAP, Kerberos, SMB, NFS), comparativa</td>
 </tr>
 <tr>
 <td><strong>Bloc 2</strong></td>
-<td><a href="bloc2-active-directory/03-active-directory-arquitectura.md">Active Directory</a></td>
-<td>P41</td>
-<td>Forest, DC, DNS integrat, OUs, usuaris i grups</td>
+<td><a href="bloc2-nfs-windows/01-nfs-windows-server-2022/">NFS multiplataforma</a></td>
+<td>P44</td>
+<td>WS2022 servidor NFS, Ubuntu servidor NFS, Client for NFS Windows</td>
 </tr>
 <tr>
 <td><strong>Bloc 3</strong></td>
-<td><a href="bloc3-gpo-recursos-windows/08-gpo-group-policy-management.md">GPO i recursos Windows</a></td>
+<td><a href="bloc3-linux-ad/01-ubuntu-ad-realmd/">Ubuntu al domini AD</a></td>
 <td>P41</td>
-<td>Group Policy, restriccions, perfils mòbils Windows, backups</td>
+<td>realmd, sssd.conf, Kerberos, oddjob-mkhomedir</td>
 </tr>
 <tr>
 <td><strong>Bloc 4</strong></td>
-<td><a href="bloc4-linux-ad/12-windows11-unio-domini.md">Linux al domini AD</a></td>
-<td>P41</td>
-<td>Windows 11 al domini, Ubuntu+realmd+sssd, Kerberos, mkhomedir</td>
-</tr>
-<tr>
-<td><strong>Bloc 5</strong></td>
-<td><a href="bloc5-openldap-multiplataforma/17-openldap-dit-ous.md">OpenLDAP multiplataforma</a></td>
+<td><a href="bloc4-samba-ad-dc/01-samba-ad-dc-arquitectura/">Samba com a AD DC</a></td>
 <td>P42</td>
-<td>PAM+NSS, pGina, perfils NFS+LDAP, validació creuada</td>
-</tr>
-<tr>
-<td><strong>Bloc 6</strong></td>
-<td><a href="bloc6-samba-ad-dc/22-samba-ad-dc-arquitectura.md">Samba com a AD DC</a></td>
-<td>P43</td>
 <td><code>samba-tool domain provision</code>, clients Windows i Linux al Samba-AD</td>
 </tr>
 <tr>
-<td><strong>Bloc 7</strong></td>
-<td><a href="bloc7-recursos-acls/27-recursos-compartits-domini.md">Recursos i ACLs</a></td>
-<td>P43</td>
-<td>Recursos compartits al domini, <code>setfacl</code>/<code>getfacl</code>, <code>acl_xattr</code>, diagnòstic</td>
+<td><strong>Bloc 5</strong></td>
+<td><a href="bloc5-recursos-acls/01-recursos-acls-domini/">Recursos i ACLs</a></td>
+<td>P42</td>
+<td>Recursos compartits al domini, <code>setfacl</code>/<code>getfacl</code>, <code>acl_xattr</code></td>
+</tr>
+<tr>
+<td><strong>Bloc 6</strong></td>
+<td><a href="bloc6-diagnostic/01-diagnostic-integral-ut4/">Diagnòstic integral</a></td>
+<td>P41–P45</td>
+<td>Flowchart diagnòstic, ordres clau, taula d'errors freqüents</td>
 </tr>
 </tbody>
 </table>
 <h2 id="mapa-de-la-unitat">Mapa de la unitat<a class="headerlink" href="#mapa-de-la-unitat" title="Permanent link">&para;</a></h2>
 <pre class="mermaid"><code>graph LR
-    B1["Bloc 1\nConceptes"] --&gt; B2["Bloc 2\nActive\nDirectory"]
-    B2 --&gt; B3["Bloc 3\nGPO i\nrecursos"]
-    B3 --&gt; B4["Bloc 4\nLinux\nal domini"]
-    B1 --&gt; B5["Bloc 5\nOpenLDAP\nmultiplat."]
-    B1 --&gt; B6["Bloc 6\nSamba\nAD DC"]
-    B4 --&gt; B7["Bloc 7\nRecursos\ni ACLs"]
-    B5 --&gt; B7
-    B6 --&gt; B7
-    click B1 "bloc1-conceptes/01-sistemes-heterogenis-conceptes/" "Obrir Bloc 1"
-    click B2 "bloc2-active-directory/03-active-directory-arquitectura/" "Obrir Bloc 2"
-    click B3 "bloc3-gpo-recursos-windows/08-gpo-group-policy-management/" "Obrir Bloc 3"
-    click B4 "bloc4-linux-ad/12-windows11-unio-domini/" "Obrir Bloc 4"
-    click B5 "bloc5-openldap-multiplataforma/17-openldap-dit-ous/" "Obrir Bloc 5"
-    click B6 "bloc6-samba-ad-dc/22-samba-ad-dc-arquitectura/" "Obrir Bloc 6"
-    click B7 "bloc7-recursos-acls/27-recursos-compartits-domini/" "Obrir Bloc 7"</code></pre>
+    B1["Bloc 1\nConceptes"] --&gt; B2["Bloc 2\nNFS\nmultiplat."]
+    B1 --&gt; B3["Bloc 3\nUbuntu\nal domini AD"]
+    B1 --&gt; B4["Bloc 4\nSamba\nAD DC"]
+    B3 --&gt; B5["Bloc 5\nRecursos\ni ACLs"]
+    B4 --&gt; B5
+    B2 --&gt; B6["Bloc 6\nDiagnòstic\nintegral"]
+    B5 --&gt; B6
+    click B1 "bloc1-conceptes/00-anatomia-infraestructura-heterogenia/" "Obrir Bloc 1"
+    click B2 "bloc2-nfs-windows/01-nfs-windows-server-2022/" "Obrir Bloc 2"
+    click B3 "bloc3-linux-ad/01-ubuntu-ad-realmd/" "Obrir Bloc 3"
+    click B4 "bloc4-samba-ad-dc/01-samba-ad-dc-arquitectura/" "Obrir Bloc 4"
+    click B5 "bloc5-recursos-acls/01-recursos-acls-domini/" "Obrir Bloc 5"
+    click B6 "bloc6-diagnostic/01-diagnostic-integral-ut4/" "Obrir Bloc 6"</code></pre>
 <hr />
 <h2 id="speedrun-projectes-interactius">SpeedRun · Projectes interactius<a class="headerlink" href="#speedrun-projectes-interactius" title="Permanent link">&para;</a></h2>
 <p>Aplica els continguts de la UT4 amb projectes pràctics al quadern digital. Cada projecte té activitats guiades, autodesat automàtic i exportació en PDF.</p>
@@ -8040,31 +8032,31 @@
 <ul>
 <li>
 <p><span class="twemoji lg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 12V6.75l6-1.32v6.48zm17-9v8.75l-10 .15V5.21zM3 13l6 .09v6.81l-6-1.15zm17 .25V22l-10-1.91V13.1z"/></svg></span></p>
-<h3 id="projecte-41-windows-active-directory">Projecte 41 · Windows Active Directory<a class="headerlink" href="#projecte-41-windows-active-directory" title="Permanent link">&para;</a></h3>
-<p>Desplega un DC amb Windows Server 2022, gestiona OUs, GPOs, clients W11 i Ubuntu al domini AD.</p>
-<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10 10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67-.75 1.23L11 13V7z"/></svg></span> 10–12 h &nbsp;·&nbsp; Blocs 1–4 &nbsp;·&nbsp; RA2, RA3, RA4, RA5, RA6</p>
+<h3 id="projecte-41-ubuntu-ws2022-ad">Projecte 41 · Ubuntu → WS2022 AD<a class="headerlink" href="#projecte-41-ubuntu-ws2022-ad" title="Permanent link">&para;</a></h3>
+<p>Uneix un client Ubuntu a un domini Windows Server 2022 Active Directory amb realmd, SSSD i Kerberos.</p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10 10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67-.75 1.23L11 13V7z"/></svg></span> 10–12 h &nbsp;·&nbsp; Blocs 1, 3 &nbsp;·&nbsp; RA4, RA5, RA6</p>
 <p><a class="md-button md-button--primary" href="speedrun/projecte41/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Veure el projecte</a></p>
 </li>
 <li>
-<p><span class="twemoji lg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 19h1a1 1 0 0 1 1 1h7v2h-7a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1H2v-2h7a1 1 0 0 1 1-1h1v-2H4a1 1 0 0 1-1-1v-4a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1h-7zM4 3h16a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1m5 4h1V5H9zm0 8h1v-2H9zM5 5v2h2V5zm0 8v2h2v-2z"/></svg></span></p>
-<h3 id="projecte-42-openldap-multiplataforma">Projecte 42 · OpenLDAP multiplataforma<a class="headerlink" href="#projecte-42-openldap-multiplataforma" title="Permanent link">&para;</a></h3>
-<p>Configura OpenLDAP amb clients Ubuntu (PAM/NSS), Windows (pGina) i perfils mòbils NFS.</p>
-<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10 10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67-.75 1.23L11 13V7z"/></svg></span> 10–12 h &nbsp;·&nbsp; Blocs 1, 5 &nbsp;·&nbsp; RA2, RA3, RA4, RA5, RA6</p>
+<p><span class="twemoji lg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 15h-2v2h2m0-6h-2v2h2m2 6h-8v-2h2v-2h-2v-2h2v-2h-2V9h8M10 7H8V5h2m0 6H8V9h2m0 6H8v-2h2m0 6H8v-2h2M6 7H4V5h2m0 6H4V9h2m0 6H4v-2h2m0 6H4v-2h2m6-10V3H2v18h20V7z"/></svg></span></p>
+<h3 id="projecte-42-samba-com-a-ad-dc">Projecte 42 · Samba com a AD DC<a class="headerlink" href="#projecte-42-samba-com-a-ad-dc" title="Permanent link">&para;</a></h3>
+<p>Desplega Samba-AD DC (libretic.local), uneix clients Windows i Ubuntu, comparteix recursos amb ACLs.</p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10 10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67-.75 1.23L11 13V7z"/></svg></span> 12–14 h &nbsp;·&nbsp; Blocs 1, 4–5 &nbsp;·&nbsp; RA4, RA5, RA6</p>
 <p><a class="md-button md-button--primary" href="speedrun/projecte42/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Veure el projecte</a></p>
 </li>
 <li>
-<p><span class="twemoji lg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 15h-2v2h2m0-6h-2v2h2m2 6h-8v-2h2v-2h-2v-2h2v-2h-2V9h8M10 7H8V5h2m0 6H8V9h2m0 6H8v-2h2m0 6H8v-2h2M6 7H4V5h2m0 6H4V9h2m0 6H4v-2h2m0 6H4v-2h2m6-10V3H2v18h20V7z"/></svg></span></p>
-<h3 id="projecte-43-samba-com-a-ad-dc">Projecte 43 · Samba com a AD DC<a class="headerlink" href="#projecte-43-samba-com-a-ad-dc" title="Permanent link">&para;</a></h3>
-<p>Desplega Samba-AD DC (libretic.local), uneix clients Windows i Ubuntu, comparteix recursos amb ACLs.</p>
-<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10 10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67-.75 1.23L11 13V7z"/></svg></span> 10–12 h &nbsp;·&nbsp; Blocs 1, 6–7 &nbsp;·&nbsp; RA1, RA2, RA3, RA4, RA5, RA6</p>
-<p><a class="md-button md-button--primary" href="speedrun/projecte43.md"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Veure el projecte</a></p>
+<p><span class="twemoji lg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 15V5a2 2 0 0 1 2-2h6l2 2h6a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-6v2h1a1 1 0 0 1 1 1h7v2h-7a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1H2v-2h7a1 1 0 0 1 1-1h1v-2H5a2 2 0 0 1-2-2"/></svg></span></p>
+<h3 id="projecte-44-nfs-multiplataforma">Projecte 44 · NFS multiplataforma<a class="headerlink" href="#projecte-44-nfs-multiplataforma" title="Permanent link">&para;</a></h3>
+<p>Configura NFS bidireccional: WS2022 com a servidor NFS i Ubuntu com a servidor NFS per a clients Windows.</p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10 10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67-.75 1.23L11 13V7z"/></svg></span> 8–10 h &nbsp;·&nbsp; Bloc 2 &nbsp;·&nbsp; RA4, RA5</p>
+<p><a class="md-button md-button--primary" href="speedrun/projecte44/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Veure el projecte</a></p>
 </li>
 <li>
 <p><span class="twemoji lg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 18h2v-2h-2zm1-12a4 4 0 0 0-4 4h2a2 2 0 0 1 2-2 2 2 0 0 1 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5a4 4 0 0 0-4-4M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2"/></svg></span></p>
-<h3 id="projecte-44-dossier-de-preguntes">Projecte 44 · Dossier de preguntes<a class="headerlink" href="#projecte-44-dossier-de-preguntes" title="Permanent link">&para;</a></h3>
+<h3 id="projecte-45-dossier-de-preguntes">Projecte 45 · Dossier de preguntes<a class="headerlink" href="#projecte-45-dossier-de-preguntes" title="Permanent link">&para;</a></h3>
 <p>Consolida i avalua els coneixements teòrics de tota la unitat per blocs.</p>
-<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10 10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67-.75 1.23L11 13V7z"/></svg></span> 3–5 h &nbsp;·&nbsp; UT4 completa &nbsp;·&nbsp; RA2–RA6</p>
-<p><a class="md-button md-button--primary" href="speedrun/projecte44/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Veure el projecte</a></p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10 10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67-.75 1.23L11 13V7z"/></svg></span> 3–4 h &nbsp;·&nbsp; UT4 completa &nbsp;·&nbsp; RA4, RA5, RA6</p>
+<p><a class="md-button md-button--primary" href="speedrun/projecte45/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Veure el projecte</a></p>
 </li>
 </ul>
 </div>
@@ -8084,19 +8076,19 @@
 <td>AD DS bàsic</td>
 <td>OpenLDAP bàsic</td>
 <td>Samba + LDAP</td>
-<td>AD avançat + Samba-AD DC</td>
+<td>Samba-AD DC</td>
 </tr>
 <tr>
 <td>GPO bàsiques</td>
 <td>SSSD per LDAP</td>
 <td>—</td>
-<td>SSSD per AD, GPOs avançades</td>
+<td>SSSD per AD</td>
 </tr>
 <tr>
 <td>Carpetes NTFS</td>
 <td>NFS bàsic</td>
 <td>NFS avançat</td>
-<td>NFS perfils roaming LDAP</td>
+<td>NFS multiplataforma</td>
 </tr>
 <tr>
 <td>Clients W11 al domini</td>
@@ -8108,13 +8100,7 @@
 <td>—</td>
 <td>—</td>
 <td>—</td>
-<td>pGina: Windows → LDAP</td>
-</tr>
-<tr>
-<td>Backups bàsics</td>
-<td>—</td>
-<td>—</td>
-<td>Veeam + PowerShell + Robocopy</td>
+<td>ACLs POSIX + acl_xattr</td>
 </tr>
 </tbody>
 </table>
