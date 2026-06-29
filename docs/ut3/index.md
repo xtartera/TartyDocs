@@ -14,6 +14,8 @@ tags:
 !!! abstract "Presentació de la unitat"
     En aquesta unitat treballem amb les tres principals tecnologies de **compartició de recursos** en entorns Linux: **Samba** (protocol SMB per a Windows i Linux), **NFS** (Network File System natiu Linux) i **CUPS** (Common UNIX Printing System per a impressió en xarxa). Apliquem criteris de seguretat, gestionem usuaris i permisos, i integrem amb l'OpenLDAP de la UT2.
 
+![Imatge UT3](../assets/Imatge-UT3.png)
+
 ## Blocs de la unitat
 
 | Bloc | Títol | Projecte | Contingut principal |

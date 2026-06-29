@@ -13,6 +13,8 @@ tags:
 !!! abstract "Presentació de la unitat"
     En aquesta unitat treballem amb **Ubuntu Server 24.04 LTS** com a plataforma de serveis de xarxa. Aprendrem a administrar un servidor Linux, a gestionar identitats amb **OpenLDAP**, a integrar l'autenticació amb **SSSD**, i a implementar **perfils mòbils** mitjançant NFS i autofs — l'equivalent Linux del que vam fer amb Active Directory i Windows Server a la UT1.
 
+![Imatge UT2](../assets/Imatge-UT2.png)
+
 ## Blocs de la unitat
 
 | Bloc | Títol | Projecte | Contingut principal |
