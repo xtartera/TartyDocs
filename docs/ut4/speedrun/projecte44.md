@@ -1,32 +1,33 @@
 ---
-title: Projecte 44 · Dossier de preguntes UT4
-icon: material/help-circle
+title: Projecte 44 · NFS multiplataforma
+icon: material/folder-network
 hide:
   - toc
 ---
 
-# Projecte 44 · Dossier de preguntes UT4
+# Projecte 44 · NFS multiplataforma
 
 !!! abstract "De què tracta"
-    Dossier d'avaluació final de la UT4. Preguntes de comprensió i reflexió que cobreixen els tres projectes (P41, P42, P43) i les competències transversals de diagnòstic en entorns heterogenis.
+    Desplega **NFS en un entorn heterogeni**: configura Windows Server 2022 com a servidor NFS per a clients Ubuntu, i Ubuntu com a servidor NFS per a clients Windows. Verifica el muntatge bidireccional i la gestió de permisos entre sistemes.
 
 | :material-clock-outline: Durada | :material-account: Modalitat | :material-book-open-variant: Blocs | :material-school: RA avaluats |
 |:---:|:---:|:---:|:---:|
-| **3–4 hores** | Individual | **UT4 · Blocs 1–7** | **RA4 · RA5 · RA6** |
+| **8–10 hores** | Individual | **UT4 · Bloc 2** | **RA4 · RA5** |
 
 ## Objectius
 
-- Demostrar la comprensió dels conceptes fonamentals d'Active Directory, OpenLDAP i Samba-AD DC
-- Explicar els protocols d'autenticació (Kerberos, LDAP, PAM, NSS) i el seu paper en la integració
-- Justificar decisions tècniques en l'elecció de solució de directori
-- Aplicar el protocol de diagnòstic sistemàtic davant d'errors d'integració
-- Comparar les tres solucions estudiades segons criteris tècnics i econòmics
+- Instal·lar i configurar *Server for NFS* a Windows Server 2022
+- Muntar recursos NFS de WS2022 des d'un client Ubuntu (`/etc/fstab`)
+- Instal·lar i configurar `nfs-kernel-server` a Ubuntu
+- Muntar recursos NFS d'Ubuntu des d'un client Windows (*Client for NFS*)
+- Gestionar permisos i opcions d'exportació (`/etc/exports`)
 
 ## Material necessari
 
-- Apunts de la UT4 (accessible des del botó inferior)
-- Notes i captures dels projectes P41, P42 i P43
-- Els quaderns completats de cada projecte
+- Windows Server 2022 (VM) — servidor NFS
+- Ubuntu 24.04 LTS (VM) — servidor NFS i client NFS
+- Windows 10/11 Pro (VM) — client NFS
+- Accés SSH als servidors Ubuntu
 
 ---
 
@@ -53,6 +54,6 @@ hide:
 </div>
 
 !!! tip "Recomanacions"
-    - Per a les preguntes procedimentals, inclou les ordres exactes i la sortida esperada.
-    - Per a les preguntes conceptuals, usa les teves pròpies paraules: la còpia literal dels apunts penalitza.
-    - Revisa el protocol de diagnòstic de la pàgina 30 (Diagnòstic integral UT4) abans de respondre el Bloc D.
+    - Verifica sempre la connectivitat bàsica (`ping`) entre les màquines **abans** d'intentar muntar via NFS.
+    - Comprova el firewall dels dos costats: el port **2049 (NFS)** i el **111 (portmapper)** han d'estar oberts.
+    - Usa `showmount -e <IP_servidor>` des del client per confirmar que el servidor exporta correctament abans de muntar.

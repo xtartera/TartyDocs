@@ -1,34 +1,34 @@
 ---
-title: Projecte 42 · OpenLDAP multiplataforma
-icon: material/linux
+title: Projecte 42 · Samba com a AD DC (libretic.local)
+icon: material/server-network
 hide:
   - toc
 ---
 
-# Projecte 42 · OpenLDAP multiplataforma
+# Projecte 42 · Samba com a AD DC (libretic.local)
 
 !!! abstract "De què tracta"
-    Desplega un servidor **OpenLDAP** a Ubuntu i integra-hi clients Linux (via PAM+NSS) i clients Windows (via pGina). Implementa perfils mòbils amb NFS i autofs, i comparteix recursos amb Samba autenticat contra LDAP.
+    Desplega **Samba 4 com a Active Directory Domain Controller** del domini `libretic.local`. Crea usuaris i grups amb `samba-tool`, uneix clients Windows i Linux al domini, i configura recursos compartits amb control d'accés per grups i ACLs esteses.
 
 | :material-clock-outline: Durada | :material-account: Modalitat | :material-book-open-variant: Blocs | :material-school: RA avaluats |
 |:---:|:---:|:---:|:---:|
-| **10–12 hores** | Individual | **UT4 · Blocs 1, 5** | **RA4 · RA5 · RA6** |
+| **12–14 hores** | Individual | **UT4 · Blocs 1, 6, 7** | **RA4 · RA5 · RA6** |
 
 ## Objectius
 
-- Instal·lar i configurar OpenLDAP (`slapd`) amb estructura DIT multiplataforma
-- Crear usuaris POSIX amb els atributs necessaris per a l'autenticació Linux
-- Integrar clients Ubuntu via PAM+NSS (`libnss-ldapd`, `libpam-ldapd`, `nslcd`)
-- Configurar pGina a Windows per autenticar contra LDAP
-- Implementar perfils mòbils amb NFS i autofs (`/etc/auto.master`, `/etc/auto.homes`)
-- Verificar l'autenticació amb `getent`, `id` i SSH
+- Desplegar Samba-AD DC amb `samba-tool domain provision --use-rfc2307`
+- Crear usuaris (ana, marc, clara) i grups (tecnics, comptabilitat, direccio) al domini
+- Unir un client Windows 11 al domini `LIBRETIC` i verificar el login
+- Unir un client Ubuntu amb `realm join` + SSSD i verificar `id` i SSH
+- Crear recursos compartits `[tecnics]` i `[comuna]` amb `valid users = @grup`
+- Aplicar ACLs POSIX (`setfacl`) i ACLs NTFS via `vfs objects = acl_xattr`
 
 ## Material necessari
 
-- Servidor Ubuntu 24.04 LTS — servidor LDAP + NFS (mínim 2 GB RAM)
-- Client Ubuntu 24.04 LTS — client PAM+NSS
-- Client Windows 10/11 — per a pGina
-- Accés SSH als servidors
+- Ubuntu 24.04 LTS — DC Samba (mínim 2 GB RAM, hostname `dc1.libretic.local`)
+- Windows 11 Pro — client del domini LIBRETIC
+- Ubuntu 24.04 LTS — client Linux del domini
+- Accés SSH al servidor DC
 
 ---
 
@@ -42,7 +42,7 @@ hide:
 
     El quadern es considerarà **APTE** quan totes les activitats hagin estat resoltes i la documentació sigui completa, coherent i suficient.
 
-    [:octicons-arrow-right-24: Obrir el quadern](https://quadern-digital-v11-2.vercel.app/moduls/mp224/unitat_treball4.html?p=2){ .md-button .md-button--primary }
+    [:octicons-arrow-right-24: Obrir el quadern](https://quadern-digital-v11-2.vercel.app/moduls/mp224/unitat_treball4.html?p=3){ .md-button .md-button--primary }
 
 - :material-book-open-page-variant:{ .lg }
 
@@ -55,6 +55,6 @@ hide:
 </div>
 
 !!! tip "Recomanacions"
-    - Assegura't que els UIDs i GIDs LDAP coincideixen entre el servidor NFS i tots els clients. Les inconsistències fan que els fitxers del home NFS apareguin com a propietat d'un número desconegut.
-    - Verifica amb `getent passwd usuari` i `id usuari` abans d'intentar el login SSH.
-    - A pGina, usa el botó "Simulate" per confirmar la configuració LDAP abans del primer login real.
+    - Desactiva `smbd` i `nmbd` **abans** d'activar `samba-ad-dc`. Tots dos serveis en conflicte impediran l'arrencada del DC.
+    - Verifica sempre els SRV records amb `host -t SRV _ldap._tcp.libretic.local 127.0.0.1` just després del provision.
+    - La sincronització horària és crítica: Kerberos rebutja tickets amb més de 5 minuts de diferència.
