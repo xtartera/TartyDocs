@@ -7975,13 +7975,7 @@
     SSSD &lt;--&gt;|"ldap://192.168.100.10"| SLAPD
     SLAPD --- DIT
     SSSD &lt;--&gt; CACHE
-
-    style U fill:#1565C0,color:#fff
-    style SSSD fill:#6A1B9A,color:#fff
-    style SLAPD fill:#1B5E20,color:#fff
-    style CACHE fill:#E65100,color:#fff
-    style PAM fill:#880E4F,color:#fff
-    style NSS fill:#004D40,color:#fff</code></pre>
+</code></pre>
 <p>SSSD té dos rols principals:</p>
 <table>
 <thead>
@@ -8064,13 +8058,7 @@
     C --&gt; D["31\nVerificar\namb getent i id"]
     D --&gt; E["32\nDiagnòstic\namb sssctl"]
     E --&gt; F["33\nLogin real\nam maria.puig"]
-
-    style A fill:#1565C0,color:#fff
-    style B fill:#6A1B9A,color:#fff
-    style C fill:#004D40,color:#fff
-    style D fill:#1B5E20,color:#fff
-    style E fill:#E65100,color:#fff
-    style F fill:#880E4F,color:#fff</code></pre>
+</code></pre>
 <div class="admonition tip">
 <p class="admonition-title">Connexió amb UT1</p>
 <p>A Windows Server, integrar un client al domini Active Directory és equivalent a "unir-se al domini" (<em>Join Domain</em>). Linux no té aquest concepte natiu, però SSSD fa la mateixa funció: ensenya al sistema operatiu a consultar un directori central per resoldre usuaris i grups. La diferència és que a Windows ho fas amb un clic (<em>System Properties → Computer Name → Change</em>); a Linux ho fas editant <code>sssd.conf</code> i <code>nsswitch.conf</code>.</p>

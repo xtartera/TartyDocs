@@ -8012,12 +8012,7 @@
     PAM["3. Login (su / ssh)\nPAM verifica credencials\nobre sessió a /perfils/maria.puig"] --&gt; AUTOFS
     AUTOFS["4. autofs\ndetecta accés a /perfils/maria.puig\nmunta NFS automàticament"] --&gt; NFS
     NFS["5. NFS\n192.168.100.10:/perfils/maria.puig\n→ /perfils/maria.puig al client"]
-
-    style LDAP fill:#1565C0,color:#fff
-    style SSSD fill:#6A1B9A,color:#fff
-    style PAM fill:#4A148C,color:#fff
-    style AUTOFS fill:#1B5E20,color:#fff
-    style NFS fill:#E65100,color:#fff</code></pre>
+</code></pre>
 <h2 id="estructura-de-directoris-al-servidor">Estructura de directoris al servidor<a class="headerlink" href="#estructura-de-directoris-al-servidor" title="Permanent link">&para;</a></h2>
 <p>Al servidor (<code>192.168.100.10</code>), la carpeta <code>/perfils/</code> conté un subdirectori per a cada usuari LDAP:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>/perfils/

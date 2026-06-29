@@ -8065,9 +8065,7 @@
     B --&gt; C["Login de l'usuari"]
     C --&gt; D["pam_mkhomedir\ncrea /perfils/maria.puig\nsi no existeix"]
     D --&gt; E["Sessió oberta\na /perfils/maria.puig"]
-
-    style A fill:#1565C0,color:#fff
-    style E fill:#1B5E20,color:#fff</code></pre>
+</code></pre>
 <h3 id="configuracio-tipica-a-2204">Configuració típica a 22.04<a class="headerlink" href="#configuracio-tipica-a-2204" title="Permanent link">&para;</a></h3>
 <p><strong><code>/etc/fstab</code></strong> (al client):
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>192.168.100.10:/perfils    /perfils    nfs    defaults,_netdev    0 0
@@ -8091,10 +8089,7 @@
     D --&gt; E["Sessió oberta\na /perfils/maria.puig"]
     E --&gt; F["Inactivitat &gt; 60 s"]
     F --&gt; G["autofs desmunta\nautomàticament"]
-
-    style A fill:#1565C0,color:#fff
-    style E fill:#1B5E20,color:#fff
-    style G fill:#6A1B9A,color:#fff</code></pre>
+</code></pre>
 <h3 id="configuracio-a-2404-el-que-hem-fet-als-blocs-7-i-8">Configuració a 24.04 (el que hem fet als Blocs 7 i 8)<a class="headerlink" href="#configuracio-a-2404-el-que-hem-fet-als-blocs-7-i-8" title="Permanent link">&para;</a></h3>
 <p><strong><code>/etc/auto.master</code></strong>:
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>/perfils    /etc/auto.perfils    --timeout=60 --ghost

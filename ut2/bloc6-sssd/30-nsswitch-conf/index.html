@@ -8088,11 +8088,7 @@
     S --&gt;|"No trobat"| SS["sss\nSSSD → LDAP"]
     SS --&gt;|"Trobat!"| R["uid=1001\ngid=2001\n/perfils/maria.puig"]
     F --&gt;|"Trobat"| R2["Resultat immediat\n(usuaris locals)"]
-
-    style Q fill:#1565C0,color:#fff
-    style SS fill:#6A1B9A,color:#fff
-    style R fill:#1B5E20,color:#fff
-    style R2 fill:#1B5E20,color:#fff</code></pre>
+</code></pre>
 <p>Els usuaris locals (<code>root</code>, <code>www-data</code>, etc.) es troben a <code>files</code> i <strong>mai</strong> arriben a consultar SSSD. Únicament els usuaris que no existeixen localment (com <code>maria.puig</code>) acaben consultats a LDAP via SSSD.</p>
 <h2 id="verificacio-rapida">Verificació ràpida<a class="headerlink" href="#verificacio-rapida" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c1"># Verifica que els canvis han tingut efecte</span>

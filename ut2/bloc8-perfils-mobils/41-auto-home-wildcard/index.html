@@ -8115,9 +8115,7 @@
     A["Accés a /perfils/anna.valls"] --&gt; B["autofs consulta auto.perfils\n* coincideix amb anna.valls"]
     B --&gt; C["&amp; = anna.valls\nmunta 192.168.100.10:/perfils/anna.valls"]
     C --&gt; D["/perfils/anna.valls\ndisponible al client"]
-
-    style A fill:#1565C0,color:#fff
-    style D fill:#1B5E20,color:#fff</code></pre>
+</code></pre>
 <h2 id="creacio-de-etcautoperfils">Creació de /etc/auto.perfils<a class="headerlink" href="#creacio-de-etcautoperfils" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>sudo<span class="w"> </span>nano<span class="w"> </span>/etc/auto.perfils
 </code></pre></div>
@@ -8198,12 +8196,7 @@
     D --&gt;|Sí| H{"getent passwd maria.puig\nretorna homeDirectory=/perfils/...?"}
     H --&gt;|No| I["SSSD no funciona\n→ revisa Bloc 6"]
     H --&gt;|Sí| J["Funciona correctament"]
-
-    style A fill:#B71C1C,color:#fff
-    style C fill:#1565C0,color:#fff
-    style F fill:#1B5E20,color:#fff
-    style G fill:#6A1B9A,color:#fff
-    style J fill:#1B5E20,color:#fff</code></pre>
+</code></pre>
 <details class="question">
 <summary>Auto-avaluació</summary>
 <p><strong>1.</strong> Explica per quin motiu <code>*</code> i <code>&amp;</code> permeten gestionar 100 usuaris amb una sola línia a <code>auto.perfils</code>.</p>
