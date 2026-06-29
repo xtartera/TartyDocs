@@ -174,6 +174,14 @@ nav:
           - "Seguretat de perfils": ut2/bloc8-perfils-mobils/44-seguretat-perfils.md
       - "Bloc 9 · Diagnòstic":
           - "Diagnòstic integral Linux": ut2/bloc9-diagnostic/45-diagnostic-integral-linux.md
+      - "SpeedRun · Projectes":
+          - "Projecte 21 · Instal·lació Ubuntu": ut2/speedrun/projecte21.md
+          - "Projecte 22 · LDAP amb LDIF": ut2/speedrun/projecte22.md
+          - "Projecte 23 · LDAP multiusuari": ut2/speedrun/projecte23.md
+          - "Projecte 24 · LDAP CRUD": ut2/speedrun/projecte24.md
+          - "Projecte 25 · SSSD": ut2/speedrun/projecte25.md
+          - "Projecte 26 · Perfils mòbils": ut2/speedrun/projecte26.md
+          - "Projecte 27 · Dossier preguntes": ut2/speedrun/projecte27.md
 
   - UT3 · Compartició de recursos:
       - Presentació: ut3/index.md
