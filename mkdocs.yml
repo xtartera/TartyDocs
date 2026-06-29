@@ -9,14 +9,14 @@ theme:
 
   palette:
     - scheme: default
-      primary: teal
-      accent: green
+      primary: light blue
+      accent: cyan
       toggle:
         icon: material/brightness-7
         name: Canvia a mode fosc
     - scheme: slate
-      primary: teal
-      accent: green
+      primary: light blue
+      accent: cyan
       toggle:
         icon: material/brightness-4
         name: Canvia a mode clar
