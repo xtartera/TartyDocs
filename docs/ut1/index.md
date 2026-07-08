@@ -89,7 +89,7 @@ Aplica els continguts de la UT1 amb projectes pràctics al quadern digital. Cada
 
     Desplega Windows Server 2022 en entorn virtualitzat des de zero.
 
-    :material-clock-outline: 4–6 h &nbsp;·&nbsp; Blocs 1–3 &nbsp;·&nbsp; RA1, RA5
+    :material-clock-outline: 1 h &nbsp;·&nbsp; Blocs 1–3 &nbsp;·&nbsp; RA1, RA5
 
     [:octicons-arrow-right-24: Veure el projecte](speedrun/projecte1.md){ .md-button .md-button--primary }
 
@@ -99,7 +99,7 @@ Aplica els continguts de la UT1 amb projectes pràctics al quadern digital. Cada
 
     Instal·la AD DS i promou el servidor a Controlador de Domini.
 
-    :material-clock-outline: 4–6 h &nbsp;·&nbsp; Blocs 3–4 &nbsp;·&nbsp; RA2, RA3
+    :material-clock-outline: 1 h &nbsp;·&nbsp; Blocs 3–4 &nbsp;·&nbsp; RA2, RA3
 
     [:octicons-arrow-right-24: Veure el projecte](speedrun/projecte2.md){ .md-button .md-button--primary }
 
@@ -109,7 +109,7 @@ Aplica els continguts de la UT1 amb projectes pràctics al quadern digital. Cada
 
     Gestiona usuaris avançats, permisos NTFS i carpetes compartides.
 
-    :material-clock-outline: 4–6 h &nbsp;·&nbsp; Blocs 5–7 &nbsp;·&nbsp; RA3, RA4
+    :material-clock-outline: 1 h &nbsp;·&nbsp; Blocs 5–7 &nbsp;·&nbsp; RA3, RA4
 
     [:octicons-arrow-right-24: Veure el projecte](speedrun/projecte3.md){ .md-button .md-button--primary }
 
@@ -119,7 +119,7 @@ Aplica els continguts de la UT1 amb projectes pràctics al quadern digital. Cada
 
     Aplica polítiques de grup globals i per UO, i configura perfils mòbils.
 
-    :material-clock-outline: 5–7 h &nbsp;·&nbsp; Blocs 8–9 &nbsp;·&nbsp; RA4, RA5
+    :material-clock-outline: 1 h &nbsp;·&nbsp; Blocs 8–9 &nbsp;·&nbsp; RA4, RA5
 
     [:octicons-arrow-right-24: Veure el projecte](speedrun/projecte4.md){ .md-button .md-button--primary }
 
@@ -129,7 +129,7 @@ Aplica els continguts de la UT1 amb projectes pràctics al quadern digital. Cada
 
     Configura el roaming complet amb redirecció de carpetes i sufix .V6.
 
-    :material-clock-outline: 5–7 h &nbsp;·&nbsp; Bloc 9 &nbsp;·&nbsp; RA5
+    :material-clock-outline: 1 h &nbsp;·&nbsp; Bloc 9 &nbsp;·&nbsp; RA5
 
     [:octicons-arrow-right-24: Veure el projecte](speedrun/projecte5.md){ .md-button .md-button--primary }
 
