@@ -135,7 +135,7 @@ Aplica els continguts de la UT1 amb projectes pràctics al quadern digital. Cada
 
 - :material-help-box:{ .lg }
 
-    ### Projecte 7 · Dossier de preguntes
+    ### Projecte 6 · Dossier de preguntes
 
     Consolida i avalua els coneixements teòrics de tota la unitat per blocs.
 
