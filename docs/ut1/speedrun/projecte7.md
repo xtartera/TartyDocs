@@ -1,18 +1,18 @@
 ---
-title: Projecte 7 · Dossier de preguntes per blocs
+title: Projecte 6 · Dossier de preguntes UT1 [OPCIONAL]
 icon: material/microsoft-windows
 hide:
   - toc
 ---
 
-# Projecte 7 · Dossier de preguntes per blocs
+# Projecte 6 · Dossier de preguntes per blocs
 
 !!! abstract "De què tracta"
     Dossier de **preguntes teòriques i pràctiques organitzat per blocs** per consolidar i avaluar els coneixements adquirits a tota la UT1. Treballaràs la comprensió conceptual, la terminologia tècnica i la relació entre teoria i pràctica.
 
 | :material-clock-outline: Durada | :material-account: Modalitat | :material-book-open-variant: Blocs | :material-school: RA avaluats |
 |:---:|:---:|:---:|:---:|
-| **3–5 hores** | Individual | **UT1 completa** | **RA1 · RA2 · RA3 · RA4 · RA5** |
+| **3 hores** | Individual | **UT1 completa** | **RA1 · RA2 · RA3 · RA4 · RA5** |
 
 ## Objectius
 
