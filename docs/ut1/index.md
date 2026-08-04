@@ -133,16 +133,6 @@ Aplica els continguts de la UT1 amb projectes pràctics al quadern digital. Cada
 
     [:octicons-arrow-right-24: Veure el projecte](speedrun/projecte5.md){ .md-button .md-button--primary }
 
-- :material-trophy:{ .lg }
-
-    ### Projecte integrador
-
-    Implanta una infraestructura AD completa per a l'Institut Montseny.
-
-    :material-clock-outline: 8–10 h &nbsp;·&nbsp; UT1 completa &nbsp;·&nbsp; RA1–RA5
-
-    [:octicons-arrow-right-24: Veure el projecte](speedrun/projecte6.md){ .md-button .md-button--primary }
-
 - :material-help-box:{ .lg }
 
     ### Projecte 7 · Dossier de preguntes
