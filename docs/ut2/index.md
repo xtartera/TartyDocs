@@ -122,7 +122,7 @@ Aplica els continguts de la UT2 amb projectes pràctics al quadern digital. Cada
 
 - :material-help-box:{ .lg }
 
-    ### Projecte 27 · Dossier de preguntes
+    ### Projecte 27 · Dossier de preguntes OPCIONAL
 
     Consolida i avalua els coneixements teòrics de tota la unitat per blocs.
 
