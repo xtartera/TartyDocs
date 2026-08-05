@@ -66,7 +66,7 @@ Aplica els continguts de la UT2 amb projectes pràctics al quadern digital. Cada
 
     Desplega Ubuntu Server 24.04 LTS en entorn virtualitzat des de zero.
 
-    :material-clock-outline: 4–6 h &nbsp;·&nbsp; Blocs 1–2 &nbsp;·&nbsp; RA1
+    :material-clock-outline: 4 h &nbsp;·&nbsp; Blocs 1–2 &nbsp;·&nbsp; RA1
 
     [:octicons-arrow-right-24: Veure el projecte](speedrun/projecte21.md){ .md-button .md-button--primary }
 
@@ -76,7 +76,7 @@ Aplica els continguts de la UT2 amb projectes pràctics al quadern digital. Cada
 
     Instal·la OpenLDAP i crea usuaris i grups POSIX amb fitxers LDIF.
 
-    :material-clock-outline: 5–7 h &nbsp;·&nbsp; Blocs 3–4 &nbsp;·&nbsp; RA2, RA3
+    :material-clock-outline: 4 h &nbsp;·&nbsp; Blocs 3–4 &nbsp;·&nbsp; RA2, RA3
 
     [:octicons-arrow-right-24: Veure el projecte](speedrun/projecte22.md){ .md-button .md-button--primary }
 
@@ -86,7 +86,7 @@ Aplica els continguts de la UT2 amb projectes pràctics al quadern digital. Cada
 
     Amplia el directori amb múltiples usuaris i grups garantint la coherència UID/GID.
 
-    :material-clock-outline: 4–6 h &nbsp;·&nbsp; Blocs 4–5 &nbsp;·&nbsp; RA3
+    :material-clock-outline: 4 h &nbsp;·&nbsp; Blocs 4–5 &nbsp;·&nbsp; RA3
 
     [:octicons-arrow-right-24: Veure el projecte](speedrun/projecte23.md){ .md-button .md-button--primary }
 
@@ -96,7 +96,7 @@ Aplica els continguts de la UT2 amb projectes pràctics al quadern digital. Cada
 
     Practica totes les operacions CRUD i diagnostica errors freqüents del directori.
 
-    :material-clock-outline: 4–6 h &nbsp;·&nbsp; Bloc 5 &nbsp;·&nbsp; RA3, RA4
+    :material-clock-outline: 4 h &nbsp;·&nbsp; Bloc 5 &nbsp;·&nbsp; RA3, RA4
 
     [:octicons-arrow-right-24: Veure el projecte](speedrun/projecte24.md){ .md-button .md-button--primary }
 
@@ -106,7 +106,7 @@ Aplica els continguts de la UT2 amb projectes pràctics al quadern digital. Cada
 
     Integra LDAP amb el sistema Linux via SSSD i valida l'autenticació real.
 
-    :material-clock-outline: 5–7 h &nbsp;·&nbsp; Bloc 6 &nbsp;·&nbsp; RA4, RA5
+    :material-clock-outline: 4 h &nbsp;·&nbsp; Bloc 6 &nbsp;·&nbsp; RA4, RA5
 
     [:octicons-arrow-right-24: Veure el projecte](speedrun/projecte25.md){ .md-button .md-button--primary }
 
@@ -116,7 +116,7 @@ Aplica els continguts de la UT2 amb projectes pràctics al quadern digital. Cada
 
     Implementa perfils mòbils complets amb NFS, autofs i SSSD.
 
-    :material-clock-outline: 6–8 h &nbsp;·&nbsp; Blocs 7–9 &nbsp;·&nbsp; RA4, RA5
+    :material-clock-outline: 4 h &nbsp;·&nbsp; Blocs 7–9 &nbsp;·&nbsp; RA4, RA5
 
     [:octicons-arrow-right-24: Veure el projecte](speedrun/projecte26.md){ .md-button .md-button--primary }
 
