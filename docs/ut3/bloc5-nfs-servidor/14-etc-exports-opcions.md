@@ -86,7 +86,7 @@ tags:
     El client `.20` té R/W i el `.21` té R/O.
 
     !!! tip "Connexió amb UT2"
-        A la UT2 (pàgina 36) vam veure `/etc/exports` per exportar `/perfils`. La sintaxi és idèntica; ara aprofundim en les opcions de seguretat (`all_squash`, `root_squash`) i en el control per IP.
+        A la UT2 (pàgina 42) vam veure `/etc/exports` per exportar `/perfils`. La sintaxi és idèntica; ara aprofundim en les opcions de seguretat (`all_squash`, `root_squash`) i en el control per IP.
 
     ??? question "Auto-avaluació"
         **1.** Quina diferència hi ha entre `root_squash` (per defecte) i `no_root_squash`?

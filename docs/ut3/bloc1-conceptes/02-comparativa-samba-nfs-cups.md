@@ -12,6 +12,9 @@ tags:
 !!! abstract "Concepte clau"
     Samba, NFS i CUPS no son alternatives sinó tecnologies **complementàries**: Samba per a compartició de fitxers multiplataforma, NFS per a compartició nativa Linux, i CUPS per a gestió d'impressió. Sovint coexisteixen al mateix servidor.
 
+!!! tip "Referència creuada amb la UT1"
+    A la **UT1 · Bloc 7 (Recursos compartits)** vas compartir carpetes i impressores des de **Windows Server** (compartició SMB nativa + permisos NTFS). Aquí fas l'equivalent des de **Linux** amb Samba (el mateix protocol SMB), NFS i CUPS. Val la pena tenir tots dos móns al cap: Samba a Linux "parla" el mateix idioma que la compartició de Windows.
+
 === ":material-notebook-outline: Apunts"
 
     ## Taula comparativa global
