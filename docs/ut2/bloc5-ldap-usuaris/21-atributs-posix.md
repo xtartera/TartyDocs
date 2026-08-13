@@ -50,7 +50,7 @@ tags:
     | Anna Valls | `anna.valls` | `1003` | `2001` | `/perfils/anna.valls` |
 
     !!! warning "homeDirectory és `/perfils/`, no `/home/`"
-        Al laboratori de la UT2, els directoris home van a `/perfils/` (muntat via NFS i autofs al Bloc 7–8), **no** a `/home/`. Si poses `/home/maria.puig`, el perfil mòbil no funcionarà. Comprova sempre aquest valor als fitxers LDIF.
+        Al laboratori de la UT2, els directoris home van a `/perfils/` (muntat via NFS i autofs al Bloc 8–8), **no** a `/home/`. Si poses `/home/maria.puig`, el perfil mòbil no funcionarà. Comprova sempre aquest valor als fitxers LDIF.
 
     ## Comparació: usuari LDAP vs usuari local (`/etc/passwd`)
 
@@ -109,7 +109,7 @@ tags:
         ??? success "Resposta"
             `uid` és el **nom d'usuari en text** (ex: `maria.puig`) — és el que l'usuari escriu per iniciar sessió i el que apareix als permisos de fitxers. `uidNumber` és el **número enter** intern que Linux usa internament per a les operacions de sistema de fitxers i control d'accés. Quan executes `ls -la`, el kernel veu `uidNumber: 1001` i consulta NSS (via SSSD) per saber que correspon a `uid: maria.puig`. Tots dos han de ser únics i estar sincronitzats.
 
-        **3.** Un alumne crea un usuari LDAP amb `homeDirectory: /home/pere.costa`. Quan s'integri amb SSSD i autofs (Bloc 6–8), quin problema apareixerà?
+        **3.** Un alumne crea un usuari LDAP amb `homeDirectory: /home/pere.costa`. Quan s'integri amb SSSD i autofs (Bloc 7–8), quin problema apareixerà?
 
         ??? success "Resposta"
             Al laboratori de UT2, els directoris home dels usuaris LDAP estan a `/perfils/` (NFS exportat des del servidor, muntat dinàmicament per autofs). Si `homeDirectory` apunta a `/home/pere.costa`, el sistema intentarà muntar el perfil a `/home/` en lloc de `/perfils/`. Com que autofs espera que el prefix sigui `/perfils/`, no farà cap muntatge, el directori home no existirà, i l'usuari no podrà iniciar sessió correctament (o iniciarà sessió a un directori temporal). Cal corregir l'atribut: `ldapmodify` amb `changetype: modify` i `replace: homeDirectory`.

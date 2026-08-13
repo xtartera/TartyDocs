@@ -120,7 +120,7 @@ tags:
     | **24.04** (Noble) | Abril 2029 | autofs + NFS necessari per a perfils mòbils; `pam_mkhomedir` no és suficient |
     | **26.04** (futura) | — | Prevista l'abril 2026. Comportament esperat equivalent a 24.04 |
 
-    Aquesta diferència entre 22.04 i 24.04 és important: el Projecte 26 és significativament més complex del que hauria estat amb Ubuntu 22.04. La pàgina [Perfils Ubuntu 22.04 vs 24.04](../bloc8-perfils-mobils/42-perfils-ubuntu22-vs-24.md) ho explica en detall.
+    Aquesta diferència entre 22.04 i 24.04 és important: el Projecte 26 és significativament més complex del que hauria estat amb Ubuntu 22.04. La pàgina [Perfils Ubuntu 22.04 vs 24.04](../bloc9-perfils-mobils/48-perfils-ubuntu22-vs-24.md) ho explica en detall.
 
     ??? question "Auto-avaluació"
 

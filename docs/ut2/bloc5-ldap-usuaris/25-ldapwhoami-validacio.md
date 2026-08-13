@@ -89,7 +89,7 @@ tags:
     | `ldap_bind: Server is unwilling to perform (53)` | 53 | L'usuari no té `userPassword` al LDIF | Afegeix `userPassword: {SSHA}...` via `ldapmodify` |
 
     !!! warning "Error 53: l'usuari no té contrasenya"
-        Si afegeixes un usuari LDIF sense el camp `userPassword`, l'usuari existeix al directori però no pot autenticar-se. `ldapwhoami` retornarà `ldap_bind: Server is unwilling to perform (53)`. Solució: afegir la contrasenya amb `ldapmodify` (Bloc 5).
+        Si afegeixes un usuari LDIF sense el camp `userPassword`, l'usuari existeix al directori però no pot autenticar-se. `ldapwhoami` retornarà `ldap_bind: Server is unwilling to perform (53)`. Solució: afegir la contrasenya amb `ldapmodify` (Bloc 6).
 
     ## Diferència entre `ldapwhoami` i `ldapsearch`
 

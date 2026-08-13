@@ -80,7 +80,7 @@ tags:
 
     ## Com verificar que no hi ha col·lisions
 
-    Un cop SSSD estigui configurat (Bloc 6), pots verificar que els UIDs LDAP no col·lideixen:
+    Un cop SSSD estigui configurat (Bloc 7), pots verificar que els UIDs LDAP no col·lideixen:
 
     ```bash
     # Consulta els UIDs de tots els usuaris (locals + LDAP via SSSD)

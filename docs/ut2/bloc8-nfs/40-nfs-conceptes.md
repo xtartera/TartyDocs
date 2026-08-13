@@ -60,11 +60,11 @@ tags:
     | # | Capa | Component | Funció |
     |----|------|-----------|--------|
     | 1 | Directori | OpenLDAP (slapd) | Emmagatzema usuaris, contrasenyes, `homeDirectory` |
-    | 2 | Integració OS | SSSD + NSS + PAM | Fa que Linux "vegi" els usuaris LDAP (Bloc 6) |
+    | 2 | Integració OS | SSSD + NSS + PAM | Fa que Linux "vegi" els usuaris LDAP (Bloc 7) |
     | 3 | **Fitxers compartits** | **NFS** | **Exporta `/perfils/` per xarxa** |
-    | 4 | Muntatge automàtic | autofs | Munta `/perfils/usuari` quan l'usuari fa login (Bloc 8) |
+    | 4 | Muntatge automàtic | autofs | Munta `/perfils/usuari` quan l'usuari fa login (Bloc 9) |
 
-    Sense NFS (Bloc 7), autofs (Bloc 8) no tindria res a muntar.
+    Sense NFS (Bloc 8), autofs (Bloc 9) no tindria res a muntar.
 
     ## NFS vs SMB/CIFS
 
@@ -79,7 +79,7 @@ tags:
     | **Permisos** | Permisos POSIX (UID/GID) | ACLs de Windows (SID) |
     | **Equivalent al lab** | `exportfs` + `/etc/exports` | Carpetes compartides de Windows Server |
 
-    **Implicació important**: NFS no autentica l'usuari per nom — confia en el **UID/GID**. Per tant, el UID de `maria.puig` ha de ser el mateix al servidor i al client (1001 en els dos casos). Gràcies a SSSD (Bloc 6), ambdós consulten el mateix LDAP i obtenen els mateixos UIDs. Aquesta és exactament la raó per la qual hem establert UIDs fixos des del Bloc 4 (pàgina 21).
+    **Implicació important**: NFS no autentica l'usuari per nom — confia en el **UID/GID**. Per tant, el UID de `maria.puig` ha de ser el mateix al servidor i al client (1001 en els dos casos). Gràcies a SSSD (Bloc 7), ambdós consulten el mateix LDAP i obtenen els mateixos UIDs. Aquesta és exactament la raó per la qual hem establert UIDs fixos des del Bloc 5 (pàgina 21).
 
     ## Ports i serveis NFS
 
@@ -105,7 +105,7 @@ tags:
         **2.** NFS basa els permisos en UID/GID, no en noms d'usuari. Quina implicació té al nostre laboratori?
 
         ??? success "Resposta"
-            El servidor NFS no sap que `maria.puig` (UID 1001) s'ha autenticat — únicament veu que el procés client s'executa amb UID 1001. Per tant, el client ha de tenir el mateix UID 1001 per a `maria.puig` que el servidor. Gràcies a SSSD (Bloc 6), el client obté la informació d'usuaris de LDAP, incloent el UID. Si servidor i client consulten el mateix LDAP, els UIDs seran idèntics i els permisos NFS funcionaran correctament.
+            El servidor NFS no sap que `maria.puig` (UID 1001) s'ha autenticat — únicament veu que el procés client s'executa amb UID 1001. Per tant, el client ha de tenir el mateix UID 1001 per a `maria.puig` que el servidor. Gràcies a SSSD (Bloc 7), el client obté la informació d'usuaris de LDAP, incloent el UID. Si servidor i client consulten el mateix LDAP, els UIDs seran idèntics i els permisos NFS funcionaran correctament.
 
         **3.** Quina diferència hi ha entre NFSv3 i NFSv4 pel que fa al firewall?
 

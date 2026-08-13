@@ -101,7 +101,7 @@ tags:
 
     ### "ldapsearch retorna resultats però SSSD no troba l'usuari"
 
-    Causa habitual: SSSD no és configurat correctament (Bloc 6), però si el problema és LDAP:
+    Causa habitual: SSSD no és configurat correctament (Bloc 7), però si el problema és LDAP:
 
     ```bash
     # Comprova que els atributs POSIX son presents

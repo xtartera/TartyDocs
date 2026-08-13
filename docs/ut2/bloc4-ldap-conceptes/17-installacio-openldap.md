@@ -157,7 +157,7 @@ tags:
         **3.** La sortida de `ldapsearch -x -b "" -s base namingContexts` mostra `namingContexts: dc=ubuntu,dc=local` en lloc de `dc=lafita,dc=local`. Quin és el motiu i com ho soluciones?
 
         ??? success "Resposta"
-            El motiu és que `slapd` s'ha instal·lat quan el hostname era `ubuntu` (el nom per defecte d'Ubuntu) en lloc de `srv-ldap.lafita.local`. El domini base per defecte es deriva del hostname en el moment de la instal·lació. La solució és `sudo dpkg-reconfigure slapd` (pàgina [13 — Configuració base d'OpenLDAP](13-configuracio-base-ldap.md)), que permet canviar el domini sense reinstal·lar.
+            El motiu és que `slapd` s'ha instal·lat quan el hostname era `ubuntu` (el nom per defecte d'Ubuntu) en lloc de `srv-ldap.lafita.local`. El domini base per defecte es deriva del hostname en el moment de la instal·lació. La solució és `sudo dpkg-reconfigure slapd` (pàgina [18 — Configuració base d'OpenLDAP](18-configuracio-base-ldap.md)), que permet canviar el domini sense reinstal·lar.
 
 === ":material-pencil-ruler: Activitat"
 

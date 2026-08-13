@@ -15,7 +15,7 @@ tags:
 
     ## Per quin motiu cal SSSD?
 
-    Al Bloc 5 vam poder fer `ldapwhoami -x -D "uid=maria.puig,..."` i verificar que l'usuari existeix al directori. Però si executes:
+    Al Bloc 6 vam poder fer `ldapwhoami -x -D "uid=maria.puig,..."` i verificar que l'usuari existeix al directori. Però si executes:
 
     ```bash
     id maria.puig
@@ -84,7 +84,7 @@ tags:
     | **Configuració** | Múltiples fitxers (PAM, NSS, ldap.conf) | Un sol fitxer: `sssd.conf` |
     | **Ús recomanat** | Scripts puntuals d'administració | Integració completa del sistema |
 
-    ## Seqüència del que fareu al Bloc 6
+    ## Seqüència del que fareu al Bloc 7
 
     ```mermaid
     flowchart LR
