@@ -1,7 +1,7 @@
 ---
 title: Mapatge d'identitats i permisos en la compartició creuada
 tags:
-  - ut5
+  - ut4
   - heterogenis
   - seguretat
   - acls
@@ -102,7 +102,7 @@ tags:
 
 === ":material-pencil-ruler: Activitat"
 
-    ## Activitat 5.B2 · Segueix el rastre de la propietat
+    ## Activitat 4.B2 · Segueix el rastre de la propietat
 
     **Objectiu**: observar com canvia la propietat i els permisos d'un fitxer que creua la frontera.
     **Temps estimat**: 35 minuts · **Modalitat**: parelles

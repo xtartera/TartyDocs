@@ -1,7 +1,7 @@
 ---
 title: Gestió d'usuaris i grups del domini Samba AD
 tags:
-  - ut5
+  - ut4
   - samba
   - active-directory
   - usuaris
@@ -32,7 +32,7 @@ tags:
     ```
 
     !!! tip "Coherència amb UT1/UT2"
-        Fem servir els mateixos usuaris que a la resta del manual (`maria.puig`, `pere.costa`, `anna.valls`). Així l'alumne reconeix els comptes i pot comparar com es gestiona el mateix usuari a AD (UT1), OpenLDAP (UT2) i Samba-AD (UT5).
+        Fem servir els mateixos usuaris que a la resta del manual (`maria.puig`, `pere.costa`, `anna.valls`). Així l'alumne reconeix els comptes i pot comparar com es gestiona el mateix usuari a AD (UT1), OpenLDAP (UT2) i Samba-AD (UT4).
 
     ## Grups
 
@@ -92,7 +92,7 @@ tags:
 
 === ":material-pencil-ruler: Activitat"
 
-    ## Activitat 5.C3 · Població del domini
+    ## Activitat 4.C3 · Població del domini
 
     **Objectiu**: crear l'estructura d'usuaris i grups del centre.
     **Temps estimat**: 40 minuts · **Modalitat**: individual

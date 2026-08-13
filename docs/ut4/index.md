@@ -12,35 +12,45 @@ tags:
 # :material-lan-connect: UT4 · Integració de sistemes heterogenis
 
 !!! abstract "Presentació de la unitat"
-    En aquesta unitat integrem entorns **Windows i Linux** en un únic directori d'usuaris. Treballem **NFS multiplataforma**, la integració d'**Ubuntu al domini Active Directory** (realmd + SSSD + Kerberos) i **Samba com a controlador de domini AD-compatible**. Apliquem recursos compartits, ACLs esteses i diagnòstic integral.
+    L'eix d'aquesta unitat és **entendre els sistemes operatius heterogenis** a través de la **connexió entre Windows i Linux en tots dos sentits** i, sobretot, les **particularitats i dificultats** que hi apareixen: mapatge d'identitats (UID/GID ↔ SID), traducció de permisos (NTFS ↔ POSIX ↔ ACLs), autenticació creuada (Kerberos, SSSD) i interoperabilitat de protocols (SMB ↔ NFS). Un cop entesa la integració, s'introdueix **Samba com a AD DC** com a *alternativa*: muntar el nostre propi controlador de domini compatible.
 
 ![Imatge UT4](../assets/Imatge-UT4.png)
 
+## Enfocament: primer la connexió, després l'alternativa
+
+```mermaid
+graph LR
+    A["Part A\nFonaments de la\nheterogeneïtat"] --> B["Part B\nConnexió Windows↔Linux\n(els dos sentits)"]
+    B --> C["Part C\nAlternativa:\nSamba com a AD DC"]
+    C --> D["Part D\nRecursos, ACLs\ni diagnòstic"]
+```
+
+L'objectiu pedagògic **no** és muntar un producte concret, sinó entendre *per què* la convivència de mons és difícil i *com* es resol. La Part A i la Part B són el nucli; Samba AD DC és extensió.
+
 ## Blocs de la unitat
 
-| Bloc | Títol | Projecte | Contingut principal |
-|------|-------|---------|---------------------|
-| **Bloc 1** | [Conceptes d'integració](bloc1-conceptes/00-anatomia-infraestructura-heterogenia.md) | P41–P45 | Anatomia infraestructura, protocols (LDAP, Kerberos, SMB, NFS), comparativa |
-| **Bloc 2** | [NFS multiplataforma](bloc2-nfs-windows/01-nfs-windows-server-2022.md) | P44 | WS2022 servidor NFS, Ubuntu servidor NFS, Client for NFS Windows |
-| **Bloc 3** | [Ubuntu al domini AD](bloc3-linux-ad/01-ubuntu-ad-realmd.md) | P41 | realmd, sssd.conf, Kerberos, oddjob-mkhomedir |
-| **Bloc 4** | [Samba com a AD DC](bloc4-samba-ad-dc/01-samba-ad-dc-arquitectura.md) | P42 | `samba-tool domain provision`, clients Windows i Linux al Samba-AD |
-| **Bloc 5** | [Recursos i ACLs](bloc5-recursos-acls/01-recursos-acls-domini.md) | P42 | Recursos compartits al domini, `setfacl`/`getfacl`, `acl_xattr` |
-| **Bloc 6** | [Diagnòstic integral](bloc6-diagnostic/01-diagnostic-integral-ut4.md) | P41–P45 | Flowchart diagnòstic, ordres clau, taula d'errors freqüents |
+| Bloc | Títol | Contingut principal |
+|------|-------|---------------------|
+| **Bloc 1** | [Fonaments de la heterogeneïtat](bloc1-fonaments/00-anatomia-infraestructura-heterogenia.md) | Anatomia, protocols (LDAP, Kerberos, SMB, NFS), comparativa, **particularitats i dificultats** |
+| **Bloc 2** | [Compartició creuada](bloc2-comparticio-creuada/01-nfs-windows-server-2022.md) | NFS multiplataforma, **client SMB des de Linux**, **mapatge d'identitats i permisos** |
+| **Bloc 3** | [Autenticació creuada](bloc3-autenticacio-creuada/01-ubuntu-ad-realmd.md) | Ubuntu al domini AD: realmd, sssd.conf, Kerberos, oddjob-mkhomedir |
+| **Bloc 4** | [Samba com a AD DC *(alternativa)*](bloc4-samba-ad-dc/01-samba-ad-dc-arquitectura.md) | Provisió, domini, usuaris/grups, perfils mòbils, RSAT, comparativa d'estratègies |
+| **Bloc 5** | [Recursos i ACLs](bloc5-recursos-acls/01-recursos-acls-domini.md) | Recursos compartits al domini, `setfacl`/`getfacl`, `acl_xattr` |
+| **Bloc 6** | [Diagnòstic integral](bloc6-diagnostic/01-diagnostic-integral-ut4.md) | Verificació de punta a punta de l'entorn heterogeni |
 
 ## Mapa de la unitat
 
 ```mermaid
 graph LR
-    B1["Bloc 1\nConceptes"] --> B2["Bloc 2\nNFS\nmultiplat."]
-    B1 --> B3["Bloc 3\nUbuntu\nal domini AD"]
-    B1 --> B4["Bloc 4\nSamba\nAD DC"]
-    B3 --> B5["Bloc 5\nRecursos\ni ACLs"]
-    B4 --> B5
-    B2 --> B6["Bloc 6\nDiagnòstic\nintegral"]
-    B5 --> B6
-    click B1 "bloc1-conceptes/00-anatomia-infraestructura-heterogenia/" "Obrir Bloc 1"
-    click B2 "bloc2-nfs-windows/01-nfs-windows-server-2022/" "Obrir Bloc 2"
-    click B3 "bloc3-linux-ad/01-ubuntu-ad-realmd/" "Obrir Bloc 3"
+    B1["Bloc 1\nFonaments"] --> B2["Bloc 2\nCompartició\ncreuada"]
+    B1 --> B3["Bloc 3\nAutenticació\ncreuada"]
+    B2 --> B4["Bloc 4\nSamba AD DC\n(alternativa)"]
+    B3 --> B4
+    B4 --> B5["Bloc 5\nRecursos\ni ACLs"]
+    B5 --> B6["Bloc 6\nDiagnòstic\nintegral"]
+    click B1 "bloc1-fonaments/00-anatomia-infraestructura-heterogenia/" "Obrir Bloc 1"
+    click B2 "bloc2-comparticio-creuada/01-nfs-windows-server-2022/" "Obrir Bloc 2"
+    click B3 "bloc3-autenticacio-creuada/01-ubuntu-ad-realmd/" "Obrir Bloc 3"
     click B4 "bloc4-samba-ad-dc/01-samba-ad-dc-arquitectura/" "Obrir Bloc 4"
     click B5 "bloc5-recursos-acls/01-recursos-acls-domini/" "Obrir Bloc 5"
     click B6 "bloc6-diagnostic/01-diagnostic-integral-ut4/" "Obrir Bloc 6"
@@ -104,6 +114,6 @@ Aplica els continguts de la UT4 amb projectes pràctics al quadern digital. Cada
 |---------------------|-------------------|--------------------|-----------------|
 | AD DS bàsic | OpenLDAP bàsic | Samba + LDAP | Samba-AD DC |
 | GPO bàsiques | SSSD per LDAP | — | SSSD per AD |
-| Carpetes NTFS | NFS bàsic | NFS avançat | NFS multiplataforma |
+| Carpetes NTFS | NFS bàsic | NFS avançat | NFS multiplataforma + client SMB |
 | Clients W11 al domini | Clients Ubuntu LDAP | — | Clients multiplataforma |
-| — | — | — | ACLs POSIX + acl_xattr |
+| — | — | — | Mapatge d'identitats + ACLs POSIX |

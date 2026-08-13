@@ -1,7 +1,7 @@
 ---
 title: Administració remota amb RSAT
 tags:
-  - ut5
+  - ut4
   - samba
   - active-directory
   - rsat
@@ -68,7 +68,7 @@ tags:
 
 === ":material-pencil-ruler: Activitat"
 
-    ## Activitat 5.C5 · Administra amb RSAT
+    ## Activitat 4.C5 · Administra amb RSAT
 
     **Objectiu**: gestionar el domini Samba des d'un client Windows amb eines gràfiques.
     **Temps estimat**: 40 minuts · **Modalitat**: individual

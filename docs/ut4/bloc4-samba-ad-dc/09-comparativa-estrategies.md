@@ -1,7 +1,7 @@
 ---
 title: Comparativa d'estratègies d'integració
 tags:
-  - ut5
+  - ut4
   - samba
   - active-directory
   - conceptes
@@ -45,7 +45,7 @@ tags:
     | Parc majoritàriament Windows amb suport corporatiu | **A** |
     | Entorn educatiu / laboratori / PIME sense llicències | **B** |
 
-    !!! tip "Connexió amb tota la UT5"
+    !!! tip "Connexió amb tota la UT4"
         Sigui quina sigui l'estratègia, les **dificultats de fons són les mateixes** (identitats, permisos, Kerberos/DNS/temps, protocols). Per això la Part A i la Part B són el nucli: canvia *qui fa de DC*, però no *per què és difícil* integrar mons.
 
     !!! info "I Zentyal?"
@@ -69,7 +69,7 @@ tags:
 
 === ":material-pencil-ruler: Activitat"
 
-    ## Activitat 5.C6 · Decideix i defensa
+    ## Activitat 4.C6 · Decideix i defensa
 
     **Objectiu**: triar una estratègia d'integració justificada per a un supòsit.
     **Temps estimat**: 30 minuts · **Modalitat**: individual o debat

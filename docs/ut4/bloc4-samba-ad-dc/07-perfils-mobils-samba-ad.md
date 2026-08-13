@@ -1,7 +1,7 @@
 ---
 title: Perfils mòbils al domini Samba AD
 tags:
-  - ut5
+  - ut4
   - samba
   - perfils
   - active-directory
@@ -80,7 +80,7 @@ tags:
 
 === ":material-pencil-ruler: Activitat"
 
-    ## Activitat 5.C4 · Perfils que viatgen
+    ## Activitat 4.C4 · Perfils que viatgen
 
     **Objectiu**: configurar i validar un perfil mòbil al domini Samba AD.
     **Temps estimat**: 45 minuts · **Modalitat**: individual

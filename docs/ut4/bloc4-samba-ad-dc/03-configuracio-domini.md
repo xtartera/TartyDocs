@@ -1,7 +1,7 @@
 ---
 title: Configuració del domini Samba AD
 tags:
-  - ut5
+  - ut4
   - samba
   - active-directory
   - dns
@@ -93,7 +93,7 @@ tags:
 
 === ":material-pencil-ruler: Activitat"
 
-    ## Activitat 5.C2 · Afina el domini
+    ## Activitat 4.C2 · Afina el domini
 
     **Objectiu**: deixar el DNS, Kerberos i el temps a punt.
     **Temps estimat**: 40 minuts · **Modalitat**: individual
