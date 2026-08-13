@@ -2,6 +2,7 @@ site_name: Sistemes Operatius en Xarxa
 
 exclude_docs: |
   ut1/speedrun/projecte6.md
+  ut5/
 
 site_description: Manual docent · 2n CFGM Sistemes Microinformàtics i Xarxes (SMX)
 site_author: Xavi Tartera
