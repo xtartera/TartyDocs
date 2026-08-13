@@ -1,7 +1,7 @@
 ---
 title: Particularitats i dificultats de la integració
 tags:
-  - ut5
+  - ut4
   - conceptes
   - heterogenis
   - seguretat
@@ -10,7 +10,7 @@ tags:
 # :material-alert-decagram: Particularitats i dificultats de la integració
 
 !!! abstract "Concepte clau"
-    Fer conviure Windows i Linux no és connectar cables: cada món representa les **identitats**, els **permisos**, l'**autenticació** i els **noms** de manera diferent. Aquest capítol és l'eix de la UT5: entendre *on* apareixen les friccions i *per què*.
+    Fer conviure Windows i Linux no és connectar cables: cada món representa les **identitats**, els **permisos**, l'**autenticació** i els **noms** de manera diferent. Aquest capítol és l'eix de la UT4: entendre *on* apareixen les friccions i *per què*.
 
 === ":material-notebook-outline: Apunts"
 
@@ -87,7 +87,7 @@ tags:
 
     ## Resum: el mapa de les friccions
 
-    | Fricció | On apareix a la UT5 |
+    | Fricció | On apareix a la UT4 |
     |---------|---------------------|
     | Identitats SID↔UID/GID | Compartició creuada · Samba AD (`--use-rfc2307`) |
     | Permisos NTFS↔POSIX↔ACL | Compartició creuada · Recursos i ACLs |
@@ -112,7 +112,7 @@ tags:
 
 === ":material-pencil-ruler: Activitat"
 
-    ## Activitat 5.03 · Cataloga les friccions
+    ## Activitat 4.03 · Cataloga les friccions
 
     **Objectiu**: aprendre a identificar de quin tipus és cada dificultat d'integració.
     **Temps estimat**: 25 minuts · **Modalitat**: individual o parelles

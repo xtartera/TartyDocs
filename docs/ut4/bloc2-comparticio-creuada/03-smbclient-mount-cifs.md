@@ -1,7 +1,7 @@
 ---
 title: Accés a comparticions Windows des de Linux
 tags:
-  - ut5
+  - ut4
   - samba
   - windows
   - heterogenis
@@ -17,7 +17,7 @@ tags:
 
     ## On encaixa aquest capítol
 
-    A la UT3 i a la resta de la UT5 hem compartit **de Linux cap a Windows** (Samba, NFS). Aquí fem el sentit contrari: **accedir a un recurs SMB de Windows des d'un client Linux**. És la peça que faltava per tenir la compartició realment **bidireccional**.
+    A la UT3 i a la resta de la UT4 hem compartit **de Linux cap a Windows** (Samba, NFS). Aquí fem el sentit contrari: **accedir a un recurs SMB de Windows des d'un client Linux**. És la peça que faltava per tenir la compartició realment **bidireccional**.
 
     ```mermaid
     graph LR
@@ -129,7 +129,7 @@ tags:
 
 === ":material-pencil-ruler: Activitat"
 
-    ## Activitat 5.B1 · De Windows a Linux
+    ## Activitat 4.B1 · De Windows a Linux
 
     **Objectiu**: accedir a una carpeta compartida de Windows des d'un client Ubuntu, primer de forma interactiva i després muntada.
     **Temps estimat**: 40 minuts · **Modalitat**: individual

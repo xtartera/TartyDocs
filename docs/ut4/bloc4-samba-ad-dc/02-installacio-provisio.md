@@ -1,7 +1,7 @@
 ---
 title: Instal·lació i provisió del domini Samba AD DC
 tags:
-  - ut5
+  - ut4
   - samba
   - active-directory
 ---
@@ -119,7 +119,7 @@ tags:
 
 === ":material-pencil-ruler: Activitat"
 
-    ## Activitat 5.C1 · Provisiona el teu domini
+    ## Activitat 4.C1 · Provisiona el teu domini
 
     **Objectiu**: muntar un domini Samba AD DC funcional des de zero.
     **Temps estimat**: 60 minuts · **Modalitat**: individual
