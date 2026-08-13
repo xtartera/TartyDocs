@@ -3,6 +3,8 @@
 > Anàlisi comparativa entre el material local (TartyDocs · UT1) i el manual de referència [SOX de Sergi Coll](https://sergi-coll.gitbook.io/sox) (UF1).
 > Objectiu: detectar buits i proposar un índex evolucionat que mantingui el que ja tenim i hi afegeixi les novetats.
 
+> **✅ ESTAT: IMPLEMENTAT (2026-08-13).** Aplicat i **publicat** (commit `9624517`). S'han afegit al Bloc 4 els capítols **Boscos, arbres i dominis** (21) i **Relacions de confiança** (22), amb diagrames Mermaid, autoavaluació i enllaç cap a la UT4. UT1 passa de 52 a 54 pàgines. Document mantingut com a **registre històric**.
+
 ---
 
 ## 1. Estat actual del material (què ja tenim)
@@ -48,12 +50,12 @@ Llegenda: *(sense marca)* = ja existent · **[NOU]** = capítol a crear · **[MI
 - **Bloc 3 · Administració** — (11–19) sense canvis
 - **Bloc 4 · Active Directory**
     - Conceptes AD (20)
-    - **[NOU] Boscos, arbres i dominis** — jerarquia, domini arrel, dominis fills, catàleg global
-    - **[NOU] Relacions de confiança** — direccionalitat (unidireccional/bidireccional), transitivitat, casos d'ús; diagrama Mermaid
-    - Unitats Organitzatives (21)
-    - Instal·lació AD DS (22)
-    - Promoció a DC (23)
-    - DNS integrat amb AD (24)
+    - **[FET] Boscos, arbres i dominis** (21) — jerarquia, domini arrel, dominis fills, catàleg global
+    - **[FET] Relacions de confiança** (22) — direccionalitat, transitivitat, confiança vs permís; diagrama Mermaid
+    - Unitats Organitzatives (23)
+    - Instal·lació AD DS (24)
+    - Promoció a DC (25)
+    - DNS integrat amb AD (26)
 - **Bloc 5 · Usuaris i grups** — (25–29) sense canvis
 - **Bloc 6 · Clients al domini** — (30–33) sense canvis
 - **Bloc 7 · Recursos compartits** — (34–38) sense canvis
@@ -61,4 +63,4 @@ Llegenda: *(sense marca)* = ja existent · **[NOU]** = capítol a crear · **[MI
 - **Bloc 9 · Perfils mòbils** — (44–49) sense canvis
 - **Bloc 10 · Diagnòstic** — (50–52) sense canvis
 
-**Resum de feina nova a UT1:** 2 capítols nous al Bloc 4 (boscos/dominis i relacions de confiança) + petites millores d'enllaç i autoavaluació. És la UT amb menys mancances.
+**Resum de feina nova a UT1:** ✅ **Fet.** 2 capítols nous al Bloc 4 (boscos/dominis i relacions de confiança) + millores d'enllaç i autoavaluació. Era la UT amb menys mancances.

@@ -3,6 +3,8 @@
 > Anàlisi comparativa entre el material local (TartyDocs · UT2) i el manual de referència [SOX de Sergi Coll](https://sergi-coll.gitbook.io/sox) (UF2).
 > Objectiu: detectar buits i proposar un índex evolucionat que mantingui el que ja tenim i hi afegeixi les novetats.
 
+> **✅ ESTAT: IMPLEMENTAT (2026-08-13).** Aplicat i **publicat** (commit `41cbadb`). S'ha afegit el nou **Bloc 3 · Administració bàsica de Linux** (permisos, usuaris/grups locals, bash, cron, administració web) i el capítol **Gestió gràfica de LDAP**, amb renumeració global neta. UT2 passa de 45 a 51 pàgines. Document mantingut com a **registre històric**. Únic pendent: el projecte SpeedRun nou (vegeu més avall).
+
 ---
 
 ## 1. Estat actual del material (què ja tenim)
@@ -49,24 +51,26 @@ Aquesta és la UT amb **més mancances**, totes de "administració Linux clàssi
 
 Llegenda: *(sense marca)* = ja existent · **[NOU]** = capítol a crear · **[MILLORA]** = capítol existent a ampliar.
 
+Llegenda actualitzada: *(sense marca)* = ja existent · **[FET]** = desenvolupat · **🔲** = pendent.
+
 - **Bloc 1 · Fonaments Linux** — (01–02) sense canvis
 - **Bloc 2 · Instal·lació i xarxa** — (03–09) sense canvis
-- **[NOU] Bloc · Administració bàsica de Linux**
-    - **[NOU] Gestió d'arxius i permisos** — navegació, `chmod`/`chown`, permisos octals, propietat
-    - **[NOU] Usuaris i grups locals** — `adduser`, `usermod`, `passwd`, `chage`, `/etc/passwd`, `/etc/shadow`, `sudoers`
-    - **[NOU] Introducció als scripts de bash** — shebang, permisos, cometes, variables, condicions i bucles
-    - **[NOU] Automatització amb cron** — `crontab`, format dels 5 camps, exemples pràctics *(enllaç al Planificador de UT1)*
-    - **[NOU] Administració web** — Webmin (i, opcional, monitoratge gràfic tipus Cockpit)
-- **Bloc 3 · LDAP – Conceptes** — (10–15) sense canvis
-- **Bloc 4 · LDAP – Usuaris i grups** — (16–22)
-    - **[NOU] Gestió gràfica de LDAP** — phpLDAPadmin (web) i LAT/LAM (client)
-- **Bloc 5 · LDAP – Operacions CRUD** — (23–26) sense canvis
-- **Bloc 6 · SSSD** — (27–33) sense canvis
-- **Bloc 7 · NFS** — (34–37) sense canvis
-- **Bloc 8 · Perfils mòbils** — (38–44) sense canvis
-- **Bloc 9 · Diagnòstic** — (45) sense canvis
+- **[FET] Bloc 3 · Administració bàsica de Linux** (10–14)
+    - **[FET] Gestió d'arxius i permisos** (10)
+    - **[FET] Usuaris i grups locals** (11)
+    - **[FET] Introducció als scripts de bash** (12)
+    - **[FET] Automatització amb cron** (13) *(enllaç al Planificador de UT1)*
+    - **[FET] Administració web** — Webmin/Cockpit (14)
+- **Bloc 4 · LDAP – Conceptes** — (15–20) *(renumerat)*
+- **Bloc 5 · LDAP – Usuaris i grups** — (21–27)
+    - **[FET] Gestió gràfica de LDAP** — phpLDAPadmin i LAM (28)
+- **Bloc 6 · LDAP – Operacions CRUD** — (29–32) *(renumerat)*
+- **Bloc 7 · SSSD** — (33–39) *(renumerat)*
+- **Bloc 8 · NFS** — (40–43) *(renumerat)*
+- **Bloc 9 · Perfils mòbils** — (44–50) *(renumerat)*
+- **Bloc 10 · Diagnòstic** — (51) *(renumerat)*
 - **SpeedRun**
-    - Projectes existents
-    - **[NOU] Projecte · Administració bàsica + automatització** (usuari local → script → cron)
+    - Projectes existents (21–27)
+    - 🔲 **[PENDENT] Projecte · Administració bàsica + automatització** (usuari local → script → cron)
 
-**Resum de feina nova a UT2:** un bloc nou d'administració bàsica de Linux (5 capítols) + gestió gràfica de LDAP + 1 projecte SpeedRun. És la UT prioritària per créixer.
+**Resum de feina nova a UT2:** ✅ **Fet** el bloc nou d'administració bàsica de Linux (5 capítols) + gestió gràfica de LDAP, amb renumeració neta. Queda pendent només el projecte SpeedRun nou.
