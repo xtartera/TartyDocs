@@ -9,7 +9,7 @@ tags:
 # :material-account-group: LDAP multiusuari: poblar el directori en bloc
 
 !!! abstract "Concepte clau"
-    Un directori LDAP real conté desenes o centenars d'usuaris. En lloc de crear-los un a un, es poblen en **lot** (*batch*): un únic fitxer LDIF amb totes les entrades i una sola crida a `ldapadd`. Aquesta pàgina consolida tot el Bloc 4 en un flux complet de creació multiusuari.
+    Un directori LDAP real conté desenes o centenars d'usuaris. En lloc de crear-los un a un, es poblen en **lot** (*batch*): un únic fitxer LDIF amb totes les entrades i una sola crida a `ldapadd`. Aquesta pàgina consolida tot el Bloc 5 en un flux complet de creació multiusuari.
 
 === ":material-notebook-outline: Apunts"
 
@@ -89,7 +89,7 @@ tags:
     ```
 
     !!! warning "Substitueix els hash SSHA"
-        Cada línia `userPassword: {SSHA}SUBSTITUEIX_PEL_HASH_REAL` s'ha de substituir pel hash real generat amb `slappasswd` (pàgina [18 — slappasswd](18-slappasswd-hash.md)). Si deixes el text `SUBSTITUEIX_PEL_HASH_REAL`, `ldapadd` acceptarà l'entrada però l'autenticació sempre fallarà perquè no serà un hash SSHA vàlid.
+        Cada línia `userPassword: {SSHA}SUBSTITUEIX_PEL_HASH_REAL` s'ha de substituir pel hash real generat amb `slappasswd` (pàgina [23 — slappasswd](23-slappasswd-hash.md)). Si deixes el text `SUBSTITUEIX_PEL_HASH_REAL`, `ldapadd` acceptarà l'entrada però l'autenticació sempre fallarà perquè no serà un hash SSHA vàlid.
 
     ## Execució: un únic fitxer, una única crida
 
@@ -145,7 +145,7 @@ tags:
     sudo dpkg-reconfigure slapd
     # Torna a poblar des del fitxer laboratori-complet.ldif
 
-    # Opció B: elimina les entrades individualment (ldapdelete, Bloc 5)
+    # Opció B: elimina les entrades individualment (ldapdelete, Bloc 6)
     # → Veure pàgina 24-ldapdelete.md
     ```
 
@@ -178,7 +178,7 @@ tags:
         **3.** Quin és l'estat del directori si executes `ldapadd -f laboratori-complet.ldif` dues vegades seguides (sense buidar el directori entre les dues execucions)?
 
         ??? success "Resposta"
-            La primera execució crea totes les entrades amb èxit. La segona execució falla en **cada entrada** amb `ldap_add: Already exists (68)`, perquè tots els DNs ja existeixen. No es produeix cap canvi al directori (les entrades existents no es sobreescriuen). El directori queda amb les entrades de la primera execució — és a dir, en bon estat. Si vols modificar una entrada existent, cal `ldapmodify` (Bloc 5), no `ldapadd`.
+            La primera execució crea totes les entrades amb èxit. La segona execució falla en **cada entrada** amb `ldap_add: Already exists (68)`, perquè tots els DNs ja existeixen. No es produeix cap canvi al directori (les entrades existents no es sobreescriuen). El directori queda amb les entrades de la primera execució — és a dir, en bon estat. Si vols modificar una entrada existent, cal `ldapmodify` (Bloc 6), no `ldapadd`.
 
 === ":material-pencil-ruler: Activitat"
 

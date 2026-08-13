@@ -9,7 +9,7 @@ tags:
 # :material-home-account: Estructura de perfils mòbils Linux
 
 !!! abstract "Concepte clau"
-    Un **perfil mòbil** (*roaming profile*) permet que un usuari trobi el seu directori home — amb tots els seus fitxers — independentment de quin client usi per fer login. A Linux, això s'aconsegueix combinant LDAP (identitat), SSSD (integració), NFS (fitxers per xarxa) i autofs (muntatge automàtic). El Bloc 8 construeix la peça final d'aquesta pila.
+    Un **perfil mòbil** (*roaming profile*) permet que un usuari trobi el seu directori home — amb tots els seus fitxers — independentment de quin client usi per fer login. A Linux, això s'aconsegueix combinant LDAP (identitat), SSSD (integració), NFS (fitxers per xarxa) i autofs (muntatge automàtic). El Bloc 9 construeix la peça final d'aquesta pila.
 
 === ":material-notebook-outline: Apunts"
 
@@ -94,11 +94,11 @@ tags:
         PAM-->>U: sessió oberta a /perfils/maria.puig
     ```
 
-    ## Estat actual vs objectiu del Bloc 8
+    ## Estat actual vs objectiu del Bloc 9
 
-    Al final del Bloc 6, tenies directoris `/perfils/` creats manualment al servidor. Al Bloc 7, has configurat NFS per exportar-los. Al Bloc 8:
+    Al final del Bloc 7, tenies directoris `/perfils/` creats manualment al servidor. Al Bloc 8, has configurat NFS per exportar-los. Al Bloc 9:
 
-    | Cosa | Bloc 6 | Bloc 8 (final) |
+    | Cosa | Bloc 7 | Bloc 9 (final) |
     |------|--------|----------------|
     | `/perfils/` al servidor | Creat manualment | Exportat per NFS |
     | Accés al client | No hi havia (tot local) | Muntat automàticament per autofs |
@@ -110,7 +110,7 @@ tags:
         **1.** Quin atribut LDAP indica al sistema on és el directori home d'un usuari? On es va definir aquest atribut?
 
         ??? success "Resposta"
-            L'atribut `homeDirectory` (de l'objectClass `posixAccount`) indica la ruta del directori home. Es va definir al LDIF de creació d'usuaris al Bloc 4 (pàgina 19): `homeDirectory: /perfils/maria.puig`. SSSD llegeix aquest atribut de LDAP i el proporciona al sistema operatiu quan un procés consulta la informació de l'usuari.
+            L'atribut `homeDirectory` (de l'objectClass `posixAccount`) indica la ruta del directori home. Es va definir al LDIF de creació d'usuaris al Bloc 5 (pàgina 19): `homeDirectory: /perfils/maria.puig`. SSSD llegeix aquest atribut de LDAP i el proporciona al sistema operatiu quan un procés consulta la informació de l'usuari.
 
         **2.** Sense autofs, com hauria de configurar-se el client perquè `maria.puig` pogués fer login i trobar el seu directori home? Quins inconvenients té?
 
@@ -151,7 +151,7 @@ tags:
     | OpenLDAP | ? |
     | SSSD | ? |
     | NFS (exportació) | ? |
-    | autofs (Bloc 8) | ? (pendent) |
+    | autofs (Bloc 9) | ? (pendent) |
 
     ### Part C – Reflexió
 

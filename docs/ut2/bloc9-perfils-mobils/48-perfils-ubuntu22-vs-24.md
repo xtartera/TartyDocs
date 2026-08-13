@@ -88,7 +88,7 @@ tags:
     | Aspecte | Ubuntu 22.04 | Ubuntu 24.04 |
     |---------|-------------|-------------|
     | **Muntatge NFS** | `/etc/fstab` (estàtic, a l'arrencada) | autofs (dinàmic, sota demanda) |
-    | **Creació home** | `pam_mkhomedir` (crea si no existeix) | Manual (Bloc 6) o pre-creat al servidor |
+    | **Creació home** | `pam_mkhomedir` (crea si no existeix) | Manual (Bloc 7) o pre-creat al servidor |
     | **Si el servidor cau a l'arrencada** | Client bloquejat | Client arrenca normalment |
     | **Connexions NFS obertes** | Sempre (des de l'arrencada) | Únicament quan hi ha usuaris actius |
     | **Escalabilitat** | Limitada | Bona (desmunta en inactivitat) |
@@ -136,7 +136,7 @@ tags:
         **2.** Per quin motiu `pam_mkhomedir` no és necessari amb la configuració d'Ubuntu 24.04 que hem fet?
 
         ??? success "Resposta"
-            `pam_mkhomedir` crea el directori home si no existeix en el moment del login. Amb la nostra configuració, els directoris home `/perfils/maria.puig`, `/perfils/pere.costa` i `/perfils/anna.valls` JA EXISTEIXEN al servidor (els vam crear al Bloc 6). autofs els munta sota demanda però no els crea — simplement accedeix al directori existent al servidor. Si necessitéssim que el directori s'creés automàticament per a usuaris nous, hauríem de crear-lo manualment al servidor o usar un script PAM específic.
+            `pam_mkhomedir` crea el directori home si no existeix en el moment del login. Amb la nostra configuració, els directoris home `/perfils/maria.puig`, `/perfils/pere.costa` i `/perfils/anna.valls` JA EXISTEIXEN al servidor (els vam crear al Bloc 7). autofs els munta sota demanda però no els crea — simplement accedeix al directori existent al servidor. Si necessitéssim que el directori s'creés automàticament per a usuaris nous, hauríem de crear-lo manualment al servidor o usar un script PAM específic.
 
         **3.** Trobes un tutorial que diu "afegeix `session optional pam_mkhomedir.so` a `/etc/pam.d/common-session`". Funciona a Ubuntu 24.04 amb la nostra configuració autofs?
 

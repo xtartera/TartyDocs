@@ -150,10 +150,10 @@ tags:
         B -->|No| C["Falta --ghost a auto.master\n→ afegeix --ghost i\nsudo systemctl restart autofs"]
         B -->|Sí| D{"ls /perfils/maria.puig\nfunciona?"}
         D -->|No| E{"showmount -e 192.168.100.10\nmosta /perfils?"}
-        E -->|No| F["NFS no configurat\n→ revisa Bloc 7\n(exportfs -ra)"]
+        E -->|No| F["NFS no configurat\n→ revisa Bloc 8\n(exportfs -ra)"]
         E -->|Sí| G["Comprova /etc/auto.perfils:\n* -rw,soft,intr 192.168.100.10:/perfils/&"]
         D -->|Sí| H{"getent passwd maria.puig\nretorna homeDirectory=/perfils/...?"}
-        H -->|No| I["SSSD no funciona\n→ revisa Bloc 6"]
+        H -->|No| I["SSSD no funciona\n→ revisa Bloc 7"]
         H -->|Sí| J["Funciona correctament"]
 
     ```

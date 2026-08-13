@@ -96,7 +96,7 @@ tags:
 
     ## Prova de muntatge manual
 
-    Abans de configurar autofs (Bloc 8), pots verificar que NFS funciona amb un muntatge manual des del client:
+    Abans de configurar autofs (Bloc 9), pots verificar que NFS funciona amb un muntatge manual des del client:
 
     ```bash
     # Al client (192.168.100.20)
@@ -126,9 +126,9 @@ tags:
     ```
 
     !!! info "Ubuntu 22.04 vs 24.04: muntatge estàtic vs autofs"
-        A Ubuntu 22.04, molts tutorials usaven `/etc/fstab` per muntar NFS permanentment al client. A Ubuntu 24.04, la solució recomanada és **autofs** (Bloc 8): munta el directori automàticament quan l'usuari hi accedeix i el desmunta quan deixa d'usar-lo. La pàgina 42 explica la diferència en detall.
+        A Ubuntu 22.04, molts tutorials usaven `/etc/fstab` per muntar NFS permanentment al client. A Ubuntu 24.04, la solució recomanada és **autofs** (Bloc 9): munta el directori automàticament quan l'usuari hi accedeix i el desmunta quan deixa d'usar-lo. La pàgina 42 explica la diferència en detall.
 
-    ## Flux complet del Bloc 7
+    ## Flux complet del Bloc 8
 
     ```mermaid
     sequenceDiagram

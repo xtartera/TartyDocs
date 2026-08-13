@@ -15,7 +15,7 @@ tags:
 
     ## Per quin motiu cal un entorn de proves?
 
-    Al laboratori, el directori LDAP conté els tres usuaris reals que SSSD (Bloc 6), NFS i autofs (Blocs 7–8) usaran per autenticar logins. Si practiques operacions destructives sobre `ou=usuaris`, pots trencar la integració de tot el sistema.
+    Al laboratori, el directori LDAP conté els tres usuaris reals que SSSD (Bloc 7), NFS i autofs (Blocs 7–8) usaran per autenticar logins. Si practiques operacions destructives sobre `ou=usuaris`, pots trencar la integració de tot el sistema.
 
     L'entorn de proves permet:
     - Provar la sintaxi de fitxers LDIF sense risc
@@ -137,9 +137,9 @@ tags:
     ldapsearch -x -b "dc=lafita,dc=local" -s one "(objectClass=*)" ou
     ```
 
-    ## Resum del cicle CRUD complet del Bloc 5
+    ## Resum del cicle CRUD complet del Bloc 6
 
-    Havent completat el Bloc 5, tens domini sobre les quatre operacions del directori:
+    Havent completat el Bloc 6, tens domini sobre les quatre operacions del directori:
 
     | Operació | Eina | LDIF necessari? | Exemple del laboratori |
     |----------|------|----------------|----------------------|
@@ -156,7 +156,7 @@ tags:
         **1.** Per quin motiu convé tenir una `ou=proves` separada en lloc de simplement crear els usuaris de prova dins de `ou=usuaris`?
 
         ??? success "Resposta"
-            Si crees usuaris de proves a `ou=usuaris`, SSSD (configurat al Bloc 6) els veurà com a usuaris legítims i els integrarà al sistema. Els clients podran intentar fer login amb comptes de proves, podran aparèixer a `getent passwd`, i si autofs (Bloc 8) genera directoris home automàticament, es crearan carpetes innecessàries a `/perfils/`. A `ou=proves`, els usuaris existeixen al directori però, si el filtre SSSD apunta únicament a `ou=usuaris`, seran completament invisibles per al sistema operatiu. La separació és una bona pràctica d'aïllament.
+            Si crees usuaris de proves a `ou=usuaris`, SSSD (configurat al Bloc 7) els veurà com a usuaris legítims i els integrarà al sistema. Els clients podran intentar fer login amb comptes de proves, podran aparèixer a `getent passwd`, i si autofs (Bloc 9) genera directoris home automàticament, es crearan carpetes innecessàries a `/perfils/`. A `ou=proves`, els usuaris existeixen al directori però, si el filtre SSSD apunta únicament a `ou=usuaris`, seran completament invisibles per al sistema operatiu. La separació és una bona pràctica d'aïllament.
 
         **2.** Has practicat modificar i eliminar usuaris a `ou=proves`. Quina ordre emet per verificar que l'entorn de proves està completament net (sense cap entrada) abans de fer el reset?
 
@@ -166,7 +166,7 @@ tags:
             ```
             Si retorna únicament l'entrada `ou=proves` (sense entrades filles), la OU ja es pot eliminar amb `ldapdelete`. Si retorna entrades d'usuaris de proves, cal eliminar-los primer. El compte de resultats al final (`# numEntries: N`) indica quants objectes queden a la OU.
 
-        **3.** Compara el flux de treball LDAP del Bloc 5 (`ldapadd → ldapmodify → ldapdelete`) amb l'equivalent a la UT1 a Active Directory. Quines diferències importants hi ha?
+        **3.** Compara el flux de treball LDAP del Bloc 6 (`ldapadd → ldapmodify → ldapdelete`) amb l'equivalent a la UT1 a Active Directory. Quines diferències importants hi ha?
 
         ??? success "Resposta"
             Diferències clau: (1) **Interfície**: AD usa GUI gràfica (ADUC) o PowerShell; LDAP usa CLI amb fitxers LDIF de text pla. (2) **Transaccions**: AD és transaccional (les operacions que falla reverteix tot el canvi); LDAP bàsic no ho és (si un `ldapadd` de 5 entrades falla a la 3a, les dues primeres ja estan escrites). (3) **Auditoria**: AD integra registres d'auditoria automàtics; a OpenLDAP cal configurar el mòdul `auditlog` manualment. (4) **Comoditat**: crear un usuari amb tots els atributs POSIX per LDIF requereix uns 10–12 atributs escrits manualment; l'assistent d'AD ho fa amb formulari. (5) **Portabilitat**: els fitxers LDIF son text pla versionable amb Git; les operacions AD son gestos de GUI no fàcilment repetibles.

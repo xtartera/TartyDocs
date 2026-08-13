@@ -53,7 +53,7 @@ tags:
     !!! warning "Opció crítica per al laboratori: `no_root_squash`"
         Per defecte, NFS aplica `root_squash`: el procés root del client és remapat a `nobody` (UID 65534) al servidor. Això protegeix el servidor contra un client root maliciós.
 
-        Al nostre laboratori, **autofs** (Bloc 8) corre com a root al client i necessita accedir als punts de muntatge de `/perfils/`. Amb `root_squash`, autofs veuria els fitxers com a `nobody` i fallaria amb `Permission denied`.
+        Al nostre laboratori, **autofs** (Bloc 9) corre com a root al client i necessita accedir als punts de muntatge de `/perfils/`. Amb `root_squash`, autofs veuria els fitxers com a `nobody` i fallaria amb `Permission denied`.
 
         Per a un laboratori educatiu, `no_root_squash` és acceptable. En producció, l'alternativa és NFSv4 amb Kerberos (`sec=krb5`).
 
@@ -80,7 +80,7 @@ tags:
     | `rw` | Els usuaris han de poder escriure al seu perfil |
     | `sync` | Escriptures segures — imprescindible per a fitxers de perfil |
     | `no_subtree_check` | Millora el rendiment; recomanat per a Ubuntu 24.04 |
-    | `no_root_squash` | Necessari per a autofs al Bloc 8 |
+    | `no_root_squash` | Necessari per a autofs al Bloc 9 |
 
     ## Aplicació dels canvis
 
@@ -150,7 +150,7 @@ tags:
         **2.** Per quin motiu `no_root_squash` és necessari per al laboratori però no es recomanaria en producció?
 
         ??? success "Resposta"
-            Al laboratori, `no_root_squash` és necessari perquè autofs (Bloc 8) corre com a root al client i necessita accedir als punts de muntatge de `/perfils/`. En producció, `no_root_squash` és perillós: si un client es veu compromès, un atacant amb root al client tindria accés de root als fitxers del servidor NFS — podria llegir o modificar fitxers d'altres usuaris. La solució en producció és NFSv4 amb Kerberos (`sec=krb5`), que autentica criptogràficament independentment dels UID/GID.
+            Al laboratori, `no_root_squash` és necessari perquè autofs (Bloc 9) corre com a root al client i necessita accedir als punts de muntatge de `/perfils/`. En producció, `no_root_squash` és perillós: si un client es veu compromès, un atacant amb root al client tindria accés de root als fitxers del servidor NFS — podria llegir o modificar fitxers d'altres usuaris. La solució en producció és NFSv4 amb Kerberos (`sec=krb5`), que autentica criptogràficament independentment dels UID/GID.
 
         **3.** Quin problema ocasiona escriure `/perfils 192.168.100.0/24 (rw,sync)` amb espai entre el client i les opcions?
 

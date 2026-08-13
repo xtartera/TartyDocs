@@ -60,7 +60,7 @@ tags:
     El directori `/perfils/` ha d'existir al servidor **abans** d'exportar-lo:
 
     ```bash
-    # Crea el directori arrel de perfils (si no existeix del Bloc 6)
+    # Crea el directori arrel de perfils (si no existeix del Bloc 7)
     sudo mkdir -p /perfils
 
     # Propietat root:root, permisos 755
@@ -69,7 +69,7 @@ tags:
     ```
 
     !!! info "Subdirectoris dels usuaris"
-        Els subdirectoris `/perfils/maria.puig`, `/perfils/pere.costa`, `/perfils/anna.valls` que vas crear manualment al Bloc 6 (pàgina 33) continuen existint. Al Bloc 8, autofs els gestionarà automàticament. Per ara, mantén-los tal qual.
+        Els subdirectoris `/perfils/maria.puig`, `/perfils/pere.costa`, `/perfils/anna.valls` que vas crear manualment al Bloc 7 (pàgina 33) continuen existint. Al Bloc 9, autofs els gestionarà automàticament. Per ara, mantén-los tal qual.
 
     ## Gestió del servei
 
@@ -102,7 +102,7 @@ tags:
     | Paquet | Propòsit |
     |--------|---------|
     | `nfs-common` | Suport per muntar sistemes NFS (client) |
-    | `autofs` | Dimoni de muntatge automàtic (Bloc 8) |
+    | `autofs` | Dimoni de muntatge automàtic (Bloc 9) |
 
     !!! info "Ubuntu 24.04 i NFSv4"
         Ubuntu 24.04 usa NFSv4 per defecte. `nfs-common` instal·la suport per a NFSv3 i NFSv4; la versió es negocia automàticament entre client i servidor. En un entorn de laboratori amb tots dos a Ubuntu 24.04, s'usarà NFSv4.
@@ -178,7 +178,7 @@ tags:
     ls -la /perfils/
     ```
 
-    Confirma que `/perfils/` existeix i que els subdirectoris dels usuaris (del Bloc 6) continuen amb la propietat correcta.
+    Confirma que `/perfils/` existeix i que els subdirectoris dels usuaris (del Bloc 7) continuen amb la propietat correcta.
 
     ### Part D – Client (si en tens un)
 

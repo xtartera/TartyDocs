@@ -9,13 +9,13 @@ tags:
 # :material-login: Autenticació real: login amb usuaris LDAP
 
 !!! abstract "Concepte clau"
-    Un cop SSSD i NSS estan configurats correctament, un usuari LDAP pot fer login al sistema Linux exactament igual que un usuari local: amb `su -`, via SSH, o en el prompt de login gràfic. Aquest és l'objectiu de tot el Bloc 6: un sistema Linux que autentica via LDAP de manera transparent.
+    Un cop SSSD i NSS estan configurats correctament, un usuari LDAP pot fer login al sistema Linux exactament igual que un usuari local: amb `su -`, via SSH, o en el prompt de login gràfic. Aquest és l'objectiu de tot el Bloc 7: un sistema Linux que autentica via LDAP de manera transparent.
 
 === ":material-notebook-outline: Apunts"
 
     ## Prerequisits per fer login amb LDAP
 
-    Abans de provar el login, verifica que tot el Bloc 6 és correcte:
+    Abans de provar el login, verifica que tot el Bloc 7 és correcte:
 
     ```bash
     # 1. SSSD funciona
@@ -31,7 +31,7 @@ tags:
     grep pam_sss /etc/pam.d/common-auth
     ```
 
-    Si qualsevol d'aquests passos falla, revisa les pàgines anteriors del Bloc 6 abans de continuar.
+    Si qualsevol d'aquests passos falla, revisa les pàgines anteriors del Bloc 7 abans de continuar.
 
     ## Verificar que PAM usa SSSD
 
@@ -54,7 +54,7 @@ tags:
     ## Preparació del directori home
 
     !!! warning "El directori `/perfils/` ha d'existir per al login"
-        Al Bloc 6, el directori home dels usuaris LDAP (`/perfils/maria.puig`) **no existeix** al servidor. Sense el directori home, el login falla amb: `su: warning: cannot change directory to /perfils/maria.puig: No such file or directory`.
+        Al Bloc 7, el directori home dels usuaris LDAP (`/perfils/maria.puig`) **no existeix** al servidor. Sense el directori home, el login falla amb: `su: warning: cannot change directory to /perfils/maria.puig: No such file or directory`.
 
         Als Blocs 7 i 8, NFS i autofs muntaran `/perfils/` automàticament quan un usuari faci login. Per ara, el crearàs manualment per a la prova:
 
@@ -166,8 +166,8 @@ tags:
 
     En el laboratori actual, has creat `/perfils/maria.puig` manualment. Als Blocs 7 i 8:
 
-    - **Bloc 7 (NFS)**: el servidor exportarà `/perfils/` per xarxa
-    - **Bloc 8 (autofs)**: el client muntarà automàticament `/perfils/usuari` quan un usuari faci login, sense necessitat de crear-lo manualment
+    - **Bloc 8 (NFS)**: el servidor exportarà `/perfils/` per xarxa
+    - **Bloc 9 (autofs)**: el client muntarà automàticament `/perfils/usuari` quan un usuari faci login, sense necessitat de crear-lo manualment
 
     Quan hagis completat els Blocs 7 i 8, podràs eliminar els directoris que acabes de crear:
     ```bash
@@ -190,7 +190,7 @@ tags:
         ??? success "Resposta"
             L'autenticació ha funcionat (contrasenya correcta, SSSD funciona), però el directori home especificat al LDAP (`homeDirectory: /perfils/anna.valls`) no existeix físicament al servidor. Linux mostra l'avís i obre la sessió al directori arrel `/` com a mesura de seguretat. Solució provisional: `sudo mkdir -p /perfils/anna.valls && sudo chown 1003:2001 /perfils/anna.valls && sudo chmod 700 /perfils/anna.valls`. Solució definitiva (Blocs 7–8): NFS exportarà `/perfils/` i autofs el muntarà automàticament en cada login.
 
-        **3.** Un cop completat el Bloc 6, quins quatre components han de funcionar conjuntament per permetre el login de `maria.puig`? Anomena'ls i la funció de cadascun.
+        **3.** Un cop completat el Bloc 7, quins quatre components han de funcionar conjuntament per permetre el login de `maria.puig`? Anomena'ls i la funció de cadascun.
 
         ??? success "Resposta"
             (1) **OpenLDAP (slapd)**: emmagatzema les credencials i els atributs POSIX de l'usuari (`uid`, `uidNumber`, `gidNumber`, `homeDirectory`, `loginShell`, `userPassword`). (2) **SSSD**: fa de pont entre Linux i LDAP — consulta el directori per obtenir informació d'usuaris i verifica contrasenyes fent un bind LDAP com a l'usuari. (3) **NSS (`/etc/nsswitch.conf`)**: indica al sistema operatiu que consulti SSSD (`sss`) per resoldre noms d'usuari i grup. Sense NSS, `id` i `getent` no funcionarien. (4) **PAM (`pam_sss.so`)**: integra SSSD amb el sistema d'autenticació de Linux. Quan un usuari fa login, PAM delega la verificació de la contrasenya a SSSD.

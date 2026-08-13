@@ -42,7 +42,7 @@ tags:
     | **Instal·lació** | Rol "AD DS" a Windows Server | `apt install slapd ldap-utils` |
     | **Arxius de config** | Base de dades interna AD | `/etc/ldap/slapd.d/` (OLC) |
     | **Port per defecte** | 389 (LDAP), 636 (LDAPS) | 389 (LDAP), 636 (LDAPS) |
-    | **Integració Linux** | Via SSSD + realmd/winbind | Via SSSD (UT2 Bloc 6) |
+    | **Integració Linux** | Via SSSD + realmd/winbind | Via SSSD (UT2 Bloc 7) |
 
     ## Terminologia comparada
 
