@@ -74,44 +74,46 @@ nav:
           - "Verificació de connectivitat": ut1/bloc3-administracio/19-verificacio-connectivitat.md
       - "Bloc 4 · Active Directory":
           - "Conceptes AD": ut1/bloc4-active-directory/20-conceptes-ad.md
-          - "Unitats Organitzatives": ut1/bloc4-active-directory/21-unitats-organitzatives.md
-          - "Instal·lació AD DS": ut1/bloc4-active-directory/22-installacio-ad-ds.md
-          - "Promoció a DC": ut1/bloc4-active-directory/23-promocio-dc.md
-          - "DNS integrat amb AD": ut1/bloc4-active-directory/24-dns-integrat-ad.md
+          - "Boscos, arbres i dominis": ut1/bloc4-active-directory/21-boscos-arbres-dominis.md
+          - "Relacions de confiança": ut1/bloc4-active-directory/22-relacions-confianca.md
+          - "Unitats Organitzatives": ut1/bloc4-active-directory/23-unitats-organitzatives.md
+          - "Instal·lació AD DS": ut1/bloc4-active-directory/24-installacio-ad-ds.md
+          - "Promoció a DC": ut1/bloc4-active-directory/25-promocio-dc.md
+          - "DNS integrat amb AD": ut1/bloc4-active-directory/26-dns-integrat-ad.md
       - "Bloc 5 · Usuaris i grups":
-          - "Gestió d'usuaris AD": ut1/bloc5-usuaris-grups/25-gestio-usuaris-ad.md
-          - "Gestió de grups AD": ut1/bloc5-usuaris-grups/26-gestio-grups-ad.md
-          - "Polítiques de contrasenya": ut1/bloc5-usuaris-grups/27-politiques-contrasenya.md
-          - "Restriccions horàries": ut1/bloc5-usuaris-grups/28-restriccions-horaries.md
-          - "PowerShell per AD": ut1/bloc5-usuaris-grups/29-powershell-ad.md
+          - "Gestió d'usuaris AD": ut1/bloc5-usuaris-grups/27-gestio-usuaris-ad.md
+          - "Gestió de grups AD": ut1/bloc5-usuaris-grups/28-gestio-grups-ad.md
+          - "Polítiques de contrasenya": ut1/bloc5-usuaris-grups/29-politiques-contrasenya.md
+          - "Restriccions horàries": ut1/bloc5-usuaris-grups/30-restriccions-horaries.md
+          - "PowerShell per AD": ut1/bloc5-usuaris-grups/31-powershell-ad.md
       - "Bloc 6 · Clients al domini":
-          - "Unió de clients W11": ut1/bloc6-clients/30-unio-clients-domini.md
-          - "Configuració DNS al client": ut1/bloc6-clients/31-configuracio-dns-client.md
-          - "Validació de la integració": ut1/bloc6-clients/32-validacio-integracio.md
-          - "gpresult /r": ut1/bloc6-clients/33-gpresult.md
+          - "Unió de clients W11": ut1/bloc6-clients/32-unio-clients-domini.md
+          - "Configuració DNS al client": ut1/bloc6-clients/33-configuracio-dns-client.md
+          - "Validació de la integració": ut1/bloc6-clients/34-validacio-integracio.md
+          - "gpresult /r": ut1/bloc6-clients/35-gpresult.md
       - "Bloc 7 · Recursos compartits":
-          - "Carpetes compartides": ut1/bloc7-recursos/34-carpetes-compartides.md
-          - "Permisos NTFS": ut1/bloc7-recursos/35-permisos-ntfs.md
-          - "Herència de permisos": ut1/bloc7-recursos/36-herencia-permisos.md
-          - "icacls": ut1/bloc7-recursos/37-icacls.md
-          - "Muntatge de carpetes de xarxa": ut1/bloc7-recursos/38-muntatge-carpetes-xarxa.md
+          - "Carpetes compartides": ut1/bloc7-recursos/36-carpetes-compartides.md
+          - "Permisos NTFS": ut1/bloc7-recursos/37-permisos-ntfs.md
+          - "Herència de permisos": ut1/bloc7-recursos/38-herencia-permisos.md
+          - "icacls": ut1/bloc7-recursos/39-icacls.md
+          - "Muntatge de carpetes de xarxa": ut1/bloc7-recursos/40-muntatge-carpetes-xarxa.md
       - "Bloc 8 · GPO":
-          - "GPO – conceptes": ut1/bloc8-gpo/39-gpo-conceptes.md
-          - "Default Domain Policy": ut1/bloc8-gpo/40-default-domain-policy.md
-          - "GPO per UO": ut1/bloc8-gpo/41-gpo-per-uo.md
-          - "GPO de restriccions": ut1/bloc8-gpo/42-gpo-restriccions.md
-          - "gpupdate": ut1/bloc8-gpo/43-gpupdate.md
+          - "GPO – conceptes": ut1/bloc8-gpo/41-gpo-conceptes.md
+          - "Default Domain Policy": ut1/bloc8-gpo/42-default-domain-policy.md
+          - "GPO per UO": ut1/bloc8-gpo/43-gpo-per-uo.md
+          - "GPO de restriccions": ut1/bloc8-gpo/44-gpo-restriccions.md
+          - "gpupdate": ut1/bloc8-gpo/45-gpupdate.md
       - "Bloc 9 · Perfils mòbils":
-          - "Tipus de perfils": ut1/bloc9-perfils/44-tipus-perfils.md
-          - "Carpeta per a perfils": ut1/bloc9-perfils/45-carpeta-perfils-mobils.md
-          - "Configuració de perfils mòbils": ut1/bloc9-perfils/46-configuracio-perfils-mobils.md
-          - "Sufix .v6": ut1/bloc9-perfils/47-sufix-v6.md
-          - "Permisos NTFS en perfils": ut1/bloc9-perfils/48-permisos-ntfs-perfils.md
-          - "Redirecció de carpetes": ut1/bloc9-perfils/49-redireccio-carpetes-gpo.md
+          - "Tipus de perfils": ut1/bloc9-perfils/46-tipus-perfils.md
+          - "Carpeta per a perfils": ut1/bloc9-perfils/47-carpeta-perfils-mobils.md
+          - "Configuració de perfils mòbils": ut1/bloc9-perfils/48-configuracio-perfils-mobils.md
+          - "Sufix .v6": ut1/bloc9-perfils/49-sufix-v6.md
+          - "Permisos NTFS en perfils": ut1/bloc9-perfils/50-permisos-ntfs-perfils.md
+          - "Redirecció de carpetes": ut1/bloc9-perfils/51-redireccio-carpetes-gpo.md
       - "Bloc 10 · Diagnòstic":
-          - "Auditoria d'accés": ut1/bloc10-monitoratge/50-auditoria-acces.md
-          - "Diagnòstic de perfils": ut1/bloc10-monitoratge/51-diagnostic-perfils.md
-          - "PowerShell de diagnòstic": ut1/bloc10-monitoratge/52-powershell-diagnostic.md
+          - "Auditoria d'accés": ut1/bloc10-monitoratge/52-auditoria-acces.md
+          - "Diagnòstic de perfils": ut1/bloc10-monitoratge/53-diagnostic-perfils.md
+          - "PowerShell de diagnòstic": ut1/bloc10-monitoratge/54-powershell-diagnostic.md
       - "SpeedRun · Projectes":
           - "Projecte 1 · Instal·lació WS": ut1/speedrun/projecte1.md
           - "Projecte 2 · Active Directory": ut1/speedrun/projecte2.md

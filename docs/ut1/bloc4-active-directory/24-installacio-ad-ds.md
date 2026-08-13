@@ -157,7 +157,7 @@ tags:
     1. Instal·la el rol via PowerShell o Server Manager
     2. Verifica la instal·lació amb `Get-WindowsFeature AD-Domain-Services`
     3. Confirma que la notificació "Configuració posterior" apareix a Server Manager
-    4. **NO facis la promoció ara** — és el tema de la pàgina 23
+    4. **NO facis la promoció ara** — és el tema de la pàgina 25
 
     ### Instantània
 
