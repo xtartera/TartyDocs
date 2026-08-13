@@ -3,6 +3,8 @@
 > Anàlisi comparativa entre el material local (TartyDocs · UT3) i el manual de referència [SOX de Sergi Coll](https://sergi-coll.gitbook.io/sox) (UF3).
 > Objectiu: detectar buits i proposar un índex evolucionat que mantingui el que ja tenim i hi afegeixi les novetats.
 
+> **✅ ESTAT: IMPLEMENTAT (2026-08-13).** Aplicat i **publicat** (commit `6b68f20`). S'ha afegit el capítol **Client SMB des de Linux** (Bloc 6) i el nou **Bloc 9 · Seguretat en la compartició** (mínim privilegi, xifratge/signatura SMB, auditoria `full_audit`, checklist d'enduriment), més la referència creuada amb UT1. Renumeració neta (CUPS +1, diagnòstic → Bloc 10). UT3 passa de 30 a 35 pàgines. Document mantingut com a **registre històric**.
+
 ---
 
 ## 1. Estat actual del material (què ja tenim)
@@ -42,26 +44,26 @@ La referència titula aquesta unitat "Compartició de recursos **i seguretat**".
 
 ## 4. Índex proposat a desenvolupar
 
-Llegenda: *(sense marca)* = ja existent · **[NOU]** = capítol a crear · **[MILLORA]** = capítol existent a ampliar.
+Llegenda actualitzada: *(sense marca)* = ja existent · **[FET]** = desenvolupat.
 
 - **Bloc 1 · Conceptes**
     - Protocols de compartició (01)
     - Comparativa Samba/NFS/CUPS (02)
-    - **[MILLORA] Referència creuada** a la compartició Windows (UT1 Bloc 7)
+    - **[FET] Referència creuada** a la compartició Windows (UT1 Bloc 7)
 - **Bloc 2 · Samba: instal·lació** — (03–05) sense canvis
 - **Bloc 3 · Samba: control d'accés** — (06–08) sense canvis
 - **Bloc 4 · Samba: gestió avançada** — (09–11) sense canvis
 - **Bloc 5 · NFS: servidor** — (12–15) sense canvis
-- **Bloc 6 · NFS: client i seguretat** — (16–21) sense canvis
-    - **[NOU] Accés a comparticions Windows des de Linux** — `smbclient`, `mount -t cifs`, `cifs-utils`, `/etc/fstab`
-- **Bloc 7 · CUPS: instal·lació** — (22–25) sense canvis
-- **Bloc 8 · CUPS: compartició** — (26–29) sense canvis
-- **[NOU] Bloc · Seguretat en la compartició**
-    - **[NOU] Principi de mínim privilegi i bones pràctiques**
-    - **[NOU] Xifratge i signatura SMB** (SMB signing/encryption)
-    - **[NOU] Auditoria i registre d'accessos** als recursos
-    - **[NOU] Checklist d'enduriment** (Samba/NFS/CUPS abans de producció)
-- **Bloc 9 · Diagnòstic** — (30) sense canvis
+- **Bloc 6 · NFS i client SMB** — (16–21)
+    - **[FET] Accés a comparticions SMB des de Linux** — `smbclient`, `mount -t cifs`, `/etc/fstab` (22)
+- **Bloc 7 · CUPS: instal·lació** — (23–26) *(renumerat +1)*
+- **Bloc 8 · CUPS: compartició** — (27–30) *(renumerat +1)*
+- **[FET] Bloc 9 · Seguretat en la compartició**
+    - **[FET] Mínim privilegi i bones pràctiques** (31)
+    - **[FET] Xifratge i signatura SMB** (32)
+    - **[FET] Auditoria i registre d'accessos** (`full_audit`) (33)
+    - **[FET] Checklist d'enduriment** (Samba/NFS/CUPS) (34)
+- **Bloc 10 · Diagnòstic** — (35) *(renumerat)*
 - **SpeedRun** — projectes existents
 
-**Resum de feina nova a UT3:** 1 capítol de client SMB des de Linux + 1 bloc de seguretat (4 capítols) + referències creuades. La base tècnica ja és forta; el creixement és sobretot en l'eix de seguretat.
+**Resum de feina nova a UT3:** ✅ **Fet.** 1 capítol de client SMB des de Linux + 1 bloc de seguretat (4 capítols) + referències creuades, amb renumeració neta.
