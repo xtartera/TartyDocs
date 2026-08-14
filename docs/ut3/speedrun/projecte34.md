@@ -8,7 +8,7 @@ hide:
 # Projecte 34 · Dossier de preguntes per blocs
 
 !!! abstract "De què tracta"
-    Dossier de **preguntes teòriques i pràctiques organitzat per blocs** per consolidar i avaluar els coneixements adquirits a tota la UT3. Treballaràs la comprensió conceptual sobre Samba, NFS i CUPS, la terminologia tècnica i la relació entre teoria i pràctica.
+    Dossier de **preguntes teòriques i pràctiques organitzat per blocs** per consolidar i avaluar els coneixements adquirits a tota la UT3. Treballaràs la comprensió conceptual sobre Samba, NFS i CUPS, la terminologia tècnica en entorn Linux i la relació entre teoria i pràctica.
 
 | :material-clock-outline: Durada | :material-account: Modalitat | :material-book-open-variant: Blocs | :material-school: RA avaluats |
 |:---:|:---:|:---:|:---:|
@@ -20,7 +20,7 @@ hide:
 - Demostrar la comprensió dels conceptes clau de Samba, NFS i CUPS
 - Relacionar els conceptes teòrics amb la seva aplicació pràctica
 - Consolidar el vocabulari tècnic del mòdul en entorn Linux
-- Comparar les tecnologies de compartició entre si i amb les solucions Windows vistes a la UT1
+- Aplicar criteris de seguretat i bones pràctiques a la compartició de recursos
 
 ---
 
@@ -34,7 +34,7 @@ hide:
 
     El quadern es considerarà **APTE** quan totes les activitats hagin estat resoltes i la documentació sigui completa, coherent i suficient.
 
-    [:octicons-arrow-right-24: Obrir el quadern](#){ .md-button .md-button--primary }
+    [:octicons-arrow-right-24: Obrir el quadern](https://quadern-digital-v11-2.vercel.app/moduls/mp224/unitat_treball3.html?id=p34){ .md-button .md-button--primary }
 
 - :material-book-open-page-variant:{ .lg }
 

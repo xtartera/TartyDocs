@@ -72,7 +72,7 @@ Aplica els continguts de la UT3 amb projectes pràctics al quadern digital. Cada
 
     Configura un servidor Samba amb accés lliure, restringit i per grups en entorn Linux.
 
-    :material-clock-outline: 8–10 h &nbsp;·&nbsp; Blocs 1–4 &nbsp;·&nbsp; RA4, RA5, RA6
+    :material-clock-outline: 4 h &nbsp;·&nbsp; Blocs 1–4 &nbsp;·&nbsp; RA4, RA5, RA6
 
     [:octicons-arrow-right-24: Veure el projecte](speedrun/projecte31.md){ .md-button .md-button--primary }
 
@@ -82,7 +82,7 @@ Aplica els continguts de la UT3 amb projectes pràctics al quadern digital. Cada
 
     Desplega un servidor NFS, controla l'accés per IP i gestiona la seguretat de muntatge.
 
-    :material-clock-outline: 8–10 h &nbsp;·&nbsp; Blocs 5–6 &nbsp;·&nbsp; RA3, RA4, RA5
+    :material-clock-outline: 4 h &nbsp;·&nbsp; Blocs 5–6 &nbsp;·&nbsp; RA3, RA4, RA5
 
     [:octicons-arrow-right-24: Veure el projecte](speedrun/projecte32.md){ .md-button .md-button--primary }
 
@@ -92,15 +92,15 @@ Aplica els continguts de la UT3 amb projectes pràctics al quadern digital. Cada
 
     Instal·la CUPS, configura impressores virtuals i comparteix en xarxa amb control de grups.
 
-    :material-clock-outline: 6–8 h &nbsp;·&nbsp; Blocs 7–8 &nbsp;·&nbsp; RA4, RA5, RA6
+    :material-clock-outline: 4 h &nbsp;·&nbsp; Blocs 7–8 &nbsp;·&nbsp; RA4, RA5, RA6
 
     [:octicons-arrow-right-24: Veure el projecte](speedrun/projecte33.md){ .md-button .md-button--primary }
 
 - :material-help-box:{ .lg }
 
-    ### Projecte 34 · Dossier de preguntes
+    ### Projecte 34 · Dossier de preguntes OPCIONAL
 
-    Consolida i avalua els coneixements teòrics de tota la unitat per blocs.
+    Activitat opcional. Consolida i avalua els coneixements teòrics de tota la unitat per blocs.
 
     :material-clock-outline: 3–5 h &nbsp;·&nbsp; UT3 completa &nbsp;·&nbsp; RA3–RA6
 
