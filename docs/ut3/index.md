@@ -25,11 +25,11 @@ tags:
 | **Bloc 3** | [Samba: control d'accés](bloc3-samba-acces/06-samba-acces-restringit.md) | `valid users`, grups Linux, `smbpasswd` |
 | **Bloc 4** | [Samba: gestió avançada](bloc4-samba-avanzat/09-samba-permisos-mascara.md) | Permisos compostos, quotes, integració LDAP |
 | **Bloc 5** | [NFS: servidor](bloc5-nfs-servidor/12-nfs-arquitectura-conceptes.md) | `nfs-kernel-server`, `/etc/exports`, `exportfs` |
-| **Bloc 6** | [NFS i client SMB](bloc6-nfs-client-seguretat/16-nfs-client-muntatge-manual.md) | Muntatge NFS, `/etc/fstab`, UFW, i **client SMB des de Linux** (`smbclient`, `mount -t cifs`) |
-| **Bloc 7** | [CUPS: instal·lació](bloc7-cups-installacio/23-cups-arquitectura-installacio.md) | `apt install cups`, port 631, impressora PDF |
-| **Bloc 8** | [CUPS: compartició](bloc8-cups-comparticio/27-cups-comparticio-xarxa.md) | Impressió en xarxa, `AllowGroup`, Samba+Windows |
-| **Bloc 9** | [Seguretat en la compartició](bloc9-seguretat-comparticio/31-minim-privilegi-bones-practiques.md) | Mínim privilegi, xifratge SMB, auditoria, checklist d'enduriment |
-| **Bloc 10** | [Diagnòstic](bloc10-diagnostic/35-diagnostic-integral-ut3.md) | Diagnòstic integral Samba + NFS + CUPS |
+| **Bloc 6** | [NFS i client SMB](bloc6-nfs-client-seguretat/16-nfs-client-muntatge-manual.md) | Muntatge NFS, `/etc/fstab`, UFW, **client SMB des de Linux** (`smbclient`, `mount -t cifs`) i operacions permeses per protocol |
+| **Bloc 7** | [CUPS: instal·lació](bloc7-cups-installacio/24-cups-arquitectura-installacio.md) | `apt install cups`, port 631, impressora PDF |
+| **Bloc 8** | [CUPS: compartició](bloc8-cups-comparticio/28-cups-comparticio-xarxa.md) | Impressió en xarxa, `AllowGroup`, Samba+Windows |
+| **Bloc 9** | [Seguretat en la compartició](bloc9-seguretat-comparticio/32-minim-privilegi-bones-practiques.md) | Mínim privilegi, xifratge SMB, auditoria, checklist d'enduriment |
+| **Bloc 10** | [Diagnòstic](bloc10-diagnostic/36-diagnostic-integral-ut3.md) | Diagnòstic integral Samba + NFS + CUPS |
 
 ## Mapa de la unitat
 
@@ -52,10 +52,10 @@ graph LR
     click B4 "bloc4-samba-avanzat/09-samba-permisos-mascara/" "Obrir Bloc 4"
     click B5 "bloc5-nfs-servidor/12-nfs-arquitectura-conceptes/" "Obrir Bloc 5"
     click B6 "bloc6-nfs-client-seguretat/16-nfs-client-muntatge-manual/" "Obrir Bloc 6"
-    click B7 "bloc7-cups-installacio/23-cups-arquitectura-installacio/" "Obrir Bloc 7"
-    click B8 "bloc8-cups-comparticio/27-cups-comparticio-xarxa/" "Obrir Bloc 8"
-    click B9 "bloc9-seguretat-comparticio/31-minim-privilegi-bones-practiques/" "Obrir Bloc 9"
-    click B10 "bloc10-diagnostic/35-diagnostic-integral-ut3/" "Obrir Bloc 10"
+    click B7 "bloc7-cups-installacio/24-cups-arquitectura-installacio/" "Obrir Bloc 7"
+    click B8 "bloc8-cups-comparticio/28-cups-comparticio-xarxa/" "Obrir Bloc 8"
+    click B9 "bloc9-seguretat-comparticio/32-minim-privilegi-bones-practiques/" "Obrir Bloc 9"
+    click B10 "bloc10-diagnostic/36-diagnostic-integral-ut3/" "Obrir Bloc 10"
 ```
 
 ---
