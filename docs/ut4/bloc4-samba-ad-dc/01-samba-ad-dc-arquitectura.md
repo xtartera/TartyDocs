@@ -81,7 +81,7 @@ tags:
     1. **Una sola DC recomanada** per a entorns educatius: Samba multi-DC és complex
     2. **GPOs**: es poden crear però no hi ha GUI nativa; cal usar RSAT des de Windows
     3. **DFS (Distributed File System)**: no completament implementat a Samba 4
-    4. **Versió**: cal Samba 4.x (disponible a Ubuntu 24.04 via `apt`)
+    4. **Versió**: cal Samba 4.x (disponible a Ubuntu 22.04 via `apt`)
 
     !!! tip "RSAT des de Windows: gestió de Samba-AD com si fos Windows AD"
         Des d'un client Windows unit al domini Samba, pots instal·lar **RSAT** (Remote Server Administration Tools) i usar **ADUC**, **GPMC**, etc. per gestionar el Samba DC com si fos un DC de Windows. Samba és prou compatible perquè RSAT funcioni per a les operacions habituals.

@@ -25,10 +25,13 @@ hide:
 
 ## Material necessari
 
-- Ubuntu 24.04 LTS — DC Samba (mínim 2 GB RAM, hostname `dc1.libretic.local`)
+- Ubuntu 22.04 LTS — DC Samba (mínim 2 GB RAM, hostname `dc1.libretic.local`)
 - Windows 11 Pro — client del domini LIBRETIC
-- Ubuntu 24.04 LTS — client Linux del domini
+- Ubuntu 22.04 LTS — client Linux del domini
 - Accés SSH al servidor DC
+
+!!! warning "Versió d'Ubuntu obligatòria: 22.04 LTS"
+    Aquest projecte s'ha de dur a terme amb **Ubuntu 22.04 LTS**, tant al DC com al client, no amb una versió posterior. El comportament del sistema (Samba, `realmd`/SSSD, xarxa) ha canviat prou entre versions perquè els passos d'aquesta guia no estiguin garantits amb Ubuntu 24.04 o superior.
 
 ---
 

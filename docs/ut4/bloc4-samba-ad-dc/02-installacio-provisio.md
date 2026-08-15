@@ -147,6 +147,6 @@ tags:
     ## Recursos audiovisuals
 
     !!! info "Cerca a YouTube"
-        - `"samba active directory domain controller ubuntu 24.04 provision"`
+        - `"samba active directory domain controller ubuntu 22.04 provision"`
         - `"samba-tool domain provision use-rfc2307"`
         - `"samba internal dns SRV records verify"`
