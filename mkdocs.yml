@@ -224,23 +224,24 @@ nav:
           - "UFW i ports NFS": ut3/bloc6-nfs-client-seguretat/20-nfs-ufw-ports.md
           - "all_squash, anonuid, anongid": ut3/bloc6-nfs-client-seguretat/21-nfs-all-squash-uid-gid.md
           - "Client SMB des de Linux": ut3/bloc6-nfs-client-seguretat/22-smbclient-mount-cifs.md
+          - "Operacions permeses: smbclient, CIFS i NFS": ut3/bloc6-nfs-client-seguretat/23-operacions-permeses-samba-vs-nfs.md
       - "Bloc 7 · CUPS: instal·lació":
-          - "CUPS: arquitectura i instal·lació": ut3/bloc7-cups-installacio/23-cups-arquitectura-installacio.md
-          - "Interfície web (port 631)": ut3/bloc7-cups-installacio/24-cups-interficie-web.md
-          - "Impressora PDF virtual": ut3/bloc7-cups-installacio/25-cups-impressora-pdf-virtual.md
-          - "Ordres d'impressió": ut3/bloc7-cups-installacio/26-cups-ordres-impressio.md
+          - "CUPS: arquitectura i instal·lació": ut3/bloc7-cups-installacio/24-cups-arquitectura-installacio.md
+          - "Interfície web (port 631)": ut3/bloc7-cups-installacio/25-cups-interficie-web.md
+          - "Impressora PDF virtual": ut3/bloc7-cups-installacio/26-cups-impressora-pdf-virtual.md
+          - "Ordres d'impressió": ut3/bloc7-cups-installacio/27-cups-ordres-impressio.md
       - "Bloc 8 · CUPS: compartició":
-          - "Compartició en xarxa": ut3/bloc8-cups-comparticio/27-cups-comparticio-xarxa.md
-          - "Restriccions per grups": ut3/bloc8-cups-comparticio/28-cups-restriccions-grups.md
-          - "PPD i URI d'impressora": ut3/bloc8-cups-comparticio/29-cups-ppd-uri.md
-          - "Samba + Windows printing": ut3/bloc8-cups-comparticio/30-cups-samba-windows.md
+          - "Compartició en xarxa": ut3/bloc8-cups-comparticio/28-cups-comparticio-xarxa.md
+          - "Restriccions per grups": ut3/bloc8-cups-comparticio/29-cups-restriccions-grups.md
+          - "PPD i URI d'impressora": ut3/bloc8-cups-comparticio/30-cups-ppd-uri.md
+          - "Samba + Windows printing": ut3/bloc8-cups-comparticio/31-cups-samba-windows.md
       - "Bloc 9 · Seguretat en la compartició":
-          - "Mínim privilegi i bones pràctiques": ut3/bloc9-seguretat-comparticio/31-minim-privilegi-bones-practiques.md
-          - "Xifratge i signatura SMB": ut3/bloc9-seguretat-comparticio/32-xifratge-signatura-smb.md
-          - "Auditoria i registre d'accessos": ut3/bloc9-seguretat-comparticio/33-auditoria-registre-accessos.md
-          - "Checklist d'enduriment": ut3/bloc9-seguretat-comparticio/34-checklist-enduriment.md
+          - "Mínim privilegi i bones pràctiques": ut3/bloc9-seguretat-comparticio/32-minim-privilegi-bones-practiques.md
+          - "Xifratge i signatura SMB": ut3/bloc9-seguretat-comparticio/33-xifratge-signatura-smb.md
+          - "Auditoria i registre d'accessos": ut3/bloc9-seguretat-comparticio/34-auditoria-registre-accessos.md
+          - "Checklist d'enduriment": ut3/bloc9-seguretat-comparticio/35-checklist-enduriment.md
       - "Bloc 10 · Diagnòstic":
-          - "Diagnòstic integral UT3": ut3/bloc10-diagnostic/35-diagnostic-integral-ut3.md
+          - "Diagnòstic integral UT3": ut3/bloc10-diagnostic/36-diagnostic-integral-ut3.md
       - "SpeedRun · Projectes":
           - "Projecte 31 · Samba": ut3/speedrun/projecte31.md
           - "Projecte 32 · NFS": ut3/speedrun/projecte32.md
