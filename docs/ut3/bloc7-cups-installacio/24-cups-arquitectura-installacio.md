@@ -92,7 +92,7 @@ tags:
     tcp  LISTEN  0  5  127.0.0.1:631  0.0.0.0:*  users:(("cupsd",...))
     ```
 
-    Per defecte, CUPS escolta **únicament a localhost** (`127.0.0.1:631`). Per a la compartició en xarxa cal modificar aquesta configuració (Bloc 8, pàgina 27).
+    Per defecte, CUPS escolta **únicament a localhost** (`127.0.0.1:631`). Per a la compartició en xarxa cal modificar aquesta configuració (Bloc 8, pàgina 28).
 
     ## Fitxers de configuració principals
 
