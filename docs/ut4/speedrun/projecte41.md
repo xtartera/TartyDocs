@@ -18,7 +18,7 @@ hide:
 
 - Instal·lar AD DS i promoure un DC amb Windows Server 2022
 - Crear OUs, usuaris i grups de domini amb PowerShell
-- Unir clients Windows 11 i Ubuntu 24.04 al domini
+- Unir clients Windows 11 i Ubuntu 22.04 al domini
 - Configurar GPOs per aplicar restriccions als usuaris
 - Implementar perfils mòbils i carpetes d'inici al servidor
 - Realitzar còpies de seguretat amb Robocopy i tasques programades
@@ -27,8 +27,11 @@ hide:
 
 - Windows Server 2022 (VM) — mínim 4 GB RAM, 80 GB disc
 - Windows 11 Pro (VM) — client del domini
-- Ubuntu 24.04 LTS (VM) — client Linux del domini
+- Ubuntu 22.04 LTS (VM) — client Linux del domini
 - Accés a PowerShell amb permisos d'administrador
+
+!!! warning "Versió d'Ubuntu obligatòria: 22.04 LTS"
+    Aquest projecte s'ha de dur a terme amb **Ubuntu 22.04 LTS**, no amb una versió posterior. El comportament del sistema (`realmd`/SSSD, xarxa) ha canviat prou entre versions perquè els passos d'aquesta guia no estiguin garantits amb Ubuntu 24.04 o superior.
 
 ---
 
