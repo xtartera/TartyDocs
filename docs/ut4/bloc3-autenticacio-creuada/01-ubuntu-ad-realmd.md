@@ -36,7 +36,7 @@ tags:
     # DNS ha d'apuntar al DC
     resolvectl status   # o cat /etc/resolv.conf
 
-    # Configura si cal (Ubuntu 24.04 amb systemd-resolved)
+    # Configura si cal (Ubuntu 22.04 amb systemd-resolved)
     # Edita /etc/systemd/resolved.conf:
     [Resolve]
     DNS=172.16.XXX.10
@@ -152,7 +152,7 @@ tags:
 
     **Objectiu**: unir un client Ubuntu Desktop al domini AD amb `realm join`.
     **Temps estimat**: 30 minuts
-    **Prerequisit**: DC AD operatiu, Ubuntu Desktop 24.04
+    **Prerequisit**: DC AD operatiu, Ubuntu Desktop 22.04
 
     ---
 
@@ -205,5 +205,5 @@ tags:
 
     !!! info "Cerca a YouTube"
         - `"Ubuntu join Active Directory domain realmd sssd"`
-        - `"realm join Active Directory Ubuntu 22.04 24.04"`
+        - `"realm join Active Directory Ubuntu 22.04"`
         - `"Linux realm discover domain controller"`

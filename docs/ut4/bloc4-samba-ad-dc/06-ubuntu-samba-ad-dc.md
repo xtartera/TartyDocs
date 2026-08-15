@@ -144,8 +144,8 @@ tags:
     | `id` / `getent` | Igual | Igual |
     | SSSD logs | Igual | Igual |
 
-    !!! warning "Versió de Samba: 4.x recomanat"
-        Samba versions anteriors a 4.x no suporten completament el mode AD DC. Ubuntu 24.04 inclou Samba 4.19+ per defecte. Verifica: `samba --version`.
+    !!! warning "Ubuntu 22.04 LTS obligatori"
+        Aquest bloc s'ha de treballar amb **Ubuntu 22.04 LTS**. Samba versions anteriors a 4.x no suporten completament el mode AD DC — comprova la versió instal·lada amb `samba --version` abans de començar el provisionament. No es garanteix el funcionament d'aquesta guia amb Ubuntu 24.04 o posterior.
 
     !!! tip "wbinfo des del client"
         Des del client Ubuntu unit al domini Samba-AD, pots usar `wbinfo` per verificar la connectivitat al DC:
@@ -224,4 +224,4 @@ tags:
     !!! info "Cerca a YouTube"
         - `"Ubuntu join Samba 4 Active Directory realm join"`
         - `"sssd Samba AD domain Linux client"`
-        - `"realm join Samba Ubuntu 24.04"`
+        - `"realm join Samba Ubuntu 22.04"`
