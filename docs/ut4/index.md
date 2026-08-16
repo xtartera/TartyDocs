@@ -94,26 +94,6 @@ Aplica els continguts de la UT4 amb projectes pràctics al quadern digital. Cada
 
     [:octicons-arrow-right-24: Veure el projecte](speedrun/projecte43.md){ .md-button .md-button--primary }
 
-- :material-folder-network:{ .lg }
-
-    ### Projecte 44 · NFS multiplataforma
-
-    Configura NFS bidireccional: WS2022 com a servidor NFS i Ubuntu com a servidor NFS per a clients Windows.
-
-    :material-clock-outline: 8–10 h &nbsp;·&nbsp; Bloc 2 &nbsp;·&nbsp; RA4, RA5
-
-    [:octicons-arrow-right-24: Veure el projecte](speedrun/projecte44.md){ .md-button .md-button--primary }
-
-- :material-help-box:{ .lg }
-
-    ### Projecte 45 · Dossier de preguntes
-
-    Consolida i avalua els coneixements teòrics de tota la unitat per blocs.
-
-    :material-clock-outline: 3–4 h &nbsp;·&nbsp; UT4 completa &nbsp;·&nbsp; RA4, RA5, RA6
-
-    [:octicons-arrow-right-24: Veure el projecte](speedrun/projecte45.md){ .md-button .md-button--primary }
-
 </div>
 
 ---
