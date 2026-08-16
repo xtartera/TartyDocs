@@ -74,15 +74,25 @@ Aplica els continguts de la UT4 amb projectes pràctics al quadern digital. Cada
 
     [:octicons-arrow-right-24: Veure el projecte](speedrun/projecte41.md){ .md-button .md-button--primary }
 
+- :material-account-network:{ .lg }
+
+    ### Projecte 42 · OpenLDAP multiplataforma
+
+    Desplega OpenLDAP amb TLS, perfils mòbils NFSv4, recursos Samba per LDAP i un client Windows 11 integrat via pGina.
+
+    :material-clock-outline: 12–14 h &nbsp;·&nbsp; Bloc 1 (transversal) &nbsp;·&nbsp; RA4, RA5, RA6
+
+    [:octicons-arrow-right-24: Veure el projecte](speedrun/projecte42.md){ .md-button .md-button--primary }
+
 - :material-domain:{ .lg }
 
-    ### Projecte 42 · Samba com a AD DC
+    ### Projecte 43 · Samba com a AD DC
 
     Desplega Samba-AD DC (libretic.local), uneix clients Windows i Ubuntu, comparteix recursos amb ACLs.
 
     :material-clock-outline: 12–14 h &nbsp;·&nbsp; Blocs 1, 4–5 &nbsp;·&nbsp; RA4, RA5, RA6
 
-    [:octicons-arrow-right-24: Veure el projecte](speedrun/projecte42.md){ .md-button .md-button--primary }
+    [:octicons-arrow-right-24: Veure el projecte](speedrun/projecte43.md){ .md-button .md-button--primary }
 
 - :material-folder-network:{ .lg }
 
