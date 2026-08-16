@@ -12,20 +12,20 @@ tags:
 # :material-lan-connect: UT4 · Integració de sistemes heterogenis
 
 !!! abstract "Presentació de la unitat"
-    L'eix d'aquesta unitat és **entendre els sistemes operatius heterogenis** a través de la **connexió entre Windows i Linux en tots dos sentits** i, sobretot, les **particularitats i dificultats** que hi apareixen: mapatge d'identitats (UID/GID ↔ SID), traducció de permisos (NTFS ↔ POSIX ↔ ACLs), autenticació creuada (Kerberos, SSSD) i interoperabilitat de protocols (SMB ↔ NFS). Un cop entesa la integració, s'introdueix **Samba com a AD DC** com a *alternativa*: muntar el nostre propi controlador de domini compatible.
+    L'eix d'aquesta unitat és **entendre els sistemes operatius heterogenis** a través de la **connexió entre Windows i Linux en tots dos sentits** i, sobretot, les **particularitats i dificultats** que hi apareixen: mapatge d'identitats (UID/GID ↔ SID), traducció de permisos (NTFS ↔ POSIX ↔ ACLs), autenticació creuada (Kerberos, SSSD) i interoperabilitat de protocols (SMB ↔ NFS). Un cop entesa la integració, s'exploren dues **alternatives** de directori centralitzat compatibles amb clients Windows i Linux: **Samba com a AD DC** i **OpenLDAP amb integració Windows via pGina**.
 
 ![Imatge UT4](../assets/Imatge-UT4.png)
 
-## Enfocament: primer la connexió, després l'alternativa
+## Enfocament: primer la connexió, després les alternatives
 
 ```mermaid
 graph LR
     A["Part A\nFonaments de la\nheterogeneïtat"] --> B["Part B\nConnexió Windows↔Linux\n(els dos sentits)"]
-    B --> C["Part C\nAlternativa:\nSamba com a AD DC"]
+    B --> C["Part C\nAlternatives de directori:\nSamba AD DC / OpenLDAP+pGina"]
     C --> D["Part D\nRecursos, ACLs\ni diagnòstic"]
 ```
 
-L'objectiu pedagògic **no** és muntar un producte concret, sinó entendre *per què* la convivència de mons és difícil i *com* es resol. La Part A i la Part B són el nucli; Samba AD DC és extensió.
+L'objectiu pedagògic **no** és muntar un producte concret, sinó entendre *per què* la convivència de mons és difícil i *com* es resol. La Part A i la Part B són el nucli, treballades als Blocs 1–3; Samba AD DC (Blocs 4–5) i el projecte d'OpenLDAP+pGina (sense bloc dedicat, ampliació de la UT2) en són extensions alternatives.
 
 ## Blocs de la unitat
 
@@ -80,7 +80,7 @@ Aplica els continguts de la UT4 amb projectes pràctics al quadern digital. Cada
 
     Desplega OpenLDAP amb TLS, perfils mòbils NFSv4, recursos Samba per LDAP i un client Windows 11 integrat via pGina.
 
-    :material-clock-outline: 12–14 h &nbsp;·&nbsp; Bloc 1 (transversal) &nbsp;·&nbsp; RA4, RA5, RA6
+    :material-clock-outline: 12–14 h &nbsp;·&nbsp; Projecte complementari &nbsp;·&nbsp; RA4, RA5, RA6
 
     [:octicons-arrow-right-24: Veure el projecte](speedrun/projecte42.md){ .md-button .md-button--primary }
 
@@ -122,7 +122,7 @@ Aplica els continguts de la UT4 amb projectes pràctics al quadern digital. Cada
 
 | UT1 (Windows Server) | UT2 (Linux Server) | UT3 (Compartició) | UT4 (Integració) |
 |---------------------|-------------------|--------------------|-----------------|
-| AD DS bàsic | OpenLDAP bàsic | Samba + LDAP | Samba-AD DC |
+| AD DS bàsic | OpenLDAP bàsic | Samba + LDAP | Samba-AD DC · OpenLDAP + Windows (pGina) |
 | GPO bàsiques | SSSD per LDAP | — | SSSD per AD |
 | Carpetes NTFS | NFS bàsic | NFS avançat | NFS multiplataforma + client SMB |
 | Clients W11 al domini | Clients Ubuntu LDAP | — | Clients multiplataforma |
