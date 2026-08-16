@@ -1,37 +1,39 @@
 ---
-title: Projecte 42 · Samba com a AD DC (libretic.local)
-icon: material/server-network
+title: Projecte 42 · OpenLDAP multiplataforma
+icon: material/account-network
 hide:
   - toc
 ---
 
-# Projecte 42 · Samba com a AD DC (libretic.local)
+# Projecte 42 · OpenLDAP multiplataforma
 
 !!! abstract "De què tracta"
-    Desplega **Samba 4 com a Active Directory Domain Controller** del domini `libretic.local`. Crea usuaris i grups amb `samba-tool`, uneix clients Windows i Linux al domini, i configura recursos compartits amb control d'accés per grups i ACLs esteses.
+    Desplega un servidor **OpenLDAP** complet i protegit amb TLS, integra un client Ubuntu amb SSSD i un client **Windows 11 amb pGina**, implementa perfils mòbils amb NFSv4, comparteix recursos amb Samba controlats per grups LDAP, i tanca el cicle amb còpies de seguretat i una auditoria funcional de tota la infraestructura.
 
 | :material-clock-outline: Durada | :material-account: Modalitat | :material-book-open-variant: Blocs | :material-school: RA avaluats |
 |:---:|:---:|:---:|:---:|
-| **12–14 hores** | Individual | **UT4 · Blocs 1, 6, 7** | **RA4 · RA5 · RA6** |
+| **12–14 hores** | Individual | **Bloc 1 (transversal, amplia UT2)** | **RA4 · RA5 · RA6** |
 
 ## Objectius
 
-- Desplegar Samba-AD DC amb `samba-tool domain provision --use-rfc2307`
-- Crear usuaris (ana, marc, clara) i grups (tecnics, comptabilitat, direccio) al domini
-- Unir un client Windows 11 al domini `LIBRETIC` i verificar el login
-- Unir un client Ubuntu amb `realm join` + SSSD i verificar `id` i SSH
-- Crear recursos compartits `[tecnics]` i `[comuna]` amb `valid users = @grup`
-- Aplicar ACLs POSIX (`setfacl`) i ACLs NTFS via `vfs objects = acl_xattr`
+- Instal·lar i configurar un servidor **OpenLDAP** a Ubuntu Server, amb estructura, grups i usuaris
+- Integrar un client Ubuntu amb OpenLDAP mitjançant **SSSD**
+- Protegir el servei LDAP amb **TLS** i una Autoritat de Certificació pròpia
+- Implementar **perfils mòbils amb NFSv4** i validar-los des de diversos equips
+- Compartir recursos amb **Samba** controlats per grups LDAP
+- Integrar un client **Windows 11** amb OpenLDAP mitjançant **pGina**
+- Definir una estratègia de còpies de seguretat i recuperació de la infraestructura LDAP
+- Auditar funcionalment tota la infraestructura desplegada
 
 ## Material necessari
 
-- Ubuntu 22.04 LTS — DC Samba (mínim 2 GB RAM, hostname `dc1.libretic.local`)
-- Windows 11 Pro — client del domini LIBRETIC
-- Ubuntu 22.04 LTS — client Linux del domini
-- Accés SSH al servidor DC
+- Ubuntu Server 24.04 LTS — servidor OpenLDAP, NFS i Samba (host multifunció)
+- Ubuntu Desktop 24.04 LTS — com a mínim 2 clients, per validar que el perfil mòbil és realment mòbil
+- Windows 11 Pro — client integrat amb OpenLDAP via pGina
+- Accés SSH al servidor
 
-!!! warning "Versió d'Ubuntu obligatòria: 22.04 LTS"
-    Aquest projecte s'ha de dur a terme amb **Ubuntu 22.04 LTS**, tant al DC com al client, no amb una versió posterior. El comportament del sistema (Samba, `realmd`/SSSD, xarxa) ha canviat prou entre versions perquè els passos d'aquesta guia no estiguin garantits amb Ubuntu 24.04 o superior.
+!!! tip "Relació amb la UT2"
+    Aquest projecte parteix dels fonaments d'**OpenLDAP** treballats a la UT2 (estructura del directori, usuaris i grups POSIX, SSSD) i els porta a un escenari de la UT4: protecció amb TLS, perfils mòbils amb NFSv4, compartició amb Samba controlada per LDAP i, sobretot, la integració d'un client **Windows** contra un directori natiu de Linux — el sentit invers del que fas al Bloc 3 (Ubuntu contra AD de Windows). No hi ha una pàgina de bloc dedicada a aquest projecte: totes les activitats i explicacions estan al quadern interactiu.
 
 ---
 
@@ -45,7 +47,7 @@ hide:
 
     El quadern es considerarà **APTE** quan totes les activitats hagin estat resoltes i la documentació sigui completa, coherent i suficient.
 
-    [:octicons-arrow-right-24: Obrir el quadern](https://quadern-digital-v11-2.vercel.app/moduls/mp224/unitat_treball4.html?id=p43){ .md-button .md-button--primary }
+    [:octicons-arrow-right-24: Obrir el quadern](https://quadern-digital-v11-2.vercel.app/moduls/mp224/unitat_treball4.html?id=p42){ .md-button .md-button--primary }
 
 - :material-book-open-page-variant:{ .lg }
 
@@ -58,6 +60,6 @@ hide:
 </div>
 
 !!! tip "Recomanacions"
-    - Desactiva `smbd` i `nmbd` **abans** d'activar `samba-ad-dc`. Tots dos serveis en conflicte impediran l'arrencada del DC.
-    - Verifica sempre els SRV records amb `host -t SRV _ldap._tcp.libretic.local 127.0.0.1` just després del provision.
-    - La sincronització horària és crítica: Kerberos rebutja tickets amb més de 5 minuts de diferència.
+    - Fes servir el mateix servidor per a OpenLDAP, NFS i Samba: no hi ha servidors separats en aquest projecte, tot recau sobre el mateix host.
+    - Valida el perfil mòbil des de **dos clients Ubuntu diferents** amb el mateix usuari LDAP, no només des d'un.
+    - Documenta cada pas de la configuració TLS: sense la CA instal·lada al client, SSSD rebutjarà la connexió xifrada.
