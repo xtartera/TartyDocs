@@ -283,8 +283,6 @@ nav:
           - "Projecte 41 · Ubuntu → WS2022 AD": ut4/speedrun/projecte41.md
           - "Projecte 42 · OpenLDAP multiplataforma": ut4/speedrun/projecte42.md
           - "Projecte 43 · Samba AD DC": ut4/speedrun/projecte43.md
-          - "Projecte 44 · NFS multiplataforma": ut4/speedrun/projecte44.md
-          - "Projecte 45 · Dossier de preguntes": ut4/speedrun/projecte45.md
 
 extra:
   mermaid:
