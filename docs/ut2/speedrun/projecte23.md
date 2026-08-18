@@ -12,7 +12,7 @@ hide:
 
 | :material-clock-outline: Durada | :material-account: Modalitat | :material-book-open-variant: Blocs | :material-school: RA avaluats |
 |:---:|:---:|:---:|:---:|
-| **4–6 hores** | Individual | **UT2 · Blocs 4–5** | **RA3** |
+| **4 hores** | Individual | **UT2 · Blocs 4–5** | **RA3** |
 
 ## Objectius
 
