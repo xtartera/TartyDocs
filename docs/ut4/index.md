@@ -70,7 +70,7 @@ Aplica els continguts de la UT4 amb projectes pràctics al quadern digital. Cada
 
     Uneix un client Ubuntu a un domini Windows Server 2022 Active Directory amb realmd, SSSD i Kerberos.
 
-    :material-clock-outline: 10–12 h &nbsp;·&nbsp; Blocs 1, 3 &nbsp;·&nbsp; RA4, RA5, RA6
+    :material-clock-outline: 6 h &nbsp;·&nbsp; Blocs 1, 3 &nbsp;·&nbsp; RA4, RA5, RA6
 
     [:octicons-arrow-right-24: Veure el projecte](speedrun/projecte41.md){ .md-button .md-button--primary }
 
@@ -80,7 +80,7 @@ Aplica els continguts de la UT4 amb projectes pràctics al quadern digital. Cada
 
     Desplega OpenLDAP amb TLS, perfils mòbils NFSv4, recursos Samba per LDAP i un client Windows 11 integrat via pGina.
 
-    :material-clock-outline: 12–14 h &nbsp;·&nbsp; Projecte complementari &nbsp;·&nbsp; RA4, RA5, RA6
+    :material-clock-outline: 8 h &nbsp;·&nbsp; Projecte complementari &nbsp;·&nbsp; RA4, RA5, RA6
 
     [:octicons-arrow-right-24: Veure el projecte](speedrun/projecte42.md){ .md-button .md-button--primary }
 
@@ -90,7 +90,7 @@ Aplica els continguts de la UT4 amb projectes pràctics al quadern digital. Cada
 
     Desplega Samba-AD DC (libretic.local), uneix clients Windows i Ubuntu, comparteix recursos amb ACLs.
 
-    :material-clock-outline: 12–14 h &nbsp;·&nbsp; Blocs 1, 4–5 &nbsp;·&nbsp; RA4, RA5, RA6
+    :material-clock-outline: 9 h &nbsp;·&nbsp; Blocs 1, 4–5 &nbsp;·&nbsp; RA4, RA5, RA6
 
     [:octicons-arrow-right-24: Veure el projecte](speedrun/projecte43.md){ .md-button .md-button--primary }
 
