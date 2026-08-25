@@ -185,5 +185,5 @@ tags:
   1. Afegir-la a la taula de blocs i al `mermaid` de [docs/ut3/index.md](../docs/ut3/index.md)
   2. Afegir-la a la navegació de `mkdocs.yml`
   3. Decidir-ne el número de pàgina (`22b` mantenint la numeració actual, o renumerar CUPS)
-  4. Si es vol, ampliar el dossier de preguntes de la UT3 (`examens/preguntes_UT3_comparticio_recursos.md` i `Projecte34.js` del quadern digital) amb 1–2 preguntes noves sobre aquest contingut
+  4. Si es vol, ampliar el dossier de preguntes de la UT3 (`preguntes_UT3_comparticio_recursos.md`, ara al repositori privat `ExamensSOX`, i `Projecte34.js` del quadern digital) amb 1–2 preguntes noves sobre aquest contingut
 - No he tocat cap fitxer de `docs/` — aquesta és només la proposta, a l'espera de la teva decisió.
