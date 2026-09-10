@@ -10,7 +10,7 @@ hide:
 *Disseny i desplegament d'una infraestructura corporativa basada en Windows Server 2022*
 
 !!! abstract "De què tracta"
-    Projecte obert de síntesi de la UT1: **dissenya, desplega i documenta** una infraestructura corporativa basada en **Windows Server 2022** per a una empresa fictícia (*Pyrenees Enterprise Systems*). A diferència dels SpeedRuns, aquí no hi ha un procediment pas a pas — ets tu qui pren i justifica les decisions tècniques.
+    Projecte obert de síntesi de la UT1: **dissenya, desplega i documenta** una infraestructura corporativa basada en **Windows Server 2022** per a una empresa fictícia (*Pyrenees Enterprise Systems*). A diferència dels quaderns interactius, aquí no hi ha un procediment pas a pas — ets tu qui pren i justifica les decisions tècniques.
 
 | :material-clock-outline: Durada | :material-account: Modalitat | :material-book-open-variant: Blocs | :material-school: RA avaluats |
 |:---:|:---:|:---:|:---:|

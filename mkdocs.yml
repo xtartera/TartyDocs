@@ -114,7 +114,7 @@ nav:
           - "Auditoria d'accés": ut1/bloc10-monitoratge/52-auditoria-acces.md
           - "Diagnòstic de perfils": ut1/bloc10-monitoratge/53-diagnostic-perfils.md
           - "PowerShell de diagnòstic": ut1/bloc10-monitoratge/54-powershell-diagnostic.md
-      - "SpeedRun · Projectes":
+      - "Quadern interactiu · Projectes":
           - "Projecte 1 · Instal·lació WS": ut1/speedrun/projecte1.md
           - "Projecte 2 · Active Directory": ut1/speedrun/projecte2.md
           - "Projecte 3 · Usuaris i recursos": ut1/speedrun/projecte3.md
@@ -191,7 +191,7 @@ nav:
           - "Seguretat de perfils": ut2/bloc9-perfils-mobils/50-seguretat-perfils.md
       - "Bloc 10 · Diagnòstic":
           - "Diagnòstic integral Linux": ut2/bloc10-diagnostic/51-diagnostic-integral-linux.md
-      - "SpeedRun · Projectes":
+      - "Quadern interactiu · Projectes":
           - "Projecte 21 · Instal·lació Ubuntu": ut2/speedrun/projecte21.md
           - "Projecte 22 · LDAP amb LDIF": ut2/speedrun/projecte22.md
           - "Projecte 23 · LDAP multiusuari": ut2/speedrun/projecte23.md
@@ -248,7 +248,7 @@ nav:
           - "Checklist d'enduriment": ut3/bloc9-seguretat-comparticio/35-checklist-enduriment.md
       - "Bloc 10 · Diagnòstic":
           - "Diagnòstic integral UT3": ut3/bloc10-diagnostic/36-diagnostic-integral-ut3.md
-      - "SpeedRun · Projectes":
+      - "Quadern interactiu · Projectes":
           - "Projecte 31 · Samba": ut3/speedrun/projecte31.md
           - "Projecte 32 · NFS": ut3/speedrun/projecte32.md
           - "Projecte 33 · CUPS": ut3/speedrun/projecte33.md
@@ -285,7 +285,7 @@ nav:
           - "Recursos compartits i ACLs POSIX": ut4/bloc5-recursos-acls/01-recursos-acls-domini.md
       - "Bloc 6 · Diagnòstic integral":
           - "Diagnòstic integral UT4": ut4/bloc6-diagnostic/01-diagnostic-integral-ut4.md
-      - "SpeedRun · Projectes":
+      - "Quadern interactiu · Projectes":
           - "Projecte 41 · Ubuntu → WS2022 AD": ut4/speedrun/projecte41.md
           - "Projecte 42 · OpenLDAP multiplataforma": ut4/speedrun/projecte42.md
           - "Projecte 43 · Samba AD DC": ut4/speedrun/projecte43.md

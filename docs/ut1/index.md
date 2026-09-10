@@ -77,7 +77,7 @@ Cada concepte d'aquesta unitat té el seu paral·lel a la **UT2 · Linux Server 
 
 ---
 
-## SpeedRun · Projectes interactius
+## Quaderns interactius
 
 Aplica els continguts de la UT1 amb projectes pràctics al quadern digital. Cada projecte té activitats guiades, autodesat automàtic i exportació en PDF.
 
@@ -149,7 +149,7 @@ Aplica els continguts de la UT1 amb projectes pràctics al quadern digital. Cada
 
 ## Projecte Integrador
 
-A diferència dels SpeedRuns (amb quadern interactiu a Vercel), el **Projecte Integrador** és un projecte obert de síntesi de tota la UT1, documentat íntegrament en aquest manual: dissenyes, despleges i documentes una infraestructura Windows Server 2022 per a una empresa fictícia, sense procediment pas a pas.
+A diferència dels quaderns interactius (allotjats a Vercel), el **Projecte Integrador** és un projecte obert de síntesi de tota la UT1, documentat íntegrament en aquest manual: dissenyes, despleges i documentes una infraestructura Windows Server 2022 per a una empresa fictícia, sense procediment pas a pas.
 
 <div class="grid cards" markdown>
 

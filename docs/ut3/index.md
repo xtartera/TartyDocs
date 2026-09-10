@@ -60,7 +60,7 @@ graph LR
 
 ---
 
-## SpeedRun · Projectes interactius
+## Quaderns interactius
 
 Aplica els continguts de la UT3 amb projectes pràctics al quadern digital. Cada projecte té activitats guiades, autodesat automàtic i exportació en PDF.
 
