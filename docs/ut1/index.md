@@ -144,3 +144,23 @@ Aplica els continguts de la UT1 amb projectes pràctics al quadern digital. Cada
     [:octicons-arrow-right-24: Veure el projecte](speedrun/projecte7.md){ .md-button .md-button--primary }
 
 </div>
+
+---
+
+## Projecte Integrador
+
+A diferència dels SpeedRuns (amb quadern interactiu a Vercel), el **Projecte Integrador** és un projecte obert de síntesi de tota la UT1, documentat íntegrament en aquest manual: dissenyes, despleges i documentes una infraestructura Windows Server 2022 per a una empresa fictícia, sense procediment pas a pas.
+
+<div class="grid cards" markdown>
+
+- :material-domain:{ .lg }
+
+    ### Projecte Integrador · UT1
+
+    Disseny, desplegament i documentació d'una infraestructura corporativa completa. Projecte obert de síntesi de tota la unitat.
+
+    :material-clock-outline: Obert &nbsp;·&nbsp; UT1 completa &nbsp;·&nbsp; RA1–RA5
+
+    [:octicons-arrow-right-24: Veure el projecte](projectes-i/index.md){ .md-button .md-button--primary }
+
+</div>

@@ -121,6 +121,12 @@ nav:
           - "Projecte 4 · GPO i perfils": ut1/speedrun/projecte4.md
           - "Projecte 5 · Perfils mòbils": ut1/speedrun/projecte5.md
           - "Projecte 7 · Dossier preguntes": ut1/speedrun/projecte7.md
+      - "Projecte Integrador":
+          - "Presentació": ut1/projectes-i/index.md
+          - "Context i encàrrec": ut1/projectes-i/01-context-i-encarrec.md
+          - "Objectius i requisits": ut1/projectes-i/02-objectius-i-requisits.md
+          - "Desenvolupament (6 fases)": ut1/projectes-i/03-desenvolupament.md
+          - "Lliurament i avaluació": ut1/projectes-i/04-lliurament-i-avaluacio.md
 
   - "UT2 · Linux Server":
       - Presentació: ut2/index.md
