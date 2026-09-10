@@ -157,7 +157,7 @@ A diferència dels SpeedRuns (amb quadern interactiu a Vercel), el **Projecte In
 
     ### Projecte Integrador · UT1
 
-    Disseny, desplegament i documentació d'una infraestructura corporativa completa. Projecte obert de síntesi de tota la unitat.
+    Disseny i desplegament d'una infraestructura corporativa basada en Windows Server 2022.
 
     :material-clock-outline: 10-12 hores &nbsp;·&nbsp; UT1 completa &nbsp;·&nbsp; RA1–RA5
 
