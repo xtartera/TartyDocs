@@ -159,7 +159,7 @@ A diferència dels SpeedRuns (amb quadern interactiu a Vercel), el **Projecte In
 
     Disseny, desplegament i documentació d'una infraestructura corporativa completa. Projecte obert de síntesi de tota la unitat.
 
-    :material-clock-outline: Obert &nbsp;·&nbsp; UT1 completa &nbsp;·&nbsp; RA1–RA5
+    :material-clock-outline: 10-12 hores &nbsp;·&nbsp; UT1 completa &nbsp;·&nbsp; RA1–RA5
 
     [:octicons-arrow-right-24: Veure el projecte](projectes-i/index.md){ .md-button .md-button--primary }
 

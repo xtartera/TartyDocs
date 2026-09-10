@@ -12,7 +12,7 @@ hide:
 
 | :material-clock-outline: Durada | :material-account: Modalitat | :material-book-open-variant: Blocs | :material-school: RA avaluats |
 |:---:|:---:|:---:|:---:|
-| **Obert** (sense límit fix) | Individual | **UT1 completa** | **RA1–RA5** |
+| **10-12 hores** (màxim) | Individual | **UT1 completa** | **RA1–RA5** |
 
 [:material-file-pdf-box: Descarrega l'enunciat del projecte (PDF)](enunciat-projecte-integrador.pdf){ .md-button .md-button--primary }
 
