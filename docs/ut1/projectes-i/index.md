@@ -14,6 +14,8 @@ hide:
 |:---:|:---:|:---:|:---:|
 | **Obert** (sense límit fix) | Individual | **UT1 completa** | **RA1–RA5** |
 
+[:material-file-pdf-box: Descarrega l'enunciat del projecte (PDF)](enunciat-projecte-integrador.pdf){ .md-button .md-button--primary }
+
 ## Missió del projecte
 
 Dissenyar, desplegar i documentar una infraestructura corporativa basada en Windows Server 2022 que respongui a les necessitats d'una empresa real, aplicant criteris tècnics, bones pràctiques d'administració i una documentació professional.
