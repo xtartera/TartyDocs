@@ -16,7 +16,7 @@ hide:
 |:---:|:---:|:---:|:---:|
 | **10-12 hores** (màxim) | Individual | **UT1 completa** | **RA1–RA5** |
 
-[:material-file-pdf-box: Descarrega l'enunciat del projecte (PDF)](enunciat-projecte-integrador.pdf){ .md-button .md-button--primary }
+[:material-file-pdf-box: Descarrega l'enunciat del projecte (PDF)](Projecte_Obert_Integrador_UT1.pdf){ .md-button .md-button--primary }
 
 ## Missió del projecte
 
