@@ -30,16 +30,6 @@ La delegació disposarà dels departaments d'**Administració, Comercial, Logís
 | Rol assignat | Administrador/a de sistemes responsable del disseny, implementació, validació i documentació de la infraestructura. |
 | Infraestructura prevista | Usuaris, grups, permisos Unix i ACL, recursos compartits amb Samba i NFS, impressora centralitzada amb CUPS, còpies de seguretat amb `tar`, tallafoc UFW i un servei transversal de transferència de fitxers (SFTP o equivalent). |
 
-## Escenari mínim
-
-- 1 servidor Linux.
-- 1 client Linux.
-- 1 client Windows.
-- 1 impressora compartida o impressora PDF virtual.
-- Entre 8 i 20 usuaris distribuïts entre els quatre departaments.
-
-La distribució exacta d'usuaris, els grups, l'adreçament IP, l'estructura de directoris i la major part de les decisions tècniques les hauràs de definir tu.
-
 ## Punt de partida
 
 **No existeix una única solució correcta.** Tu ets qui decideix la distribució d'usuaris i grups, quins recursos es publiquen amb Samba i quins amb NFS, com s'estructuren els directoris i quines mesures de seguretat s'apliquen. La responsabilitat d'analitzar les necessitats, prendre les decisions i justificar-les tècnicament és teva.
