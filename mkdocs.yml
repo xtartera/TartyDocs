@@ -259,6 +259,12 @@ nav:
           - "Projecte 32 · NFS": ut3/speedrun/projecte32.md
           - "Projecte 33 · CUPS": ut3/speedrun/projecte33.md
           - "Projecte 34 · Dossier preguntes": ut3/speedrun/projecte34.md
+      - "Projecte Integrador":
+          - "Presentació": ut3/projectes-i/index.md
+          - "Context i encàrrec": ut3/projectes-i/01-context-i-encarrec.md
+          - "Objectius i requisits": ut3/projectes-i/02-objectius-i-requisits.md
+          - "Desenvolupament (11 activitats)": ut3/projectes-i/03-desenvolupament.md
+          - "Lliurament i avaluació": ut3/projectes-i/04-lliurament-i-avaluacio.md
 
   - "UT4 · Integració de sistemes heterogenis":
       - Presentació: ut4/index.md

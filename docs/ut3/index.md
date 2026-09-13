@@ -110,6 +110,26 @@ Aplica els continguts de la UT3 amb projectes pràctics al quadern digital. Cada
 
 ---
 
+## Projecte Integrador
+
+A diferència dels quaderns interactius (allotjats a Vercel), el **Projecte Integrador** és un projecte obert de síntesi de tota la UT3, documentat íntegrament en aquest manual: dissenyes, implementes i documentes una infraestructura de recursos compartits per a Pyrenees Outdoor Group, sense procediment pas a pas.
+
+<div class="grid cards" markdown>
+
+- :material-folder-network:{ .lg }
+
+    ### Projecte Integrador · UT3
+
+    Infraestructura corporativa de recursos compartits amb Samba, NFS i CUPS.
+
+    :material-clock-outline: UT3 completa &nbsp;·&nbsp; RA2, RA4, RA5, RA6
+
+    [:octicons-arrow-right-24: Veure el projecte](projectes-i/index.md){ .md-button .md-button--primary }
+
+</div>
+
+---
+
 ## Relació amb la UT1 i UT2
 
 | UT1 (Windows Server) | UT2 (Linux Server) | UT3 (Compartició) |
