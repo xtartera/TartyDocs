@@ -137,6 +137,26 @@ Aplica els continguts de la UT2 amb projectes pràctics al quadern digital. Cada
 
 ---
 
+## Projecte Integrador
+
+A diferència dels quaderns interactius (allotjats a Vercel), el **Projecte Integrador** és un projecte obert de síntesi de tota la UT2, documentat íntegrament en aquest manual: dissenyes i implementes una infraestructura de xarxa Linux per a una organització que tu mateix defineixes, sense procediment pas a pas.
+
+<div class="grid cards" markdown>
+
+- :material-linux:{ .lg }
+
+    ### Projecte Integrador · UT2
+
+    Disseny i implementació d'una infraestructura de xarxa Linux amb LDAP, NFS i Apache.
+
+    :material-clock-outline: UT2 completa &nbsp;·&nbsp; RA1–RA5
+
+    [:octicons-arrow-right-24: Veure el projecte](projectes-i/index.md){ .md-button .md-button--primary }
+
+</div>
+
+---
+
 ## Relació amb la UT1
 
 | UT1 (Windows Server) | UT2 (Linux / Ubuntu) |
