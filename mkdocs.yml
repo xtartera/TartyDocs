@@ -199,6 +199,12 @@ nav:
           - "Projecte 25 · SSSD": ut2/speedrun/projecte25.md
           - "Projecte 26 · Perfils mòbils": ut2/speedrun/projecte26.md
           - "Projecte 27 · Dossier preguntes": ut2/speedrun/projecte27.md
+      - "Projecte Integrador":
+          - "Presentació": ut2/projectes-i/index.md
+          - "Context i encàrrec": ut2/projectes-i/01-context-i-encarrec.md
+          - "Objectius i requisits": ut2/projectes-i/02-objectius-i-requisits.md
+          - "Desenvolupament (5 fases)": ut2/projectes-i/03-desenvolupament.md
+          - "Lliurament i avaluació": ut2/projectes-i/04-lliurament-i-avaluacio.md
 
   - UT3 · Compartició de recursos:
       - Presentació: ut3/index.md
