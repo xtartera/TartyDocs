@@ -2,3 +2,9 @@ site/
 .cache/
 __pycache__/
 *.pyc
+
+# Exàmens i solucionaris: no s'han de pujar mai a GitHub
+examens/
+Examens/
+**/*[Ee]xamen*.md
+**/*[Ss]olucionari*
