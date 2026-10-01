@@ -40,7 +40,7 @@ tags:
 
     !!! danger "Si el servidor té IP dinàmica quan instal·les AD DS i el promous a DC, Active Directory registrarà una IP que pot canviar en el pròxim reinici. Tots els clients deixaran de poder autenticar-se. **Configura la IP estàtica primer, sempre.**"
 
-    !!! tip "Repassa la infografia de [bones pràctiques d'Active Directory](23b-bones-practiques-ad.md): l'apartat «Abans de promocionar el servidor» resumeix aquests prerequisits en sis passos."
+    !!! tip "Repassa la infografia de [bones pràctiques d'Active Directory](23b-bones-practiques-ad.md): el pas «1 · Preparació prèvia» resumeix aquests prerequisits (nom definitiu, IP estàtica i DNS correcte)."
 
     ## Instal·lació via Server Manager
 

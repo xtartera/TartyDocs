@@ -54,7 +54,7 @@ Cada fase inclou:
 - Preparar l'esquema general de la infraestructura.
 
 !!! tip "Llista de comprovació"
-    Abans de tancar el disseny, contrasta'l amb la infografia de [bones pràctiques d'Active Directory](../bloc4-active-directory/23b-bones-practiques-ad.md): hi trobaràs les decisions que són difícils de desfer un cop creat el domini.
+    Abans de tancar el disseny, contrasta'l amb la infografia de [bones pràctiques d'Active Directory](../bloc4-active-directory/23b-bones-practiques-ad.md): hi trobaràs els cinc passos del desplegament i els errors que són difícils de desfer un cop creat el domini.
 
 **Evidències a incorporar al dossier**
 
