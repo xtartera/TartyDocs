@@ -53,6 +53,9 @@ Cada fase inclou:
 - Dissenyar les polítiques de grup.
 - Preparar l'esquema general de la infraestructura.
 
+!!! tip "Llista de comprovació"
+    Abans de tancar el disseny, contrasta'l amb la infografia de [bones pràctiques d'Active Directory](../bloc4-active-directory/23b-bones-practiques-ad.md): hi trobaràs les decisions que són difícils de desfer un cop creat el domini.
+
 **Evidències a incorporar al dossier**
 
 - Esquema de la infraestructura.

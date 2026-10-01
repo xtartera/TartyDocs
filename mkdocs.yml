@@ -77,6 +77,7 @@ nav:
           - "Boscos, arbres i dominis": ut1/bloc4-active-directory/21-boscos-arbres-dominis.md
           - "Relacions de confiança": ut1/bloc4-active-directory/22-relacions-confianca.md
           - "Unitats Organitzatives": ut1/bloc4-active-directory/23-unitats-organitzatives.md
+          - "Bones pràctiques AD": ut1/bloc4-active-directory/23b-bones-practiques-ad.md
           - "Instal·lació AD DS": ut1/bloc4-active-directory/24-installacio-ad-ds.md
           - "Promoció a DC": ut1/bloc4-active-directory/25-promocio-dc.md
           - "DNS integrat amb AD": ut1/bloc4-active-directory/26-dns-integrat-ad.md

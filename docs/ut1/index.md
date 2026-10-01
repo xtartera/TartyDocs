@@ -23,7 +23,7 @@ tags:
 | **Bloc 1** | [Fonaments](bloc1-fonaments/01-so-escriptori-vs-xarxa.md) | 01–05 | SO escriptori vs xarxa, arquitectura client-servidor, serveis Windows Server, virtualització, requisits de maquinari |
 | **Bloc 2** | [Instal·lació](bloc2-installacio/06-modes-installacio.md) | 06–10 | Modes d'instal·lació, particionament, sistemes de fitxers NTFS/ReFS, instal·lació pas a pas, configuració inicial |
 | **Bloc 3** | [Administració](bloc3-administracio/11-server-manager.md) | 11–19 | Server Manager, rols i característiques, PowerShell bàsic, monitoratge de recursos, Visor d'Esdeveniments, manteniment, planificador de tasques, unattend.xml, verificació de connectivitat |
-| **Bloc 4** | [Active Directory](bloc4-active-directory/20-conceptes-ad.md) | 20–26 | Conceptes AD, **boscos/arbres/dominis**, **relacions de confiança**, unitats organitzatives (UO), instal·lació AD DS, promoció a DC, DNS integrat en AD |
+| **Bloc 4** | [Active Directory](bloc4-active-directory/20-conceptes-ad.md) | 20–26 | Conceptes AD, **boscos/arbres/dominis**, **relacions de confiança**, unitats organitzatives (UO), **bones pràctiques (infografia)**, instal·lació AD DS, promoció a DC, DNS integrat en AD |
 | **Bloc 5** | [Usuaris i grups](bloc5-usuaris-grups/27-gestio-usuaris-ad.md) | 27–31 | Gestió d'usuaris i grups AD, polítiques de contrasenya, restriccions horàries, PowerShell per AD |
 | **Bloc 6** | [Clients al domini](bloc6-clients/32-unio-clients-domini.md) | 32–35 | Unió de clients Windows 11, configuració DNS al client, validació de la integració, gpresult |
 | **Bloc 7** | [Recursos compartits](bloc7-recursos/36-carpetes-compartides.md) | 36–40 | Carpetes compartides, permisos NTFS, herència de permisos, icacls, muntatge de carpetes de xarxa |
